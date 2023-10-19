@@ -1,0 +1,10 @@
+version="0.1"
+tags={
+	"Ships"
+	"Planets"
+	"Missions"
+	"Species"
+	"Tech"
+}
+name="Cannon"
+supported_version="1.0.0"

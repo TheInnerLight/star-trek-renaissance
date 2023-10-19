@@ -1,0 +1,773 @@
+##################
+# MISC
+##################
+
+@build_block_radius_none = 0
+@build_block_radius_civilian = 20
+@build_block_radius_military = 200
+
+@speed_very_slow = 80
+@speed_slow = 100
+@speed_default = 120
+@speed_fast = 140
+@speed_very_fast = 160
+
+##################
+# CORVETTE
+##################
+
+@corvette_collision_radius = 2.0
+@corvette_formation_priority = 20
+
+@corvette_hp = 300
+@corvette_evasion = 60
+@corvette_build_time = 60
+
+@corvette_upkeep_energy = 0.3
+@corvette_upkeep_deuterium = 0.3
+@corvette_upkeep_alloys = 0.1
+@corvette_upkeep_minerals = 0.2
+
+##################
+# DESTROYER
+##################
+
+@destroyer_collision_radius = 2.5
+@destroyer_formation_priority = 10
+
+@destroyer_hp = 800
+@destroyer_evasion = 35
+@destroyer_build_time = 120
+
+@destroyer_upkeep_energy = 0.6
+@destroyer_upkeep_deuterium = 0.6
+@destroyer_upkeep_alloys = 0.2
+@destroyer_upkeep_minerals = 0.4
+
+##################
+# CRUISER
+##################
+
+@cruiser_collision_radius = 3.5
+@cruiser_formation_priority = 30
+
+@cruiser_hp = 1800
+@cruiser_evasion = 10
+@cruiser_build_time = 240
+
+@cruiser_upkeep_energy = 1.2
+@cruiser_upkeep_deuterium = 1.2
+@cruiser_upkeep_alloys = 0.4
+@cruiser_upkeep_minerals = 0.8
+
+##################
+# BATTLESHIP
+##################
+
+@battleship_collision_radius = 6
+@battleship_formation_priority = 50
+
+@battleship_hp = 3000
+@battleship_evasion = 5
+@battleship_build_time = 480
+
+@battleship_upkeep_energy = 2.4
+@battleship_upkeep_deuterium = 2.4
+@battleship_upkeep_alloys = 0.8
+
+##################
+# TITAN
+##################
+
+@titan_collision_radius = 12
+@titan_formation_priority = 40
+
+@titan_hp = 10000
+@titan_evasion = 5
+@titan_build_time = 1800
+
+@titan_upkeep_energy = 4.8
+@titan_upkeep_deuterium = 4.8
+@titan_upkeep_alloys = 1.6
+
+##################
+# CONSTRUCTION SHIP
+##################
+
+@construction_hp = 300
+@construction_evasion = 25
+@construction_build_time = 60
+
+@construction_upkeep_energy = 1
+@construction_upkeep_deuterium = 1
+@construction_upkeep_alloys = 0
+
+##################
+# SCIENCE SHIP
+##################
+
+@science_hp = 300
+@science_evasion = 40
+@science_build_time = 60
+
+@science_upkeep_energy = 1
+@science_upkeep_deuterium = 1
+@science_upkeep_alloys = 0
+
+##################
+# SPY SHIP
+##################
+
+@spy_ship_hp = 235
+@spy_ship_evasion = 85
+@spy_ship_build_time = 60
+
+@spy_ship_upkeep_energy = 1
+@spy_ship_upkeep_deuterium = 1
+@spy_ship_upkeep_alloys = 0
+
+##################
+# COLONY SHIP
+##################
+
+@colony_hp = 300
+@colony_evasion = 10
+@colony_build_time = 360
+
+# [HRB] AI doesnt like upkeep on colony ships. keep at 0 for now.
+
+@colony_upkeep_energy = 1
+@colony_upkeep_deuterium = 1
+@colony_upkeep_alloys = 1
+
+##################
+# TRANSPORT SHIP
+##################
+
+@transport_hp = 100
+@transport_evasion = 70
+@transport_build_time = 0
+
+@transport_upkeep_energy = 1
+@transport_upkeep_deuterium = 1
+@transport_upkeep_alloys = 1
+
+##################
+# STARBASES
+##################
+
+@starbase_outpost_build_time = 360
+@starbase_starport_build_time = 360
+@starbase_starhold_build_time = 720
+@starbase_starfortress_build_time = 1080
+
+######################
+######   UFOP	######
+######################
+
+#########################
+# ufop_tier1_test
+#########################
+
+# @ufop_tier1_testship_Speed = 160
+
+# @ufop_tier1_testship_collision_radius = 2.0
+# @ufop_testship_tierI_formation_priority = 20
+
+# @ufop_tier1_testship_hp = 900
+# @ufop_tier1_testship_evasion = 48
+# @ufop_tier1_testship_build_time = 78
+
+# @ufop_tier1_testship_upkeep_energy = 0
+# @ufop_tier1_testship_upkeep_deuterium = 0
+# @ufop_tier1_testship_upkeep_alloys = 0
+
+
+##################
+# MIRANDA
+##################
+
+@miranda_speed = 160
+
+@miranda_collision_radius = 2.0
+@miranda_formation_priority = 20
+
+@miranda_hp = 750
+@miranda_evasion = 50
+@miranda_build_time = 60
+
+@miranda_upkeep_energy = 0.3
+@miranda_upkeep_deuterium = 0.1
+@miranda_upkeep_alloys = 0.1
+
+##################
+# DEFIANT
+##################
+
+@defiant_speed = 180
+
+@defiant_collision_radius = 2.0
+@defiant_formation_priority = 20
+
+@defiant_hp = 2200
+@defiant_evasion = 55
+@defiant_build_time = 90
+
+@defiant_upkeep_energy = 0.5
+@defiant_upkeep_deuterium = 0.4
+@defiant_upkeep_alloys = 0.4
+
+##################
+# INTREPID
+##################
+
+@intrepid_speed = 112
+
+@intrepid_collision_radius = 2.5
+@intrepid_formation_priority = 10
+
+@intrepid_hp = 1750
+@intrepid_evasion = 48
+@intrepid_build_time = 120
+
+@intrepid_upkeep_energy = 0.6
+@intrepid_upkeep_deuterium = 0.2
+@intrepid_upkeep_alloys = 0.2
+@intrepid_upkeep_minerals = 0.4
+
+##################
+# EXCELSIOR
+##################
+
+@excelsior_speed = 80
+
+@excelsior_collision_radius = 3.5
+@excelsior_formation_priority = 30
+
+@excelsior_hp = 3200
+@excelsior_evasion = 36
+@excelsior_build_time = 240
+
+@excelsior_upkeep_energy = 1.2
+@excelsior_upkeep_deuterium = 0.4
+@excelsior_upkeep_alloys = 0.4
+@excelsior_upkeep_minerals = 0.8
+
+##################
+# GALAXY
+##################
+
+@Galaxy_speed = 28.8
+
+@galaxy_collision_radius = 6
+@galaxy_formation_priority = 50
+
+@galaxy_hp = 11302
+@galaxy_evasion = 9.6
+@galaxy_build_time = 1050
+
+@galaxy_upkeep_energy = 3.4
+@galaxy_upkeep_deuterium = 1.8
+@galaxy_upkeep_alloys = 1.8
+
+##################
+# ENTERPRISE
+##################
+
+
+
+@enterprise_collision_radius = 6
+@enterprise_formation_priority = 50
+
+@enterprise_hp = 11302
+@enterprise_evasion = 10
+@enterprise_build_time = 1050
+
+@enterprise_upkeep_energy = 3.4
+@enterprise_upkeep_deuterium = 1.8
+@enterprise_upkeep_alloys = 1.8
+
+##################
+# GOVERNOR
+##################
+
+@governor_hp = 300 
+@governor_evasion = 40 
+@governor_build_time = 60 
+ 
+@governor_upkeep_energy = 1 
+@governor_upkeep_deuterium = 1 
+@governor_upkeep_alloys = 0 
+
+##################
+# SOVEREIGN
+##################
+
+@sovereign_speed = 85
+
+@sovereign_collision_radius = 3.5
+@sovereign_formation_priority = 40
+
+@sovereign_hp = 9200
+@sovereign_evasion = 35
+@sovereign_build_time = 960
+
+@sovereign_upkeep_energy = 2
+@sovereign_upkeep_deuterium = 0.9
+@sovereign_upkeep_alloys = 0.9
+
+##################
+# BULK CARRIER
+##################
+
+@bulk_carrier_hp = 100
+@bulk_carrier_evasion = 70
+@bulk_carrier_build_time = 360
+
+######################
+#####  Klingon	######
+######################
+
+##################
+# klingon_tier1_test
+##################
+
+# @klingon_tier1_test_speed = 176
+
+# @klingon_tier1_test_collision_radius = 2.0
+# @klingon_tier1_test_formation_priority = 20
+
+# @klingon_tier1_test_hp = 600
+# @klingon_tier1_test_evasion = 48
+# @klingon_tier1_test_build_time = 66
+
+# @klingon_tier1_test_upkeep_energy = 0.3
+# @klingon_tier1_test_upkeep_deuterium = 0.1
+# @klingon_tier1_test_upkeep_alloys = 0.1
+
+##################
+# BIRD_OF_PREY
+##################
+
+@bird_of_prey_collision_radius = 2
+@bird_of_prey_formation_priority = 20
+@bird_of_prey_hp = 400
+@bird_of_prey_evasion = 60
+@bird_of_prey_build_time = 160
+@bird_of_prey_upkeep_energy = 0.3
+@bird_of_prey_upkeep_deuterium = 0.1
+@bird_of_prey_upkeep_alloys = 0.1
+@bird_of_prey_speed = 210
+
+##################
+# WARBIRD
+##################
+
+@warbird_speed = 134
+
+@warbird_collision_radius = 2.5
+@warbird_formation_priority = 10
+
+@warbird_hp = 800
+@warbird_evasion = 48
+@warbird_build_time = 280
+
+@warbird_upkeep_energy = 0.6
+@warbird_upkeep_deuterium = 0.2
+@warbird_upkeep_alloys = 0.2
+@warbird_upkeep_minerals = 0.4
+
+##################
+# K'TINGA
+##################
+
+@ktinga_speed = 80
+
+@ktinga_collision_radius = 3.5
+@ktinga_formation_priority = 30
+
+@ktinga_hp = 2100
+@ktinga_evasion = 36
+@ktinga_build_time = 640
+
+@ktinga_upkeep_energy = 1.2
+@ktinga_upkeep_deuterium = 0.4
+@ktinga_upkeep_alloys = 0.4
+@ktinga_upkeep_minerals = 0.8
+
+##################
+# VOR'CHA
+##################
+
+@vorcha_speed = 38
+
+@vorcha_collision_radius = 6
+@vorcha_formation_priority = 50
+
+@vorcha_hp = 6400
+@vorcha_evasion = 12
+@vorcha_build_time = 960
+
+@vorcha_upkeep_energy = 2.4
+@vorcha_upkeep_deuterium = 0.8
+@vorcha_upkeep_alloys = 0.8
+
+##################
+# NEGH'VAR
+##################
+
+@neghvar_speed = 19
+
+@neghvar_collision_radius = 3.5
+@neghvar_formation_priority = 40
+
+@neghvar_hp = 16000
+@neghvar_evasion = 4.48
+@neghvar_build_time = 1536
+
+@neghvar_upkeep_energy = 4.8
+@neghvar_upkeep_deuterium = 1.6
+@neghvar_upkeep_alloys = 1.6
+
+######################
+######  Romulan ######
+######################
+
+##################
+# ROMULAN Tier I Test Ship
+##################
+
+# @romulan_tier1_test_speed = 192
+
+# @romulan_tier1_test_collision_radius = 2.0
+# @romulan_tier1_test_formation_priority = 20
+
+# @romulan_tier1_test_hp = 400
+# @romulan_tier1_test_evasion = 60
+# @romulan_tier1_test_build_time = 60
+
+# @romulan_tier1_test_upkeep_energy = 0.3
+# @romulan_tier1_test_upkeep_deuterium = 0.1
+# @romulan_tier1_test_upkeep_alloys = 0.1
+
+
+##################
+# FERRAX
+##################
+
+@ferrax_speed = 192
+
+@ferrax_collision_radius = 2.0
+@ferrax_formation_priority = 20
+
+@ferrax_hp = 300
+@ferrax_evasion = 50
+@ferrax_build_time = 60
+
+@ferrax_upkeep_energy = 0.3
+@ferrax_upkeep_deuterium = 0.1
+@ferrax_upkeep_alloys = 0.1
+
+##################
+# VINDIUS
+##################
+
+@vindius_speed = 112
+
+@vindius_collision_radius = 2.5
+@vindius_formation_priority = 10
+
+@vindius_hp = 400
+@vindius_evasion = 38.4
+@vindius_build_time = 120
+
+@vindius_upkeep_energy = 0.6
+@vindius_upkeep_deuterium = 0.2
+@vindius_upkeep_alloys = 0.2
+@vindius_upkeep_minerals = 0.4
+
+##################
+# VALDORE
+##################
+
+@valdore_speed = 40
+
+
+@valdore_collision_radius = 3.5
+@valdore_formation_priority = 30
+
+@valdore_hp = 800
+@valdore_evasion = 36
+@valdore_build_time = 240
+
+@valdore_upkeep_energy = 1.2
+@valdore_upkeep_deuterium = 0.4
+@valdore_upkeep_alloys = 0.4
+@valdore_upkeep_minerals = 0.8
+
+##################
+# D'DERIDEX
+##################
+
+@dderidex_speed = 28.8
+
+@dderidex_collision_radius = 6
+@dderidex_formation_priority = 50
+
+@dderidex_hp = 2800
+@dderidex_evasion = 5
+@dderidex_build_time = 480
+
+@dderidex_upkeep_energy = 2.4
+@dderidex_upkeep_deuterium = 0.8
+@dderidex_upkeep_alloys = 0.8
+
+##################
+# MAJESTUS
+##################
+
+@majestus_speed = 14
+
+@majestus_collision_radius = 3.5
+@majestus_formation_priority = 40
+
+@majestus_hp = 6400
+@majestus_evasion = 4.8
+@majestus_build_time = 960
+
+@majestus_upkeep_energy = 4.8
+@majestus_upkeep_deuterium = 1.6
+@majestus_upkeep_alloys = 1.6
+
+######################
+####  Cardassian  ####
+######################
+
+##################
+# Cardassian Tier I Test Ship - Meant for testiing purposes only
+##################
+
+# @cardassian_tier1_test_speed = 208
+
+# @cardassian_tier1_test_collision_radius = 2.0
+# @cardassian_tier1_test_priority = 20
+
+# @cardassian_tier1_test_hp = 200
+# @cardassian_tier1_test_evasion = 90
+# @cardassian_tier1_test_build_time = 42
+
+# @cardassian_tier1_test_upkeep_energy = 0.3
+# @cardassian_tier1_test_upkeep_deuterium = 0.1
+# @cardassian_tier1_test_upkeep_alloys = 0.1
+
+
+
+##################
+# HIDEKI
+##################
+
+@hideki_collision_radius = 2
+@hideki_formation_priority = 20
+@hideki_hp = 750
+@hideki_evasion = 60
+@hideki_build_time = 160
+@hideki_upkeep_energy = 0.3
+@hideki_upkeep_deuterium = 0.1
+@hideki_upkeep_alloys = 0.1
+@hideki_speed = 210
+
+##################
+# GALOR
+##################
+
+@galor_speed = 134
+
+@galor_collision_radius = 2.5
+@galor_formation_priority = 10
+
+@galor_hp = 1000
+@galor_evasion = 48
+@galor_build_time = 320
+
+@galor_upkeep_energy = 0.6
+@galor_upkeep_deuterium = 0.2
+@galor_upkeep_alloys = 0.2
+@galor_upkeep_minerals = 0.4
+
+##################
+# KELDON
+##################
+
+@keldon_speed = 72
+
+@keldon_collision_radius = 3.5
+@keldon_formation_priority = 30
+
+@keldon_hp = 3400
+@keldon_evasion = 36
+@keldon_build_time = 640
+
+@keldon_upkeep_energy = 1.2
+@keldon_upkeep_deuterium = 0.4
+@keldon_upkeep_alloys = 0.4
+@keldon_upkeep_minerals = 0.8
+
+##################
+# KAZIKAI
+##################
+
+@kazikai_speed = 48
+
+@kazikai_collision_radius = 6
+@kazikai_formation_priority = 50
+
+@kazikai_hp = 8800
+@kazikai_evasion = 12
+@kazikai_build_time = 960
+
+@kazikai_upkeep_energy = 2.4
+@kazikai_upkeep_deuterium = 0.8
+@kazikai_upkeep_alloys = 0.8
+
+##################
+# NOKORAM
+##################
+
+@nokoram_speed = 19.2
+
+@nokoram_collision_radius = 3.5
+@nokoram_formation_priority = 40
+
+@nokoram_hp = 12000
+@nokoram_evasion = 4.48
+@nokoram_build_time = 1536
+
+@nokoram_upkeep_energy = 4.8
+@nokoram_upkeep_deuterium = 1.6
+@nokoram_upkeep_alloys = 1.6
+
+##################
+# MINORS
+##################
+
+# SMALL
+
+@small_minor_speed = 160
+
+@small_minor_collision_radius = 3.5
+@small_minor_formation_priority = 40
+
+@small_minor_hp = 650
+@small_minor_evasion = 48
+@small_minor_build_time = 78
+
+@small_minor_upkeep_energy = 0 #4.8
+@small_minor_upkeep_deuterium = 0 #1.6
+@small_minor_upkeep_alloys = 0 #1.6
+
+#MEDIUM
+
+@medium_minor_speed = 96
+
+@medium_minor_collision_radius = 3.5
+@medium_minor_formation_priority = 40
+
+@medium_minor_hp = 2400
+@medium_minor_evasion = 28
+@medium_minor_build_time = 240
+
+@medium_minor_upkeep_energy = 4.8
+@medium_minor_upkeep_deuterium = 1.6
+@medium_minor_upkeep_alloys = 1.6
+@medium_minor_upkeep_minerals = 1.6
+@medium_minor_ATK_upkeep_energy = 0.3
+@medium_minor_ATK_upkeep_deuterium = 0.1
+@medium_minor_ATK_upkeep_alloys = 0.1
+
+# LARGE
+
+@large_minor_speed = 80
+
+@large_minor_collision_radius = 3.5
+@large_minor_formation_priority = 40
+
+@large_minor_hp = 2400
+@large_minor_evasion = 28
+@large_minor_build_time = 240
+
+@large_minor_upkeep_energy = 4.8
+@large_minor_upkeep_deuterium = 1.6
+@large_minor_upkeep_alloys = 1.6
+@large_minor_upkeep_minerals = 1.6
+@large_minor_ATK_upkeep_energy = 0.3
+@large_minor_ATK_upkeep_deuterium = 0.1
+@large_minor_ATK_upkeep_alloys = 0.1
+
+##################
+# NAUSICAAN
+##################
+
+# SMALL
+
+@small_nausicaan_speed = 160
+
+@small_nausicaan_collision_radius = 3.5
+@small_nausicaan_formation_priority = 40
+
+@small_nausicaan_hp = 650
+@small_nausicaan_evasion = 48
+@small_nausicaan_build_time = 78
+
+@small_nausicaan_upkeep_energy = 0 #4.8
+@small_nausicaan_upkeep_deuterium = 0 #1.6
+@small_nausicaan_upkeep_alloys = 0 #1.6
+
+#MEDIUM
+
+@medium_nausicaan_speed = 96
+
+@medium_nausicaan_collision_radius = 3.5
+@medium_nausicaan_formation_priority = 40
+
+@medium_nausicaan_hp = 2400
+@medium_nausicaan_evasion = 28
+@medium_nausicaan_build_time = 240
+
+@medium_nausicaan_upkeep_energy = 4.8
+@medium_nausicaan_upkeep_deuterium = 1.6
+@medium_nausicaan_upkeep_alloys = 1.6
+@medium_nausicaan_upkeep_minerals = 1.6
+@medium_nausicaan_ATK_upkeep_energy = 0.3
+@medium_nausicaan_ATK_upkeep_deuterium = 0.1
+@medium_nausicaan_ATK_upkeep_alloys = 0.1
+
+# LARGE
+
+@large_nausicaan_speed = 80
+
+@large_nausicaan_collision_radius = 3.5
+@large_nausicaan_formation_priority = 40
+
+@large_nausicaan_hp = 2400
+@large_nausicaan_evasion = 28
+@large_nausicaan_build_time = 240
+
+@large_nausicaan_upkeep_energy = 4.8
+@large_nausicaan_upkeep_deuterium = 1.6
+@large_nausicaan_upkeep_alloys = 1.6
+@large_nausicaan_upkeep_minerals = 1.6
+@large_nausicaan_ATK_upkeep_energy = 0.3
+@large_nausicaan_ATK_upkeep_deuterium = 0.1
+@large_nausicaan_ATK_upkeep_alloys = 0.1
+
+##################
+# BORG CUBES
+##################
+
+@starting_officers = 0.5
+
+##################
+# CERRITOS
+##################
+
+@cerritos_hp = 400

@@ -1,0 +1,2542 @@
+###########################################
+### United Federation of Planets (UFOP) ###
+###########################################
+
+@ufop_section_cost = 0
+
+################################################
+# This section template is for test ships only
+################################################
+
+# ship_section_template = {
+# 	key = "ufop_tier1_test_MID"
+# 	ship_size = ufop_tier1_test
+# 	fits_on_slot = mid
+# 	should_draw_components = no
+# 	entity = "miranda_entity"
+# 	icon = "GFX_ship_part_core_mid"
+	
+# 	prerequisites = { tech_missiles_1 }
+	
+# 	ai_weight = {
+# 		modifier = {
+# 			factor = 10.0
+# 			is_preferred_weapons = weapon_type_explosive
+# 		}
+# 		modifier = {
+# 			factor = 0.1
+# 			NOT = { is_preferred_weapons = weapon_type_explosive }
+# 		}		
+# 	}
+	
+# 	component_slot = {
+# 		name = "SMALL_GUN_01"
+# 		template = "invisible_small_turret"
+# 		locatorname = "small_gun_01"
+# 	}
+	
+# 	component_slot = {
+# 		name = "MEDIUM_GUN_01"
+# 		template = "invisible_medium_turret"
+# 		locatorname = "medium_gun_01"
+# 	}
+
+# 	small_utility_slots = 3
+# 	aux_utility_slots = 1
+	
+# 	resources = {
+# 		category = ship_sections
+# 		cost = {
+# 			alloys = @ufop_section_cost
+# 		}
+# 	}
+# }
+
+
+
+ship_section_template = {
+	key = "MIRANDA_MID"
+	ship_size = miranda
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "miranda_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}		
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_03"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	small_utility_slots = 3
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @ufop_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "INTREPID_MID"
+	ship_size = intrepid
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "intrepid_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOR = {
+				has_ai_personality = peaceful_traders
+				has_ai_personality = slaving_despots
+				has_ai_personality = migrating_flock
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = hive_mind
+			}
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}	
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_02"
+	}
+	
+	
+	
+	small_utility_slots = 4
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @ufop_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "EXCELSIOR_MID"
+	ship_size = excelsior
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "excelsior_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}		
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+    component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	small_utility_slots = 2
+	medium_utility_slots = 4
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @ufop_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "SOVEREIGN_MID"
+	ship_size = sovereign
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "sovereign_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+		modifier = {
+			factor = 0.1
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	large_utility_slots = 6
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @ufop_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "GALAXY_MID"
+	ship_size = galaxy
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "galaxy_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+		modifier = {
+			factor = 0.1
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+    component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+	}
+
+		
+	large_utility_slots = 12
+	aux_utility_slots = 3
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @ufop_section_cost
+		}
+	}
+}
+
+###############
+### Klingon ###
+###############
+
+@klingon_section_cost = 0
+
+#This section template is for test ships only
+
+# ship_section_template = {
+# 	key = "KLINGON_TIER1_TEST_MID"
+# 	ship_size = klingon_tier1_test
+# 	fits_on_slot = mid
+# 	should_draw_components = no
+# 	entity = "bird_of_prey_entity"
+# 	icon = "GFX_ship_part_core_mid"
+	
+# 	prerequisites = { tech_missiles_1 }
+	
+# 	ai_weight = {
+# 		modifier = {
+# 			factor = 10.0
+# 			is_preferred_weapons = weapon_type_explosive
+# 		}
+# 		modifier = {
+# 			factor = 0.1
+# 			NOT = { is_preferred_weapons = weapon_type_explosive }
+# 		}		
+# 	}
+	
+# 	component_slot = {
+# 		name = "SMALL_GUN_01"
+# 		template = "invisible_small_turret"
+# 		locatorname = "small_gun_01"
+# 	}
+	
+# 	component_slot = {
+# 		name = "SMALL_GUN_02"
+# 		template = "invisible_small_turret"
+# 		locatorname = "small_gun_02"
+# 	}
+	
+# 	component_slot = {
+# 		name = "MEDIUM_GUN_01"
+# 		template = "invisible_medium_turret"
+# 		locatorname = "medium_gun_01"
+# 	}
+
+# 	small_utility_slots = 2
+# 	aux_utility_slots = 1
+	
+# 	resources = {
+# 		category = ship_sections
+# 		cost = {
+# 			alloys = @klingon_section_cost
+# 		}
+# 	}
+# }
+
+
+ship_section_template = {
+	key = "BIRD_OF_PREY_MID"
+	ship_size = bird_of_prey
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "bop_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}		
+	}
+	
+	# component_slot = {
+	# 	name = "SMALL_GUN_02"
+	# 	template = "invisible_small_turret"
+	# 	locatorname = "small_gun_02"
+	# }
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_03"
+	}
+
+	#small_utility_slots = 2
+	#aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @klingon_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "WARBIRD_MID"
+	ship_size = warbird
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "warbird_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOR = {
+				has_ai_personality = peaceful_traders
+				has_ai_personality = slaving_despots
+				has_ai_personality = migrating_flock
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = hive_mind
+			}
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}	
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_03"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_04"
+	}
+
+	
+	
+	small_utility_slots = 4
+	#medium_utility_slots = 1
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @klingon_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "KTINGA_MID"
+	ship_size = ktinga
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "ktinga_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}		
+	}
+	
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_03"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_04"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_05"
+	}
+
+		
+	medium_utility_slots = 6
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @klingon_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "VORCHA_MID"
+	ship_size = vorcha
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "vorcha_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_03"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_04"
+	}
+	
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @klingon_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "NEGHVAR_MID"
+	ship_size = neghvar
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "neghvar_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+		modifier = {
+			factor = 0.1
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_03"
+	}
+
+	
+
+
+	
+	large_utility_slots = 12
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @klingon_section_cost
+		}
+	}
+}
+
+###############
+### Romulan ###
+###############
+
+@romulan_section_cost = 0
+
+
+#The following section is just for testing purposes
+
+# ship_section_template = {
+# 	key = "romulan_tier1_test_MID"
+# 	ship_size = romulan_tier1_test
+# 	fits_on_slot = mid
+# 	should_draw_components = no
+# 	entity = "romulan_bird_of_prey_entity"
+# 	icon = "GFX_ship_part_core_mid"
+	
+# 	prerequisites = { tech_missiles_1 }
+	
+# 	ai_weight = {
+# 		modifier = {
+# 			factor = 10.0
+# 			is_preferred_weapons = weapon_type_explosive
+# 		}
+# 		modifier = {
+# 			factor = 0.1
+# 			NOT = { is_preferred_weapons = weapon_type_explosive }
+# 		}		
+# 	}
+	
+# 	component_slot = {
+# 		name = "SMALL_GUN_01"
+# 		template = "invisible_small_turret"
+# 		locatorname = "small_gun_01"
+# 	}
+	
+# 	component_slot = {
+# 		name = "SMALL_GUN_02"
+# 		template = "invisible_missile_turret"
+# 		locatorname = "small_gun_02"
+# 	}
+
+# 	component_slot = {
+# 		name = "MEDIUM_GUN_01"
+# 		template = "invisible_medium_turret"
+# 		locatorname = "medium_gun_01"
+# 	}
+
+# 	small_utility_slots = 2
+# 	aux_utility_slots = 1
+	
+# 	resources = {
+# 		category = ship_sections
+# 		cost = {
+# 			alloys = @romulan_section_cost
+# 		}
+# 	}
+# }
+
+ship_section_template = {
+	key = "FERRAX_MID"
+	ship_size = ferrax
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "ferrax_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}		
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	small_utility_slots = 1
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @romulan_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "VINDIUS_MID"
+	ship_size = vindius
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "vindius_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOR = {
+				has_ai_personality = peaceful_traders
+				has_ai_personality = slaving_despots
+				has_ai_personality = migrating_flock
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = hive_mind
+			}
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	# component_slot = {
+	# 	name = "SMALL_GUN_03"
+	# 	template = "invisible_small_turret"
+	# 	locatorname = "small_gun_03"
+	# }
+	
+	small_utility_slots = 3
+	#medium_utility_slots = 1
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @romulan_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "VALDORE_MID"
+	ship_size = valdore
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "valdore_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}		
+	}
+	
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_03"
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_02"
+	}
+	
+	# component_slot = {
+	# 	name = "SMALL_GUN_02"
+	# 	template = "invisible_small_turret"
+	# 	locatorname = "small_gun_02"
+	# }
+
+	# component_slot = {
+	# 	name = "SMALL_GUN_03"
+	# 	template = "invisible_small_turret"
+	# 	locatorname = "small_gun_03"
+	# }
+
+	# component_slot = {
+	# 	name = "SMALL_GUN_04"
+	# 	template = "point_defence_turret"
+	# 	locatorname = "small_gun_04"
+	# }
+
+	
+	
+	small_utility_slots = 4
+	#medium_utility_slots = 8
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @romulan_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DDERIDEX_MID"
+	ship_size = dderidex
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "dderidex_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+	
+		
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_03"
+	}
+
+	
+
+	
+	
+	
+	large_utility_slots = 5
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @romulan_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "MAJESTUS_MID"
+	ship_size = majestus
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "majestus_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+		modifier = {
+			factor = 0.1
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_03"
+	}
+
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_03"
+	}
+
+	
+	
+	large_utility_slots = 10
+	aux_utility_slots = 3
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @romulan_section_cost
+		}
+	}
+}
+
+##################
+### Cardassian ###
+##################
+
+@cardassian_section_cost = 0
+
+#The following section is meant for testing purposes only
+
+# ship_section_template = {
+# 	key = "CARDASSIAN_TIER1_TEST_MID"
+# 	ship_size = cardassian_tier1_test
+# 	fits_on_slot = mid
+# 	should_draw_components = no
+# 	entity = "hideki_entity"
+# 	icon = "GFX_ship_part_core_mid"
+	
+# 	prerequisites = { tech_missiles_1 }
+	
+# 	ai_weight = {
+# 		modifier = {
+# 			factor = 10.0
+# 			is_preferred_weapons = weapon_type_explosive
+# 		}
+# 		modifier = {
+# 			factor = 0.1
+# 			NOT = { is_preferred_weapons = weapon_type_explosive }
+# 		}		
+# 	}
+	
+# 	component_slot = {
+# 		name = "SMALL_GUN_01"
+# 		template = "invisible_small_turret"
+# 		locatorname = "small_gun_01"
+# 	}
+	
+# 	component_slot = {
+# 		name = "SMALL_GUN_02"
+# 		template = "invisible_missile_turret"
+# 		locatorname = "small_gun_02"
+# 	}
+
+# 	component_slot = {
+# 		name = "MEDIUM_GUN_01"
+# 		template = "invisible_medium_turret"
+# 		locatorname = "medium_gun_01"
+# 	}
+
+# 	small_utility_slots = 2
+# 	aux_utility_slots = 1
+	
+# 	resources = {
+# 		category = ship_sections
+# 		cost = {
+# 			alloys = @cardassian_section_cost
+# 		}
+# 	}
+# }
+
+
+ship_section_template = {
+	key = "HIDEKI_MID"
+	ship_size = hideki
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "hideki_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}		
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_missile_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_missile_turret"
+		locatorname = "small_gun_03"
+	}
+
+	small_utility_slots = 3
+	medium_utility_slots = 1
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @cardassian_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "GALOR_MID"
+	ship_size = galor
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "galor_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOR = {
+				has_ai_personality = peaceful_traders
+				has_ai_personality = slaving_despots
+				has_ai_personality = migrating_flock
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = hive_mind
+			}
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_missile_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_missile_turret"
+		locatorname = "small_gun_03"
+	}
+
+	
+	small_utility_slots = 3
+	medium_utility_slots = 2
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @cardassian_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "KELDON_MID"
+	ship_size = keldon
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "keldon_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}		
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_missile_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_missile_turret"
+		locatorname = "small_gun_03"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "invisible_missile_turret"
+		locatorname = "small_gun_04"
+	}
+	
+	#small_utility_slots = 2
+	medium_utility_slots = 8
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @cardassian_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "KAZIKAI_MID"
+	ship_size = kazikai
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "kazikai_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_missile_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_missile_turret"
+		locatorname = "small_gun_03"
+	}
+	
+	large_utility_slots = 4
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @cardassian_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "NOKORAM_MID"
+	ship_size = nokoram
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "nokoram_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+		modifier = {
+			factor = 0.1
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_03"
+	}
+
+	
+	
+	large_utility_slots = 6
+	aux_utility_slots = 3
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @cardassian_section_cost
+		}
+	}
+}
+
+##############
+### Minors ###
+##############
+
+@minor_section_cost = 0
+
+ship_section_template = {
+	key = "SMALL_MINOR_MID"
+	ship_size = small_minor
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "minor_small_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}		
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	small_utility_slots = 2
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @minor_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "MEDIUM_MINOR_MID"
+	ship_size = medium_minor
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "minor_medium_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOR = {
+				has_ai_personality = peaceful_traders
+				has_ai_personality = slaving_despots
+				has_ai_personality = migrating_flock
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = hive_mind
+			}
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}	
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_03"
+	}
+	
+	small_utility_slots = 5
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @minor_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "LARGE_MINOR_MID"
+	ship_size = large_minor
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "minor_large_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+		
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_02"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	large_utility_slots = 6
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @minor_section_cost
+		}
+	}
+}
+
+#################
+### Nausicaan ###
+#################
+
+@nausicaan_section_cost = 0
+
+ship_section_template = {
+	key = "SMALL_NAUSICAAN_MID"
+	ship_size = small_nausicaan
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "null_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}		
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	small_utility_slots = 2
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @nausicaan_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "MEDIUM_NAUSICAAN_MID"
+	ship_size = medium_nausicaan
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "null_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}	
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_03"
+	}
+	
+	small_utility_slots = 5
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @nausicaan_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "LARGE_NAUSICAAN_MID"
+	ship_size = large_nausicaan
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "null_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+		
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_02"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+	
+	large_utility_slots = 6
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @nausicaan_section_cost
+		}
+	}
+}
+
+################
+### Specials ###
+################
+
+ship_section_template = {
+	key = "BORG_CUBE_LARGE"
+	ship_size = borgcube_size_large
+	fits_on_slot = mid
+	entity = "borg_cube_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"		
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"		
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"		
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_04"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"		
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "large_gun_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "large_gun_06"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_03"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_04"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_05"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_05"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_06"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_06"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_03"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_04"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_05"
+	}
+	component_slot = {
+		name = "SMALL_GUN_06"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_06"
+	}
+	component_slot = {
+		name = "SMALL_GUN_07"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_04"
+	}
+	component_slot = {
+		name = "SMALL_GUN_08"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_05"
+	}
+	component_slot = {
+		name = "SMALL_GUN_09"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_06"
+	}
+	
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "PD_02"
+		template = "point_defence_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "PD_03"
+		template = "point_defence_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "PD_04"
+		template = "point_defence_turret"
+		locatorname = "large_gun_04"
+	}
+
+	large_utility_slots = 18
+	aux_utility_slots = 8
+}
+
+ship_section_template = {
+	key = "BORG_CUBE_MID"
+	ship_size = borgcube_size_mid
+	fits_on_slot = mid
+	entity = "borg_tacticalcube_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"		
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"		
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_04"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_03"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_04"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_03"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_04"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_05"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_06"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_06"
+	}
+
+	large_utility_slots = 8
+	aux_utility_slots = 3
+}
+
+ship_section_template = {
+	key = "BORG_CUBE_SMALL"
+	ship_size = borgcube_size_small
+	fits_on_slot = mid
+	entity = "borg_sphere_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"		
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"		
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "large_turret"
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "large_turret"
+		locatorname = "large_gun_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "large_turret"
+		locatorname = "large_gun_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "large_turret"
+		locatorname = "large_gun_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "large_turret"
+		locatorname = "large_gun_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "large_turret"
+		locatorname = "large_gun_06"
+	}
+	component_slot = {
+		name = "LARGE_GUN_07"
+		template = "large_turret"
+		locatorname = "large_gun_07"
+	}
+
+	large_utility_slots = 6
+	aux_utility_slots = 3
+}
+
+ship_section_template = {
+	key = "ENTERPRISE_MID"
+	ship_size = enterprise
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "enterprise_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	prerequisites = { tech_big_bomb_1 }
+
+	#component_slot = {
+	#	name = "EXTRA_LARGE_01"
+	#	template = "invisible_extra_large_fixed"
+	#	locatorname = "xl_gun_01"
+	#}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_03"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	#component_slot = {
+	#	name = "MEDIUM_GUN_03"
+	#	template = "invisible_medium_turret"
+	#	locatorname = "medium_gun_03"
+	#}
+
+	#component_slot = {
+	#	name = "MEDIUM_GUN_02"
+	#	template = "invisible_medium_turret"
+	#	locatorname = "medium_gun_02"
+	#}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	large_utility_slots = 6
+	#aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @ufop_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "CALIFORNIA_MID"
+	ship_size = california
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "california_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	large_utility_slots = 1
+	small_utility_slots = 2
+	aux_utility_slots = 0
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @ufop_section_cost
+		}
+	}
+}
+
+# Nausicaan Dreadnought
+ship_section_template = {
+	key = "NAUSICAAN_DREADNOUGHT"
+	ship_size = dreadnought
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "dreadnought_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_02"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_02"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_GUN_03"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_03"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_03"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_04"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_05"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_06"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_03"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_04"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_05"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_05"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_06"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_06"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_07"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_07"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_08"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_08"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_09"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_09"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_10"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_10"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_03"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_04"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_05"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_06"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_06"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_07"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_07"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_08"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_08"
+	}
+	large_utility_slots = 20
+	aux_utility_slots = 4
+}
+
+ship_section_template = {
+	key = "DEFIANT_MID"
+	ship_size = defiant
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "defiant_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}		
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+    component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+	}
+
+    component_slot = {
+		name = "MEDIUM_GUN_03"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_03"
+	}
+
+    component_slot = {
+		name = "MEDIUM_GUN_04"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_04"
+	}
+
+    component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+	
+    component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_02"
+	}
+
+    component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_03"
+	}
+
+    component_slot = {
+		name = "SMALL_GUN_04"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_04"
+	}
+
+	small_utility_slots = 4
+	medium_utility_slots = 2
+	aux_utility_slots = 2
+
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @ufop_section_cost
+		}
+	}
+}
+
+##############################
+# WAR EVENTS MERCENARY SHIPS #
+##############################
+
+ship_section_template = {
+	key = "SMALL_MINOR_MID_MERCENARY"
+	ship_size = small_minor
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "minor_small_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}		
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	small_utility_slots = 2
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @minor_section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "MEDIUM_MINOR_MID_MERCENARY"
+	ship_size = medium_minor
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "minor_medium_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_big_bomb_1 }
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOR = {
+				has_ai_personality = peaceful_traders
+				has_ai_personality = slaving_despots
+				has_ai_personality = migrating_flock
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = hive_mind
+			}
+		}
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+	}
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}	
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_03"
+	}
+	
+	small_utility_slots = 5
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @minor_section_cost
+		}
+	}
+}

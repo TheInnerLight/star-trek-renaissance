@@ -1,0 +1,3354 @@
+# reloadable with 'reload stats'
+# This file is where you start when you want to configure something new, then go to sections
+
+####################
+# NOTE FOR MODDERS #
+####################
+# modifier = { } only takes the following modifiers
+# hull, shield & armor add/mult and regen add perc/static
+# evasion add/mult
+# speed/base speed mult
+# weapon damage mult
+# upkeep mult
+# for other modifiers, use ship_modifier = { }
+# use_shipnames_from = other_size # allows a ship size to use names from another size
+# text_icon = military_size_1 	# military_size_1 is default, it will use GFX_text_<key> in fleet composition screens
+# fleet_view_background = "" 	# ship size key is default, it will use GFX_fleet_view_main_bg_<MaPo>_<fleet_view_background> 
+#								for the fleet view background. For minor powers it'll use GFX_fleet_view_main_bg_<fleet_view_background>
+####################
+
+@base_operative_officers = 20
+@base_officers_escape_perc = 15
+
+@corvette_size_icon_frame = 2
+@destroyer_size_icon_frame = 3
+@cruiser_size_icon_frame = 4
+@battleship_size_icon_frame = 5
+@titan_size_icon_frame = 6
+@juggernaut_size_icon_frame = 7
+
+########################
+########################
+####      UFOP      ####
+########################
+########################
+
+############
+#  COMBAT  #
+############
+
+miranda = {
+	formation_priority = @miranda_formation_priority
+	max_speed = @miranda_speed
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @miranda_collision_radius
+	max_hitpoints = @miranda_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_miranda"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @miranda_evasion
+		#ship_piracy_suppression_add = 15
+	}
+    
+	size_multiplier = 2
+	fleet_slot_size = 1
+	graphical_culture = no
+	
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @corvette_size_icon_frame
+	base_buildtime = @miranda_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_escort"
+
+	prerequisites =	{ "tech_corvette_unlock" }
+
+	potential_country = {
+		has_country_id = ufop
+	}
+
+	combat_disengage_chance = 1.00
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @miranda_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @miranda_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+intrepid = {
+	formation_priority = @intrepid_formation_priority
+	max_speed = @intrepid_speed
+	acceleration = 0.28
+	rotation_speed = 0.3
+	collision_radius = @intrepid_collision_radius
+	max_hitpoints = @intrepid_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_intrepid"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @intrepid_evasion
+		#ship_piracy_suppression_add = 20
+	}
+
+	size_multiplier = 3
+	fleet_slot_size = 2
+	graphical_culture = no
+
+	section_slots = { "mid" = { locator = "part1" } }
+
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @destroyer_size_icon_frame
+	base_buildtime = @intrepid_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_interceptor"
+
+	#prerequisites = { "tech_destroyer_unlock" }
+
+	potential_country = {
+		has_country_id = ufop
+	}
+
+	combat_disengage_chance = 1.50
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @intrepid_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @intrepid_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+excelsior = {
+	formation_priority = @excelsior_formation_priority
+	max_speed = @excelsior_speed
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @excelsior_collision_radius
+	max_hitpoints = @excelsior_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_excelsior"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @excelsior_evasion
+		#ship_piracy_suppression_add = 40
+	}
+    
+	size_multiplier = 5
+	fleet_slot_size = 3
+	graphical_culture = no
+	
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @cruiser_size_icon_frame
+	base_buildtime = @excelsior_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_bomber"
+
+	#prerequisites = { "tech_cruiser_unlock" }
+
+	potential_country = {
+		has_country_id = ufop
+	}
+
+	combat_disengage_chance = 1.8
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @excelsior_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @excelsior_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+sovereign = {
+	formation_priority = @sovereign_formation_priority
+	max_speed = @sovereign_speed
+	acceleration = 0.37
+	rotation_speed = 0.32
+	collision_radius = @sovereign_collision_radius
+	max_hitpoints = @sovereign_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_sovereign"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @sovereign_evasion
+		#ship_piracy_suppression_add = 160
+	}
+
+	size_multiplier = 5
+	fleet_slot_size = 3
+	graphical_culture = no
+
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	#icon_frame = @titan_size_icon_frame
+    icon_frame = @battleship_size_icon_frame
+	base_buildtime = @sovereign_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	#default_behavior = "hrb_artillery"
+    default_behavior = "hrb_artillery"
+
+	#prerequisites = { "tech_titan_unlock" }
+
+	potential_country = {
+		has_country_id = ufop
+	}
+
+	combat_disengage_chance = 1.25
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @sovereign_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @sovereign_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+galaxy = {
+	formation_priority = @galaxy_formation_priority
+	max_speed = @Galaxy_speed
+	acceleration = 0.126
+	rotation_speed = 0.24
+	collision_radius = @galaxy_collision_radius
+	max_hitpoints = @galaxy_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_galaxy"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @galaxy_evasion
+		#ship_piracy_suppression_add = 120
+	}	
+
+	size_multiplier = 8
+	fleet_slot_size = 4
+	graphical_culture = no
+	
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @battleship_size_icon_frame
+	base_buildtime = @galaxy_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	#default_behavior = "hrb_line"
+    default_behavior = "hrb_artillery"
+
+	#prerequisites = { "tech_battleship_unlock" }
+
+	potential_country = {
+		has_country_id = ufop
+	}
+
+    possible_construction = {
+		custom_tooltip = {
+			is_scope_type = starbase
+			has_starbase_building = titan_yards
+			fail_text = starbase_titan_yards_trigger
+		}
+	}
+
+	combat_disengage_chance = 1
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @galaxy_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @galaxy_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+
+
+########################
+########################
+####     KLINGON    ####
+########################
+########################
+
+############
+#  COMBAT  #
+############
+
+bird_of_prey = {
+	formation_priority = @bird_of_prey_formation_priority
+	max_speed = @speed_very_fast
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @bird_of_prey_collision_radius
+	max_hitpoints = @bird_of_prey_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_bird_of_prey"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @bird_of_prey_evasion
+		#ship_piracy_suppression_add = 10
+	}
+    
+	size_multiplier = 2
+	fleet_slot_size = 1
+	graphical_culture = no
+	
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @corvette_size_icon_frame
+	base_buildtime = @bird_of_prey_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_escort"
+
+	prerequisites = { "tech_corvette_unlock" }
+
+	potential_country = {
+		has_country_id = klingon
+	}
+
+	combat_disengage_chance = 0.30
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @bird_of_prey_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @bird_of_prey_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+warbird = {
+	formation_priority = @warbird_formation_priority
+    entity = ktinga_entity
+	max_speed = @warbird_speed
+	acceleration = 0.28
+	rotation_speed = 0.3
+	collision_radius = @warbird_collision_radius
+	max_hitpoints = @warbird_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_warbird"
+	
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @warbird_evasion
+		#ship_piracy_suppression_add = 20
+	}
+    
+	size_multiplier = 3
+	fleet_slot_size = 2
+	graphical_culture = no
+
+	section_slots = { "mid" = { locator = "part1" } }
+
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @destroyer_size_icon_frame
+	base_buildtime = @warbird_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_interceptor"
+
+	#prerequisites = { "tech_destroyer_unlock" }
+
+	potential_country = {
+		has_country_id = klingon
+	}
+
+	combat_disengage_chance = 0.45
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @warbird_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @warbird_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+ktinga = {
+	formation_priority = @ktinga_formation_priority
+    entity = kvort_entity
+	max_speed = @ktinga_speed
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @ktinga_collision_radius
+	max_hitpoints = @ktinga_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_ktinga"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @ktinga_evasion
+		#ship_piracy_suppression_add = 40
+	}
+    
+	size_multiplier = 5
+	fleet_slot_size = 3
+	graphical_culture = no
+	
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @cruiser_size_icon_frame
+	base_buildtime = @ktinga_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_bomber"
+
+	#prerequisites = { "tech_cruiser_unlock" }
+
+	potential_country = {
+		has_country_id = klingon
+	}
+
+	combat_disengage_chance = 0.75
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @ktinga_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @ktinga_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+vorcha = {
+	formation_priority = @vorcha_formation_priority
+	max_speed = @vorcha_speed
+	acceleration = 0.17
+	rotation_speed = 0.24
+	collision_radius = @vorcha_collision_radius
+	max_hitpoints = @vorcha_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_vorcha"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @vorcha_evasion
+		#ship_piracy_suppression_add = 120
+	}
+
+	size_multiplier = 8
+	fleet_slot_size = 4
+	graphical_culture = no
+	
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @battleship_size_icon_frame
+	base_buildtime = @vorcha_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_line"
+
+	#prerequisites = { "tech_battleship_unlock" }
+
+	potential_country = {
+		has_country_id = klingon
+	}
+
+	combat_disengage_chance = 0.75
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @vorcha_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @vorcha_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+neghvar = {
+	formation_priority = @neghvar_formation_priority
+	max_speed = @neghvar_speed
+	acceleration = 0.17
+	rotation_speed = 0.3
+	collision_radius = @neghvar_collision_radius
+	max_hitpoints = @neghvar_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_neghvar"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @neghvar_evasion
+		#ship_piracy_suppression_add = 160
+	}
+    
+	size_multiplier = 13
+	fleet_slot_size = 8
+	graphical_culture = no
+	
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @titan_size_icon_frame
+	base_buildtime = @neghvar_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_artillery"
+
+	#prerequisites = { "tech_titan_unlock" }
+
+	potential_country = {
+		has_country_id = klingon
+	}
+
+	possible_construction = {
+		custom_tooltip = {
+			is_scope_type = starbase
+			has_starbase_building = titan_yards
+			fail_text = starbase_titan_yards_trigger
+		}
+	}
+
+	combat_disengage_chance = 0.75
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @neghvar_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @neghvar_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+########################
+########################
+####     ROMULAN    ####
+########################
+########################
+
+############
+#  COMBAT  #
+############
+
+ferrax = {
+	formation_priority = @ferrax_formation_priority
+	max_speed = @ferrax_speed
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @ferrax_collision_radius
+	max_hitpoints = @ferrax_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_ferrax"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @ferrax_evasion
+		#ship_piracy_suppression_add = 11
+	}
+    
+	size_multiplier = 2
+	fleet_slot_size = 1
+	graphical_culture = no
+
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @corvette_size_icon_frame
+	base_buildtime = @ferrax_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_escort"
+
+	prerequisites = { "tech_corvette_unlock" }
+
+	potential_country = {
+		has_country_id = romulan
+	}
+
+	combat_disengage_chance = 1.20
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @ferrax_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @ferrax_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+vindius = {
+	formation_priority = @vindius_formation_priority
+	max_speed = @vindius_speed
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @vindius_collision_radius
+	max_hitpoints = @vindius_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_vindius"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @vindius_evasion
+		#ship_piracy_suppression_add = 30
+	}
+    
+	size_multiplier = 3
+	fleet_slot_size = 2
+	graphical_culture = no
+
+	section_slots = { "mid" = { locator = "part1" } }
+
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @destroyer_size_icon_frame
+	base_buildtime = @vindius_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_interceptor"
+
+	prerequisites = { "tech_destroyer_unlock" }
+
+	potential_country = {
+		has_country_id = romulan
+	}
+
+	combat_disengage_chance = 1.3
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @vindius_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @vindius_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+valdore = {
+	formation_priority = @valdore_formation_priority
+	max_speed = @valdore_speed
+	acceleration = 0.14
+	rotation_speed = 0.3
+	collision_radius = @valdore_collision_radius
+	max_hitpoints = @valdore_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_valdore"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @valdore_evasion
+		#ship_piracy_suppression_add = 40
+	}
+    
+	size_multiplier = 5
+	fleet_slot_size = 3
+	graphical_culture = no
+
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @cruiser_size_icon_frame
+	base_buildtime = @valdore_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_bomber"
+
+	prerequisites = { "tech_cruiser_unlock" }
+
+	potential_country = {
+		has_country_id = romulan
+	}
+
+	combat_disengage_chance = 1.30
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @valdore_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @valdore_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+dderidex = {
+	formation_priority = @dderidex_formation_priority
+	max_speed = @dderidex_speed
+	acceleration = 0.14
+	rotation_speed = 0.24
+	collision_radius = @dderidex_collision_radius
+	max_hitpoints = @dderidex_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_dderidex"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @dderidex_evasion
+		#ship_piracy_suppression_add = 120
+	}
+
+	size_multiplier = 8
+	fleet_slot_size = 4
+	graphical_culture = no
+
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @battleship_size_icon_frame
+	base_buildtime = @dderidex_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_line"
+
+	prerequisites = { "tech_battleship_unlock" }
+
+	potential_country = {
+		has_country_id = romulan
+	}
+
+	combat_disengage_chance = 1.20
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @dderidex_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @dderidex_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+majestus = {
+	formation_priority = @majestus_formation_priority
+	max_speed = @majestus_speed
+	acceleration = 0.17
+	rotation_speed = 0.3
+	collision_radius = @majestus_collision_radius
+	max_hitpoints = @majestus_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_majestus"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @majestus_evasion
+		#ship_piracy_suppression_add = 240
+	}
+    
+	size_multiplier = 13
+	fleet_slot_size = 8
+	graphical_culture = no
+
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @titan_size_icon_frame
+	base_buildtime = @majestus_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_artillery"
+
+	prerequisites = { "tech_titan_unlock" }
+
+	potential_country = {
+		has_country_id = romulan
+	}
+
+	possible_construction = {
+		custom_tooltip = {
+			is_scope_type = starbase
+			has_starbase_building = titan_yards
+			fail_text = starbase_titan_yards_trigger
+		}
+	}
+
+	combat_disengage_chance = 1.20
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @majestus_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @majestus_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+########################
+########################
+####   CARDASSIAN   ####
+########################
+########################
+
+############
+#  COMBAT  #
+############
+
+hideki = {
+	formation_priority = @hideki_formation_priority
+	max_speed = @hideki_speed
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @hideki_collision_radius
+	max_hitpoints = @hideki_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_hideki"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		#Raider Corps Civic
+		ship_fire_rate_mult = 0.20
+		ship_evasion_add = @hideki_evasion
+		#ship_piracy_suppression_add = 7
+		ship_shield_damage_mult = 0.2
+		ship_hull_damage_mult = 0.2
+	}
+    
+	size_multiplier = 2
+	fleet_slot_size = 1
+	graphical_culture = no
+
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @corvette_size_icon_frame
+	base_buildtime = @hideki_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_escort"
+
+	prerequisites = { "tech_corvette_unlock" }
+
+	potential_country = {
+		has_country_id = cardassian
+	}
+
+	combat_disengage_chance = 0.3
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @hideki_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @hideki_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+galor = {
+	formation_priority = @galor_formation_priority
+	max_speed = @galor_speed
+	acceleration = 0.28
+	rotation_speed = 0.3
+	collision_radius = @galor_collision_radius
+	max_hitpoints = @galor_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_galor"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		#Raider Corps Civic
+		ship_fire_rate_mult = 0.15
+		ship_evasion_add = @galor_evasion
+		#ship_piracy_suppression_add = 10
+		ship_shield_damage_mult = 0.15
+		ship_hull_damage_mult = 0.15
+	}
+    
+	size_multiplier = 3
+	fleet_slot_size = 2
+	graphical_culture = no
+
+	section_slots = { "mid" = { locator = "part1" } }
+
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @destroyer_size_icon_frame
+	base_buildtime = @galor_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_interceptor"
+
+	prerequisites = { "tech_destroyer_unlock" }
+
+	potential_country = {
+		has_country_id = cardassian
+	}
+
+	combat_disengage_chance = 0.45
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @galor_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @galor_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+keldon = {
+	formation_priority = @keldon_formation_priority
+	max_speed = @keldon_speed
+	acceleration = 0.25
+	rotation_speed = 0.27
+	collision_radius = @keldon_collision_radius
+	max_hitpoints = @keldon_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_keldon"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @keldon_evasion
+		#ship_piracy_suppression_add = 40
+		ship_shield_damage_mult = 0.1
+		ship_hull_damage_mult = 0.1
+		#Raider Corps Civic
+		ship_fire_rate_mult = 0.10
+	}
+	size_multiplier = 5
+	fleet_slot_size = 3
+	graphical_culture = no
+
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @cruiser_size_icon_frame
+	base_buildtime = @keldon_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_bomber"
+
+	prerequisites = { "tech_cruiser_unlock" }
+
+	potential_country = {
+		has_country_id = cardassian
+	}
+
+	combat_disengage_chance = 1.8
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @keldon_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @keldon_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+kazikai = {
+	formation_priority = @kazikai_formation_priority
+	max_speed = @kazikai_speed
+	acceleration = 0.21
+	rotation_speed = 0.3
+	collision_radius = @kazikai_collision_radius
+	max_hitpoints = @kazikai_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_kazikai"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @kazikai_evasion
+		#ship_piracy_suppression_add = 120
+		ship_shield_damage_mult = 0.05
+		ship_hull_damage_mult = 0.05
+		#Raider Corps Civic
+		ship_fire_rate_mult = 0.05
+	}
+
+	size_multiplier = 8
+	fleet_slot_size = 4
+	graphical_culture = no
+
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @battleship_size_icon_frame
+	base_buildtime = @kazikai_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_line"
+
+	prerequisites = { "tech_battleship_unlock" }
+
+	potential_country = {
+		has_country_id = cardassian
+	}
+
+	combat_disengage_chance = 1.5
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @kazikai_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @kazikai_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+nokoram = {
+	formation_priority = @nokoram_formation_priority
+	max_speed = @nokoram_speed
+	acceleration = 0.16
+	rotation_speed = 0.3
+	collision_radius = @nokoram_collision_radius
+	max_hitpoints = @nokoram_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_nokoram"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @nokoram_evasion
+		#ship_piracy_suppression_add = 160
+	}
+    
+	size_multiplier = 13
+	fleet_slot_size = 8
+	graphical_culture = no
+
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @titan_size_icon_frame
+	base_buildtime = @nokoram_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_artillery"
+
+	prerequisites = { "tech_titan_unlock" }
+
+	potential_country = {
+		has_country_id = cardassian
+	}
+
+	possible_construction = {
+		custom_tooltip = {
+			is_scope_type = starbase
+			has_starbase_building = titan_yards
+			fail_text = starbase_titan_yards_trigger
+		}
+	}
+	
+	combat_disengage_chance = 1.25
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @nokoram_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @nokoram_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+########################
+########################
+####     MINORS     ####
+########################
+########################
+
+small_minor = {
+	formation_priority = @small_minor_formation_priority
+	max_speed = @small_minor_speed
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @small_minor_collision_radius
+	max_hitpoints = @small_minor_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_small"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @small_minor_evasion
+		#ship_piracy_suppression_add = 10
+	}
+    
+	size_multiplier = 2
+	fleet_slot_size = 1
+	
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @corvette_size_icon_frame
+	base_buildtime = @small_minor_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_war_bird"
+
+	prerequisites = { "tech_corvette_unlock" }
+
+	potential_country = {
+		is_minor = yes
+	}
+
+	combat_disengage_chance = 1.00
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @small_minor_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @small_minor_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+medium_minor = {
+	formation_priority = @medium_minor_formation_priority
+	max_speed = @medium_minor_speed
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @medium_minor_collision_radius
+	max_hitpoints = @medium_minor_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_medium"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @medium_minor_evasion
+		#ship_piracy_suppression_add = 10
+	}
+    
+	size_multiplier = 3
+	fleet_slot_size = 2
+
+	section_slots = { "mid" = { locator = "part1" } }
+
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @destroyer_size_icon_frame
+	base_buildtime = @medium_minor_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_bomber"
+
+	prerequisites = { "tech_cruiser_unlock" }
+
+	potential_country = {
+		is_minor = yes
+	}
+
+	combat_disengage_chance = 1.00
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @medium_minor_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @medium_minor_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+large_minor = {
+	formation_priority = @large_minor_formation_priority
+	max_speed = @large_minor_speed
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @large_minor_collision_radius
+	max_hitpoints = @large_minor_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_large"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @large_minor_evasion
+		#ship_piracy_suppression_add = 10
+	}
+    
+	size_multiplier = 3
+	fleet_slot_size = 2
+
+	section_slots = { "mid" = { locator = "part1" } }
+
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @battleship_size_icon_frame
+	base_buildtime = @large_minor_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_line"
+
+	prerequisites = { "tech_battleship_unlock" }
+
+	potential_country = {
+		is_minor = yes
+	}
+
+	combat_disengage_chance = 1.00
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @large_minor_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @large_minor_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+########################
+########################
+####   NAUSICAAN    ####
+########################
+########################
+
+small_nausicaan = {
+	formation_priority = @small_nausicaan_formation_priority
+	max_speed = @small_nausicaan_speed
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @small_nausicaan_collision_radius
+	max_hitpoints = @small_nausicaan_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "nausicaan_military_small"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @small_nausicaan_evasion
+		#ship_piracy_suppression_add = 10
+	}
+    
+	size_multiplier = 2
+	fleet_slot_size = 1
+	
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @corvette_size_icon_frame
+	base_buildtime = @small_nausicaan_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_war_bird"
+
+	prerequisites = { "tech_corvette_unlock" }
+
+	potential_country = {
+		has_country_flag = nausicaan
+	}
+
+	combat_disengage_chance = 1.00
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @small_nausicaan_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @small_nausicaan_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+medium_nausicaan = {
+	formation_priority = @medium_nausicaan_formation_priority
+	max_speed = @medium_nausicaan_speed
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @medium_nausicaan_collision_radius
+	max_hitpoints = @medium_nausicaan_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "nausicaan_military_medium"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @medium_nausicaan_evasion
+		#ship_piracy_suppression_add = 10
+	}
+    
+	size_multiplier = 3
+	fleet_slot_size = 2
+
+	section_slots = { "mid" = { locator = "part1" } }
+
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @destroyer_size_icon_frame
+	base_buildtime = @medium_nausicaan_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_bomber"
+
+	prerequisites = { "tech_cruiser_unlock" }
+
+	potential_country = {
+		has_country_flag = nausicaan
+	}
+
+	combat_disengage_chance = 1.00
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @medium_nausicaan_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @medium_nausicaan_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+large_nausicaan = {
+	formation_priority = @large_nausicaan_formation_priority
+	max_speed = @large_nausicaan_speed
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @large_nausicaan_collision_radius
+	max_hitpoints = @large_nausicaan_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "nausicaan_military_large"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @large_nausicaan_evasion
+		#ship_piracy_suppression_add = 10
+	}
+    
+	size_multiplier = 3
+	fleet_slot_size = 2
+
+	section_slots = { "mid" = { locator = "part1" } }
+
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @battleship_size_icon_frame
+	base_buildtime = @large_nausicaan_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_line"
+
+	prerequisites = { "tech_battleship_unlock" }
+
+	potential_country = {
+		has_country_flag = nausicaan
+	}
+
+	combat_disengage_chance = 1.00
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @large_nausicaan_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @large_nausicaan_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+########################
+########################
+####     SPECIAL    ####
+########################
+########################
+
+### Borg
+
+borgcube_size_small = {
+	can_be_inspected = yes
+	graphical_culture = no
+	entity = borg_01_sphere_entity
+
+	max_speed = @speed_fast
+	acceleration = 0.5
+	rotation_speed = 0.3
+	collision_radius = 12
+
+	ship_modifier = {
+		ship_evasion_add = @sovereign_evasion
+	}
+	
+	max_hitpoints = @sovereign_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	size_multiplier = 13
+	fleet_slot_size = 8
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 9
+	is_space_station = no
+	icon_frame = @destroyer_size_icon_frame
+	fleet_view_background = "military_borg_sphere"
+
+	default_behavior = "hrb_artillery"
+	
+	class = shipclass_military
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	is_designable = no
+}
+
+borgcube_size_mid = {
+	can_be_inspected = yes
+	graphical_culture = no
+	entity = borg_01_tactical_cube_entity
+
+	max_speed = @speed_slow
+	acceleration = 0.5
+	rotation_speed = 0.3
+	collision_radius = 12
+	
+	modifier = {
+		ship_shield_mult = 1	
+	}
+
+	max_hitpoints = 50000
+	operative_officers = 1000
+	officers_escape_perc = @base_officers_escape_perc
+	size_multiplier = 21
+	fleet_slot_size = 8
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 9
+	is_space_station = no
+	icon_frame = @battleship_size_icon_frame
+	fleet_view_background = "military_borg_cube_tactical"
+
+	default_behavior = "hrb_artillery"
+	
+	class = shipclass_military
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	is_designable = no
+}
+
+borgcube_size_large = {
+	can_be_inspected = yes
+	graphical_culture = no
+	entity = borg_01_cube_entity
+
+	max_speed = @speed_very_slow
+	acceleration = 0.5
+	rotation_speed = 0.3
+	collision_radius = 12
+	
+	ship_modifier = {
+	}
+	
+	max_hitpoints = 75000
+	operative_officers = 2500
+	officers_escape_perc = @base_officers_escape_perc
+	size_multiplier = 21
+	fleet_slot_size = 8
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 9
+	is_space_station = no
+	icon_frame = @titan_size_icon_frame
+	fleet_view_background = "military_borg_cube"
+
+	default_behavior = "hrb_artillery"
+	
+	class = shipclass_military
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	is_designable = no
+}
+
+### Enterprise
+
+enterprise = {
+	formation_priority = @enterprise_formation_priority
+	max_speed = @speed_very_fast
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @enterprise_collision_radius
+	max_hitpoints = @enterprise_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_galaxy"
+
+	ship_modifier = {
+		ship_evasion_add = @enterprise_evasion
+		#ship_piracy_suppression_add = 10
+	}
+
+	size_multiplier = 8
+	fleet_slot_size = 4
+
+	section_slots = { "mid" = { locator = "part1" } }
+
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @juggernaut_size_icon_frame
+	base_buildtime = @enterprise_build_time
+	can_have_federation_design = yes
+	enable_default_design = no
+	auto_upgrade = yes
+	can_also_survey = yes
+	is_destroyable = no
+	ignores_warp_range = yes
+	
+	default_behavior = "hrb_line"
+
+	prerequisites = { }
+
+	potential_country = {
+		has_country_id = ufop
+	}
+
+	combat_disengage_chance = 1.00
+
+	class = shipclass_military
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	is_designable = no
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @enterprise_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @enterprise_upkeep_alloys
+		}
+	}
+}
+
+enterprise_sovereign = {
+	formation_priority = @sovereign_formation_priority
+	max_speed = @speed_very_fast
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @sovereign_collision_radius
+	max_hitpoints = @sovereign_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_sovereign"
+
+	ship_modifier = {
+		ship_evasion_add = @enterprise_evasion
+		#ship_piracy_suppression_add = 160
+	}
+    
+	size_multiplier = 13
+	fleet_slot_size = 8
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @juggernaut_size_icon_frame
+	base_buildtime = @sovereign_build_time
+	can_have_federation_design = yes
+	enable_default_design = no
+	auto_upgrade = yes
+	can_also_survey = yes
+	is_destroyable = no
+	ignores_warp_range = yes
+	
+	default_behavior = "hrb_line"
+	prerequisites = { }
+	potential_country = {
+		has_country_id = ufop
+	}
+	combat_disengage_chance = 1.25
+	class = shipclass_military
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	is_designable = no
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @sovereign_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0.5
+		}
+
+		upkeep = {
+			alloys = @sovereign_upkeep_alloys
+		}
+	}
+}
+
+### California
+
+california = {
+	formation_priority = @defiant_formation_priority
+	max_speed = @speed_very_fast
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @defiant_collision_radius
+	max_hitpoints = @cerritos_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_california"
+
+	ship_modifier = {
+		ship_evasion_add = @science_evasion
+		#ship_piracy_suppression_add = 10
+
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+	}
+
+	size_multiplier = 1
+	fleet_slot_size = 4
+	graphical_culture = no
+
+	section_slots = { "mid" = { locator = "part1" } }
+
+	components_add_to_cost = no
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @juggernaut_size_icon_frame
+	base_buildtime = @science_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes # If yes, countries will have an auto-generated design at start
+	is_designable = no
+	enable_3dview_in_ship_browser = no # If yes, ship design will have a 3d view in the ship browser
+	auto_upgrade = yes
+	can_also_survey = yes
+	#is_destroyable = no
+	is_california_class = yes
+	ignores_warp_range = yes
+	
+	default_behavior = "hrb_line"
+
+	prerequisites = { "tech_california_unlock" }
+
+	potential_country = {
+		has_country_id = ufop
+		host_has_dlc = "Pre Order Bonus"
+	}
+
+	combat_disengage_chance = 1.00
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+
+	resources = {
+		category = ships
+		cost = {
+			alloys = 80
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @enterprise_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @enterprise_upkeep_alloys
+		}
+	}
+}
+
+california_hero = {
+	formation_priority = @defiant_formation_priority
+	max_speed = @speed_very_fast
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @defiant_collision_radius
+	max_hitpoints = @cerritos_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_california"
+	# entity = california_entity #This is a placeholder entity until we have the cerritos model
+
+	ship_modifier = {
+		ship_evasion_add = @science_evasion
+		#ship_piracy_suppression_add = 10
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_shield_mult = 1
+		ship_speed_mult = 1
+	}
+
+	size_multiplier = 1
+	fleet_slot_size = 4
+	graphical_culture = no
+
+	section_slots = { "mid" = { locator = "part1" } }
+
+	components_add_to_cost = no
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @juggernaut_size_icon_frame
+	base_buildtime = @science_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes # If yes, countries will have an auto-generated design at start
+	is_designable = no
+	enable_3dview_in_ship_browser = no # If yes, ship design will have a 3d view in the ship browser
+	auto_upgrade = yes
+	can_also_survey = yes
+	is_destroyable = no
+	is_california_class = yes
+	ignores_warp_range = yes
+	
+	default_behavior = "hrb_line"
+
+	prerequisites = { }
+
+	potential_construction = {
+		always = no
+	}
+
+	potential_country = {
+		has_country_id = ufop
+		host_has_dlc = "Pre Order Bonus"
+	}
+
+	combat_disengage_chance = 1.00
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+
+
+	resources = {
+		category = ships
+		cost = {
+			alloys = 80
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @enterprise_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @enterprise_upkeep_alloys
+		}
+	}
+}
+
+### Spy
+
+spy_ship = {
+	max_speed = @speed_very_fast
+	acceleration = 0.3
+	rotation_speed = 0.2
+	max_hitpoints = @spy_ship_hp
+	
+	ship_modifier = {
+		ship_evasion_add = @spy_ship_evasion
+		ship_hyperlane_range_add = 1
+	}
+
+	size_multiplier = 1
+	fleet_slot_size = 1
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 0
+	is_space_station = no
+	icon_frame = 14
+	text_icon = military_size_spy
+	fleet_view_background = "spy"
+	base_buildtime = @spy_ship_build_time
+
+	combat_disengage_chance = 2.0
+
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+	is_designable = no
+	components_add_to_cost = no
+	prerequisites = { }
+	is_civilian = yes
+	
+	uses_global_warp_range = yes
+	ignores_borders = yes
+	
+	class = shipclass_spy_ship
+
+	# HRB_NOTE: for now, we don't want to be able to construct Spy ships via the Starbase
+	# construction_type = starbase_shipyard
+
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	valid_target_aggressive_stance = no
+	auto_upgrade = yes
+
+	resources = {
+		category = ships
+		cost = {
+			alloys = 100
+		}
+		cost = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = @artificial_singularity_reactor_cost
+		}
+
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @spy_ship_upkeep_deuterium
+		}
+
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @spy_ship_upkeep_alloys
+		}
+	}
+}
+
+### Governor
+
+governor_ship = { 
+	max_speed = @speed_very_fast 
+	acceleration = 0.3 
+	rotation_speed = 0.2 
+	max_hitpoints = @governor_hp 
+
+	ship_modifier = { 
+		ship_hyperlane_range_add = 1 
+		ship_evasion_add = @governor_evasion 
+	}
+
+	size_multiplier = 1 
+	fleet_slot_size = 1 
+	section_slots = { "mid" = { locator = "part1" } } 
+	num_target_locators = 0 
+	is_space_station = no 
+	icon_frame = 10 
+	text_icon = military_size_spy 
+	fleet_view_background = "governor"
+	base_buildtime = @governor_build_time 
+ 
+	combat_disengage_chance = 2.0 
+ 
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start 
+	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser 
+	is_designable = no 
+	components_add_to_cost = no 
+	prerequisites = { } 
+	is_civilian = yes 
+	class = shipclass_governor_ship 
+	required_component_set = "power_core" 
+	required_component_set = "ftl_components" 
+	required_component_set = "thruster_components" 
+	required_component_set = "sensor_components" 
+	valid_target_aggressive_stance = no 
+	auto_upgrade = yes 
+	resources = { 
+		category = ships 
+		cost = { 
+			alloys = 100 
+		} 
+		cost = { 
+			trigger = { 
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+			} 
+			artificial_singularities = @artificial_singularity_reactor_cost 
+		} 
+ 
+		upkeep = { 
+			trigger = { 
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			} 
+			deuterium = @governor_upkeep_deuterium 
+		} 
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = { 
+			alloys = @governor_upkeep_alloys 
+		} 
+	} 
+} 
+
+### Others
+
+dreadnought = {
+	formation_priority = @nokoram_formation_priority
+	max_speed = @nokoram_speed
+	acceleration = 0.3
+	rotation_speed = 1.00
+	collision_radius = @nokoram_collision_radius
+	max_hitpoints = 70000
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_nokoram"
+
+	ship_modifier = {
+		ship_evasion_add = 35
+	}
+	
+	size_multiplier = 21
+	fleet_slot_size = 8
+	graphical_culture = no
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 0
+	is_space_station = no
+	icon_frame = @titan_size_icon_frame
+	class = shipclass_military
+	is_designable = no
+	default_behavior = "hrb_artillery"
+	components_add_to_cost = no
+}
+
+defiant = {
+	formation_priority = @defiant_formation_priority
+	max_speed = @defiant_speed
+	acceleration = 0.45
+	rotation_speed = 0.3
+	collision_radius = @defiant_collision_radius
+	max_hitpoints = @defiant_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_defiant"
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @defiant_evasion
+		#ship_piracy_suppression_add = 15
+	}
+
+	size_multiplier = 1
+	fleet_slot_size = 1
+	graphical_culture = no
+	
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @corvette_size_icon_frame
+	base_buildtime = @defiant_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_escort"
+
+	# prerequisites = {  "tech_defiant"  }
+
+	potential_country = {
+		has_country_id = ufop
+	}
+
+	combat_disengage_chance = 1.00
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @defiant_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @defiant_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
+bulk_carrier = {
+	max_speed = @speed_very_fast
+	auto_upgrade = yes 
+	acceleration = 0.6
+	rotation_speed = 0.2
+	max_hitpoints = @bulk_carrier_hp
+	fleet_view_background = "transport"
+
+	ship_modifier = {
+		ship_evasion_add = @bulk_carrier_evasion
+	}
+
+	size_multiplier = 1
+	fleet_slot_size = 1
+	section_slots = { "mid" = { locator = "part1" } }
+	num_target_locators = 0
+	is_space_station = no
+	icon_frame = 11
+	text_icon = military_size_1
+	base_buildtime = @bulk_carrier_build_time
+	construction_type = starbase_shipyard
+	combat_disengage_chance = 1.5
+	graphical_culture = no
+	
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	is_designable = no
+	components_add_to_cost = no
+	class = shipclass_transport_special
+	is_civilian = yes
+
+	required_component_set = "ftl_components"
+
+	# prerequisites = { "tech_civilian_ships" }
+	potential_country = {
+		has_country_flag = bulk_carrier_flag
+	}
+	possible_construction = {
+		owner = {
+			has_technology = tech_civilian_ships	
+		}
+		
+	}
+	resources = {
+		category = ships
+		cost = { 
+			alloys = 250 
+		} 
+	}
+}
+
+################################
+# MERCENARY SHIPS - WAR EVENTS #
+################################
+
+small_minor_mercenary = {
+	formation_priority = @small_minor_formation_priority
+	max_speed = @small_minor_speed
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @small_minor_collision_radius
+	max_hitpoints = @small_minor_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_small"
+	entity = minor_01_small_minor_entity
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @small_minor_evasion
+		#ship_piracy_suppression_add = 10
+	}
+    
+	size_multiplier = 2
+	fleet_slot_size = 1
+	
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @corvette_size_icon_frame
+	base_buildtime = @small_minor_build_time
+	can_have_federation_design = yes
+	enable_default_design = no	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_war_bird"
+
+	prerequisites = { "tech_corvette_unlock" }
+
+	potential_country = {
+		always = no
+	}
+
+	combat_disengage_chance = 1.00
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @small_minor_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @small_minor_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+
+	is_designable = no
+}
+
+medium_minor_mercenary = {
+	formation_priority = @medium_minor_formation_priority
+	max_speed = @medium_minor_speed
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @medium_minor_collision_radius
+	max_hitpoints = @medium_minor_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_medium"
+	entity = minor_01_medium_minor_entity
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @medium_minor_evasion
+		#ship_piracy_suppression_add = 10
+	}
+    
+	size_multiplier = 3
+	fleet_slot_size = 2
+
+	section_slots = { "mid" = { locator = "part1" } }
+
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @destroyer_size_icon_frame
+	base_buildtime = @medium_minor_build_time
+	can_have_federation_design = yes
+	enable_default_design = no	#if yes, countries will have an auto-generated design at start
+
+	default_behavior = "hrb_bomber"
+
+	prerequisites = { "tech_cruiser_unlock" }
+
+	potential_country = {
+		always = no
+	}
+
+	combat_disengage_chance = 1.00
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @medium_minor_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @medium_minor_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+
+	is_designable = no
+}
