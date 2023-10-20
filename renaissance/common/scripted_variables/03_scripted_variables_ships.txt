@@ -351,7 +351,7 @@
 
 @bird_of_prey_collision_radius = 2
 @bird_of_prey_formation_priority = 20
-@bird_of_prey_hp = 400
+@bird_of_prey_hp = 427
 @bird_of_prey_evasion = 60
 @bird_of_prey_build_time = 160
 @bird_of_prey_upkeep_energy = 0.3
@@ -363,37 +363,37 @@
 # WARBIRD
 ##################
 
-@warbird_speed = 134
+@warbird_speed = 80
 
-@warbird_collision_radius = 2.5
-@warbird_formation_priority = 10
+@warbird_collision_radius = 3.5
+@warbird_formation_priority = 30
 
-@warbird_hp = 800
-@warbird_evasion = 48
-@warbird_build_time = 280
+@warbird_hp = 2400
+@warbird_evasion = 38
+@warbird_build_time = 640
 
-@warbird_upkeep_energy = 0.6
-@warbird_upkeep_deuterium = 0.2
-@warbird_upkeep_alloys = 0.2
-@warbird_upkeep_minerals = 0.4
+@warbird_upkeep_energy = 1.2
+@warbird_upkeep_deuterium = 0.4
+@warbird_upkeep_alloys = 0.4
+@warbird_upkeep_minerals = 0.8
 
 ##################
 # K'TINGA
 ##################
 
-@ktinga_speed = 80
+@ktinga_speed = 134
 
-@ktinga_collision_radius = 3.5
-@ktinga_formation_priority = 30
+@ktinga_collision_radius = 2.5
+@ktinga_formation_priority = 10
 
-@ktinga_hp = 2100
-@ktinga_evasion = 36
-@ktinga_build_time = 640
+@ktinga_hp = 982
+@ktinga_evasion = 48
+@ktinga_build_time = 280
 
-@ktinga_upkeep_energy = 1.2
-@ktinga_upkeep_deuterium = 0.4
-@ktinga_upkeep_alloys = 0.4
-@ktinga_upkeep_minerals = 0.8
+@ktinga_upkeep_energy = 0.6
+@ktinga_upkeep_deuterium = 0.2
+@ktinga_upkeep_alloys = 0.2
+@ktinga_upkeep_minerals = 0.4
 
 ##################
 # VOR'CHA
@@ -404,8 +404,8 @@
 @vorcha_collision_radius = 6
 @vorcha_formation_priority = 50
 
-@vorcha_hp = 6400
-@vorcha_evasion = 12
+@vorcha_hp = 6165
+@vorcha_evasion = 18
 @vorcha_build_time = 960
 
 @vorcha_upkeep_energy = 2.4
@@ -416,13 +416,13 @@
 # NEGH'VAR
 ##################
 
-@neghvar_speed = 19
+@neghvar_speed = 25
 
 @neghvar_collision_radius = 3.5
 @neghvar_formation_priority = 40
 
-@neghvar_hp = 16000
-@neghvar_evasion = 4.48
+@neghvar_hp = 13520
+@neghvar_evasion = 7.5
 @neghvar_build_time = 1536
 
 @neghvar_upkeep_energy = 4.8
@@ -460,7 +460,7 @@
 @ferrax_collision_radius = 2.0
 @ferrax_formation_priority = 20
 
-@ferrax_hp = 300
+@ferrax_hp = 600
 @ferrax_evasion = 50
 @ferrax_build_time = 60
 
@@ -477,7 +477,7 @@
 @vindius_collision_radius = 2.5
 @vindius_formation_priority = 10
 
-@vindius_hp = 400
+@vindius_hp = 1600
 @vindius_evasion = 38.4
 @vindius_build_time = 120
 
@@ -496,8 +496,8 @@
 @valdore_collision_radius = 3.5
 @valdore_formation_priority = 30
 
-@valdore_hp = 800
-@valdore_evasion = 36
+@valdore_hp = 7762
+@valdore_evasion = 16
 @valdore_build_time = 240
 
 @valdore_upkeep_energy = 1.2
@@ -509,12 +509,12 @@
 # D'DERIDEX
 ##################
 
-@dderidex_speed = 28.8
+@dderidex_speed = 23
 
 @dderidex_collision_radius = 6
 @dderidex_formation_priority = 50
 
-@dderidex_hp = 2800
+@dderidex_hp = 10620
 @dderidex_evasion = 5
 @dderidex_build_time = 480
 
@@ -526,13 +526,13 @@
 # MAJESTUS
 ##################
 
-@majestus_speed = 14
+@majestus_speed = 20
 
 @majestus_collision_radius = 3.5
 @majestus_formation_priority = 40
 
-@majestus_hp = 6400
-@majestus_evasion = 4.8
+@majestus_hp = 13520
+@majestus_evasion = 4.9
 @majestus_build_time = 960
 
 @majestus_upkeep_energy = 4.8
@@ -580,13 +580,13 @@
 # GALOR
 ##################
 
-@galor_speed = 134
+@galor_speed = 112
 
 @galor_collision_radius = 2.5
 @galor_formation_priority = 10
 
-@galor_hp = 1000
-@galor_evasion = 48
+@galor_hp = 1650
+@galor_evasion = 46
 @galor_build_time = 320
 
 @galor_upkeep_energy = 0.6
@@ -598,12 +598,12 @@
 # KELDON
 ##################
 
-@keldon_speed = 72
+@keldon_speed = 103
 
 @keldon_collision_radius = 3.5
 @keldon_formation_priority = 30
 
-@keldon_hp = 3400
+@keldon_hp = 2295
 @keldon_evasion = 36
 @keldon_build_time = 640
 
@@ -621,8 +621,8 @@
 @kazikai_collision_radius = 6
 @kazikai_formation_priority = 50
 
-@kazikai_hp = 8800
-@kazikai_evasion = 12
+@kazikai_hp = 6100
+@kazikai_evasion = 17
 @kazikai_build_time = 960
 
 @kazikai_upkeep_energy = 2.4
@@ -638,8 +638,8 @@
 @nokoram_collision_radius = 3.5
 @nokoram_formation_priority = 40
 
-@nokoram_hp = 12000
-@nokoram_evasion = 4.48
+@nokoram_hp = 10500
+@nokoram_evasion = 10.7
 @nokoram_build_time = 1536
 
 @nokoram_upkeep_energy = 4.8

@@ -70,6 +70,7 @@ miranda = {
 	base_buildtime = @miranda_build_time
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	can_also_survey = yes
 
 	default_behavior = "hrb_escort"
 
@@ -156,6 +157,7 @@ intrepid = {
 	base_buildtime = @intrepid_build_time
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	can_also_survey = yes
 
 	default_behavior = "hrb_interceptor"
 
@@ -242,6 +244,7 @@ excelsior = {
 	base_buildtime = @excelsior_build_time
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	can_also_survey = yes
 
 	default_behavior = "hrb_bomber"
 
@@ -329,6 +332,7 @@ sovereign = {
 	base_buildtime = @sovereign_build_time
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	can_also_survey = yes
 
 	#default_behavior = "hrb_artillery"
     default_behavior = "hrb_artillery"
@@ -416,6 +420,7 @@ galaxy = {
 	base_buildtime = @galaxy_build_time
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	can_also_survey = yes
 
 	#default_behavior = "hrb_line"
     default_behavior = "hrb_artillery"
@@ -578,7 +583,7 @@ bird_of_prey = {
 
 warbird = {
 	formation_priority = @warbird_formation_priority
-    entity = ktinga_entity
+	entity = kvort_entity
 	max_speed = @warbird_speed
 	acceleration = 0.28
 	rotation_speed = 0.3
@@ -598,8 +603,9 @@ warbird = {
 		#ship_piracy_suppression_add = 20
 	}
     
-	size_multiplier = 3
-	fleet_slot_size = 2
+	size_multiplier = 5
+	fleet_slot_size = 3
+
 	graphical_culture = no
 
 	section_slots = { "mid" = { locator = "part1" } }
@@ -665,7 +671,7 @@ warbird = {
 
 ktinga = {
 	formation_priority = @ktinga_formation_priority
-    entity = kvort_entity
+	entity = ktinga2_entity
 	max_speed = @ktinga_speed
 	acceleration = 0.35
 	rotation_speed = 0.3
@@ -685,8 +691,11 @@ ktinga = {
 		#ship_piracy_suppression_add = 40
 	}
     
-	size_multiplier = 5
-	fleet_slot_size = 3
+	#size_multiplier = 5
+	#fleet_slot_size = 3
+	size_multiplier = 3
+	fleet_slot_size = 2
+
 	graphical_culture = no
 	
 	section_slots = { "mid" = { locator = "part1" } }
@@ -1518,7 +1527,7 @@ galor = {
 
 	default_behavior = "hrb_interceptor"
 
-	prerequisites = { "tech_destroyer_unlock" }
+	#prerequisites = { "tech_destroyer_unlock" }
 
 	potential_country = {
 		has_country_id = cardassian
@@ -1607,7 +1616,7 @@ keldon = {
 
 	default_behavior = "hrb_bomber"
 
-	prerequisites = { "tech_cruiser_unlock" }
+	#prerequisites = { "tech_cruiser_unlock" }
 
 	potential_country = {
 		has_country_id = cardassian
@@ -1697,7 +1706,7 @@ kazikai = {
 
 	default_behavior = "hrb_line"
 
-	prerequisites = { "tech_battleship_unlock" }
+	#prerequisites = { "tech_battleship_unlock" }
 
 	potential_country = {
 		has_country_id = cardassian
@@ -1783,7 +1792,7 @@ nokoram = {
 
 	default_behavior = "hrb_artillery"
 
-	prerequisites = { "tech_titan_unlock" }
+	#prerequisites = { "tech_titan_unlock" }
 
 	potential_country = {
 		has_country_id = cardassian

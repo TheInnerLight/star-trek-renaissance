@@ -265,17 +265,32 @@ ship_design = {
 		slot = "mid"
 
 		component = {
-			slot = "EXTRA_LARGE_GUN_01"
-			template = "PHASER_SPINAL_LANCE" 
-		}
-
-		component = {
-			slot = "EXTRA_LARGE_GUN_02"
-			template = "PHASER_SPINAL_LANCE" 
-		}
-
-		component = {
 			slot = "LARGE_GUN_01"
+			template = "LARGE_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "LARGE_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "LARGE_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "LARGE_GUN_05"
+			template = "LARGE_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "LARGE_GUN_06"
 			template = "LARGE_PHASER_CANNON"
 		}
 
@@ -284,7 +299,11 @@ ship_design = {
 			template = "MEDIUM_PHASER_CANNON"
 		}
 
-		
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_PHASER_CANNON"
+		}
+
 		# ARMOR (UTILITIES)
 		component = {
 			slot = "LARGE_UTILITY_1"
@@ -312,6 +331,11 @@ ship_design = {
 
         component = {
 			slot = "LARGE_UTILITY_6"
+			template = "LARGE_TRITANIUM_HULLS"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_7"
 			template = "LARGE_TRITANIUM_HULLS"
 		}
 
@@ -522,11 +546,6 @@ ship_design = {
 		slot = "mid"
 
 		# WEAPONS
-
-		# component = {
-		# 	slot = "SMALL_GUN_02"
-		# 	template = "SMALL_NEGATRON_DISRUPTOR"
-		# }
 		
 		component = {
 			slot = "MEDIUM_GUN_01"
@@ -562,11 +581,21 @@ ship_design = {
 		template = "WARBIRD_MID"
 		slot = "mid"
 
-		# WEAPONS
-		# component = {
-		# 	slot = "SMALL_GUN_01"
-		# 	template = "SMALL_MASS_DRIVER_1" #HRB_TODO: Mass Drivers Where Removed
-		# }
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "MEDIUM_GUN_03"
+			template = "MEDIUM_PHASER_CANNON"
+		}
+
 		component = {
 			slot = "SMALL_GUN_01"
 			template = "SMALL_PHASER_CANNON"
@@ -576,103 +605,6 @@ ship_design = {
 			slot = "SMALL_GUN_02"
 			template = "SMALL_PHASER_CANNON"
 		}
-
-		component = {
-			slot = "SMALL_GUN_03"
-			template = "SMALL_PHASER_CANNON"
-		}
-
-		component = {
-			slot = "SMALL_GUN_04"
-			template = "SMALL_PHASER_CANNON"
-		}
-
-		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_PHASER_CANNON"
-		}
-
-		# ARMOR (UTILITIES)
-		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_DEFENSE_FIELD_SHIELDS"
-		}
-
-		component = {
-			slot = "SMALL_UTILITY_2"
-			template = "SMALL_DEFENSE_FIELD_SHIELDS"
-		}
-
-		component = {
-			slot = "SMALL_UTILITY_3"
-			template = "SMALL_DEFENSE_FIELD_SHIELDS"
-		}
-
-		component = {
-			slot = "SMALL_UTILITY_4"
-			template = "SMALL_DEFENSE_FIELD_SHIELDS"
-		}
-
-		component = {
-			slot = "AUX_UTILITY_1"
-			template = "CLOAKING_DEVICE_1"
-		}
-	}
-
-	required_component = "DESTROYER_FUSION_REACTOR"
-	required_component = "WARP_DRIVE_1"
-	required_component = "DESTROYER_IMPULSE_ENGINE"
-	required_component = "SENSOR_PROBES"
-	required_component = "COMBAT_COMPUTER_HRB_INTERCEPTOR_DEFAULT"
-}
-
-# K't'inga
-ship_design = {
-	name = "NAME_Ktinga"
-	ship_size = ktinga
-	is_event_design = yes
-
-	section = {
-		template = "KTINGA_MID"
-		slot = "mid"
-
-		# WEAPONS
-		# component = {
-		# 	slot = "SMALL_GUN_01"
-		# 	template = "SMALL_MASS_DRIVER_1" #HRB_TODO: Mass Drivers Where Removed
-		# }
-
-		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_PHASER_CANNON"
-		}
-
-		component = {
-			slot = "SMALL_GUN_01"
-			template = "SMALL_PHASER_CANNON"
-		}
-
-		component = {
-			slot = "SMALL_GUN_02"
-			template = "SMALL_PHASER_CANNON"
-		}
-
-		component = {
-			slot = "SMALL_GUN_03"
-			template = "SMALL_PHASER_CANNON"
-		}
-
-		component = {
-			slot = "SMALL_GUN_04"
-			template = "SMALL_PHASER_CANNON"
-		}
-
-		component = {
-			slot = "SMALL_GUN_05"
-			template = "SMALL_PHASER_CANNON"
-		}
-
-		
 
 		# ARMOR (UTILITIES)
 		component = {
@@ -706,7 +638,6 @@ ship_design = {
 			template = "MEDIUM_TRITANIUM_HULLS"
 		}
 
-
 		component = {
 			slot = "AUX_UTILITY_1"
 			template = "CLOAKING_DEVICE_1"
@@ -715,6 +646,76 @@ ship_design = {
 		component = {
 			slot = "AUX_UTILITY_2"
 			template = "SHIELD_BOOSTER"
+		}
+
+	}
+
+	required_component = "DESTROYER_FUSION_REACTOR"
+	required_component = "WARP_DRIVE_1"
+	required_component = "DESTROYER_IMPULSE_ENGINE"
+	required_component = "SENSOR_PROBES"
+	required_component = "COMBAT_COMPUTER_HRB_INTERCEPTOR_DEFAULT"
+}
+
+# K't'inga
+ship_design = {
+	name = "NAME_Ktinga"
+	ship_size = ktinga
+	is_event_design = yes
+
+	section = {
+		template = "KTINGA_MID"
+		slot = "mid"
+
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "SMALL_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "SMALL_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "SMALL_GUN_03"
+			template = "SMALL_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "SMALL_GUN_04"
+			template = "SMALL_PHASER_CANNON"
+		}
+
+		# ARMOR (UTILITIES)
+		component = {
+			slot = "SMALL_UTILITY_1"
+			template = "SMALL_DEFENSE_FIELD_SHIELDS"
+		}
+
+		component = {
+			slot = "SMALL_UTILITY_2"
+			template = "SMALL_DEFENSE_FIELD_SHIELDS"
+		}
+
+		component = {
+			slot = "SMALL_UTILITY_3"
+			template = "SMALL_DEFENSE_FIELD_SHIELDS"
+		}
+
+		component = {
+			slot = "SMALL_UTILITY_4"
+			template = "SMALL_DEFENSE_FIELD_SHIELDS"
+		}
+
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "CLOAKING_DEVICE_1"
 		}
 
 		
@@ -738,11 +739,25 @@ ship_design = {
 		template = "VORCHA_MID"
 		slot = "mid"
 
-		# WEAPONS
-		# component = {
-		# 	slot = "SMALL_GUN_01"
-		# 	template = "SMALL_MASS_DRIVER_1" #HRB_TODO: Mass Drivers Where Removed
-		# }
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "LARGE_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "LARGE_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "LARGE_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "LARGE_PHASER_CANNON"
+		}
 
 		component = {
 			slot = "MEDIUM_GUN_01"
@@ -773,6 +788,7 @@ ship_design = {
 			slot = "SMALL_GUN_04"
 			template = "SMALL_PHASER_CANNON"
 		}
+
 		# ARMOR (UTILITIES)
 		component = {
 			slot = "LARGE_UTILITY_1"
@@ -831,7 +847,15 @@ ship_design = {
 			template = "PHASER_SPINAL_LANCE"
 		}
 
-		
+		component = {
+			slot = "EXTRA_LARGE_GUN_02"
+			template = "PHASER_SPINAL_LANCE"
+		}
+
+		component = {
+			slot = "EXTRA_LARGE_GUN_03"
+			template = "PHASER_SPINAL_LANCE"
+		}
 
 		component = {
 			slot = "LARGE_GUN_01"
@@ -844,11 +868,15 @@ ship_design = {
 		}
 
 		component = {
-			slot = "LARGE_GUN_03"
-			template = "LARGE_PHASER_CANNON"
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_PHASER_CANNON"
 		}
 
-		
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_PHASER_CANNON"
+		}
+
 		
 		# ARMOR (UTILITIES)
 		component = {
@@ -898,16 +926,6 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_UTILITY_10"
-			template = "LARGE_TRITANIUM_HULLS"
-		}
-
-		component = {
-			slot = "LARGE_UTILITY_11"
-			template = "LARGE_TRITANIUM_HULLS"
-		}
-
-		component = {
-			slot = "LARGE_UTILITY_12"
 			template = "LARGE_TRITANIUM_HULLS"
 		}
 
@@ -1034,17 +1052,6 @@ ship_design = {
 		template = "VINDIUS_MID"
 		slot = "mid"
 
-		# component = {
-		# 	slot = "SMALL_GUN_01"
-		# 	template = "SMALL_MASS_DRIVER_1" #HRB_TODO: Mass Drivers Where Removed
-		# }
-
-		
-		# component = {
-		# 	slot = "SMALL_GUN_03"
-		# 	template = "SMALL_PHASER_CANNON"
-		# }
-
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "LARGE_PHASER_CANNON"
@@ -1099,39 +1106,6 @@ ship_design = {
 		template = "VALDORE_MID"
 		slot = "mid"
 		
-
-		# component = {
-		# 	slot = "SMALL_GUN_02"
-		# 	template = "SMALL_PHASER_CANNON"
-		# }
-
-		# component = {
-		# 	slot = "SMALL_GUN_03"
-		# 	template = "SMALL_PHASER_CANNON"
-		# }
-		
-		# component = {
-		# 	slot = "SMALL_GUN_04"
-		# 	template = "PHASER_SPINAL_LANCE" 
-		# }
-
-		
-
-		component = {
-			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_PHASER_CANNON"
-		}
-
-		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_PHASER_CANNON"
-		}
-
-		component = {
-			slot = "MEDIUM_GUN_03"
-			template = "MEDIUM_PHASER_CANNON"
-		}
-
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "LARGE_PHASER_CANNON"
@@ -1142,26 +1116,56 @@ ship_design = {
 			template = "LARGE_PHASER_CANNON"
 		}
 
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "LARGE_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "LARGE_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_PHASER_CANNON"
+		}
+
 		# ARMOR (UTILITIES)
-		
+
 		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_DEFENSE_FIELD_SHIELDS"
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_DEFENSE_FIELD_SHIELDS"
 		}
 
 		component = {
-			slot = "SMALL_UTILITY_2"
-			template = "SMALL_TRITANIUM_HULLS"
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_DEFENSE_FIELD_SHIELDS"
 		}
 
 		component = {
-			slot = "SMALL_UTILITY_3"
-			template = "SMALL_TRITANIUM_HULLS"
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_DEFENSE_FIELD_SHIELDS"
 		}
 
 		component = {
-			slot = "SMALL_UTILITY_4"
-			template = "SMALL_TRITANIUM_HULLS"
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_TRITANIUM_HULLS"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_TRITANIUM_HULLS"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_1"
+			template = "MEDIUM_DEFENSE_FIELD_SHIELDS"
 		}
 
 		component = {
@@ -1192,19 +1196,6 @@ ship_design = {
 		template = "DDERIDEX_MID"
 		slot = "mid"
 
-		# WEAPONS
-		# component = {
-		# 	slot = "SMALL_GUN_01"
-		# 	template = "SMALL_MASS_DRIVER_1" #HRB_TODO: Mass Drivers Where Removed
-		# }
-		
-		component = {
-			slot = "EXTRA_LARGE_GUN_01"
-			template = "PHASER_SPINAL_LANCE" 
-		}
-
-		
-		
 		component = {
 			slot = "LARGE_GUN_01"
 			template = "LARGE_PHASER_CANNON"
@@ -1220,6 +1211,20 @@ ship_design = {
 			template = "LARGE_PHASER_CANNON"
 		}
 
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "LARGE_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "LARGE_GUN_05"
+			template = "LARGE_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "LARGE_GUN_06"
+			template = "LARGE_PHASER_CANNON"
+		}
 		
 		
 		# ARMOR (UTILITIES)
@@ -1237,6 +1242,7 @@ ship_design = {
 			slot = "LARGE_UTILITY_3"
 			template = "LARGE_DEFENSE_FIELD_SHIELDS"
 		}
+
 		component = {
 			slot = "LARGE_UTILITY_4"
 			template = "LARGE_TRITANIUM_HULLS"
@@ -1244,6 +1250,31 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_UTILITY_5"
+			template = "LARGE_TRITANIUM_HULLS"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_TRITANIUM_HULLS"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_TRITANIUM_HULLS"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "LARGE_TRITANIUM_HULLS"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_9"
+			template = "LARGE_TRITANIUM_HULLS"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_10"
 			template = "LARGE_TRITANIUM_HULLS"
 		}
 
@@ -1287,11 +1318,6 @@ ship_design = {
 			template = "PHASER_SPINAL_LANCE" 
 		}
 
-		component = {
-			slot = "EXTRA_LARGE_GUN_03"
-			template = "PHASER_SPINAL_LANCE" 
-		}
-
 				
 		component = {
 			slot = "LARGE_GUN_01"
@@ -1308,8 +1334,20 @@ ship_design = {
 			template = "LARGE_PHASER_CANNON"
 		}
 
-				
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "LARGE_PHASER_CANNON"
+		}
 
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_PHASER_CANNON"
+		}
 		
 		# ARMOR (UTILITIES)
 		component = {
@@ -1360,6 +1398,16 @@ ship_design = {
 		component = {
 			slot = "LARGE_UTILITY_10"
 			template = "LARGE_TRITANIUM_HULLS"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_11"
+			template = "LARGE_TRITANIUM_HULLS"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_1"
+			template = "MEDIUM_DEFENSE_FIELD_SHIELDS"
 		}
 
 		component = {
@@ -1453,40 +1501,21 @@ ship_design = {
 		slot = "mid"
 
 		# WEAPONS
+
 		component = {
-			slot = "SMALL_GUN_01"
-			template = "SMALL_PHASER_CANNON" 
+			slot = "LARGE_GUN_01"
+			template = "LARGE_PHASER_CANNON"
 		}
 
 		component = {
-			slot = "SMALL_GUN_02"
-			template = "SMALL_PHASER_CANNON" 
-		}
-
-		component = {
-			slot = "SMALL_GUN_03"
-			template = "SMALL_PHASER_CANNON" 
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_PHASER_CANNON"
 		}
 
 		# ARMOR (UTILITIES)
 		component = {
 			slot = "SMALL_UTILITY_1"
 			template = "SMALL_DEFENSE_FIELD_SHIELDS"
-		}
-
-		component = {
-			slot = "SMALL_UTILITY_2"
-			template = "SMALL_DEFENSE_FIELD_SHIELDS"
-		}
-
-		component = {
-			slot = "SMALL_UTILITY_3"
-			template = "SMALL_TRITANIUM_HULLS"
-		}
-
-		component = {
-			slot = "MEDIUM_UTILITY_1"
-			template = "MEDIUM_DEFENSE_FIELD_SHIELDS"
 		}
 
 		component = {
@@ -1512,11 +1541,10 @@ ship_design = {
 		template = "GALOR_MID"
 		slot = "mid"
 
-		# WEAPONS
-		# component = {
-		# 	slot = "SMALL_GUN_01"
-		# 	template = "SMALL_MASS_DRIVER_1" #HRB_TODO: Mass Drivers Where Removed
-		# }
+		component = {
+			slot = "EXTRA_LARGE_GUN_01"
+			template = "PHASER_SPINAL_LANCE" 
+		}
 
 		component = {
 			slot = "SMALL_GUN_01"
@@ -1528,30 +1556,16 @@ ship_design = {
 			template = "SMALL_PHASER_CANNON"
 		}
 
-		component = {
-			slot = "SMALL_GUN_03"
-			template = "SMALL_PHASER_CANNON"
-		}
-
-		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_PHASER_CANNON"
-		}
-
 		# ARMOR (UTILITIES)
-		component = {
-			slot = "SMALL_UTILITY_1"
-			template = "SMALL_DEFENSE_FIELD_SHIELDS"
-		}
-
-		component = {
-			slot = "SMALL_UTILITY_2"
-			template = "SMALL_DEFENSE_FIELD_SHIELDS"
-		}
 
 		component = {
 			slot = "MEDIUM_UTILITY_1"
 			template = "MEDIUM_DEFENSE_FIELD_SHIELDS"
+		}
+
+		component = {
+			slot = "SMALL_UTILITY_1"
+			template = "SMALL_DEFENSE_FIELD_SHIELDS"
 		}
 
 		component = {
@@ -1579,6 +1593,21 @@ ship_design = {
 		slot = "mid"
 		
 		component = {
+			slot = "EXTRA_LARGE_GUN_01"
+			template = "PHASER_SPINAL_LANCE" 
+		}
+
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "MEDIUM_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "MEDIUM_PHASER_CANNON"
+		}
+
+		component = {
 			slot = "SMALL_GUN_01"
 			template = "SMALL_PHASER_CANNON"
 		}
@@ -1587,22 +1616,6 @@ ship_design = {
 			slot = "SMALL_GUN_02"
 			template = "SMALL_PHASER_CANNON"
 		}
-
-		component = {
-			slot = "SMALL_GUN_03"
-			template = "SMALL_PHASER_CANNON"
-		}
-		
-		component = {
-			slot = "SMALL_GUN_04"
-			template = "SMALL_PHASER_CANNON"
-		}
-
-		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_PHASER_CANNON"
-		}
-		
 
 		# ARMOR (UTILITIES)
 
@@ -1622,28 +1635,8 @@ ship_design = {
 		}
 
 		component = {
-			slot = "MEDIUM_UTILITY_4"
-			template = "MEDIUM_DEFENSE_FIELD_SHIELDS"
-		}
-
-		component = {
-			slot = "MEDIUM_UTILITY_5"
-			template = "MEDIUM_DEFENSE_FIELD_SHIELDS"
-		}
-
-		component = {
-			slot = "MEDIUM_UTILITY_6"
-			template = "MEDIUM_DEFENSE_FIELD_SHIELDS"
-		}
-
-		component = {
-			slot = "MEDIUM_UTILITY_7"
-			template = "MEDIUM_DEFENSE_FIELD_SHIELDS"
-		}
-
-		component = {
-			slot = "MEDIUM_UTILITY_8"
-			template = "MEDIUM_DEFENSE_FIELD_SHIELDS"
+			slot = "SMALL_UTILITY_1"
+			template = "SMALL_DEFENSE_FIELD_SHIELDS"
 		}
 
 		component = {

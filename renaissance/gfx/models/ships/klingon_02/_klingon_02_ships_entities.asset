@@ -57,7 +57,7 @@ entity = {
 }
 
 entity = {
-	name = "ktinga_entity"	
+	name = "ktinga2_entity"	
 	pdxmesh = "klingon_02_ktinga_mesh"
 
 	default_state = "idle"
