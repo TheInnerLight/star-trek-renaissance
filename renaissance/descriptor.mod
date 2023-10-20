@@ -6,5 +6,5 @@ tags={
 	"Species"
 	"Tech"
 }
-name="Cannon"
+name="Renaissance"
 supported_version="1.0.0"
