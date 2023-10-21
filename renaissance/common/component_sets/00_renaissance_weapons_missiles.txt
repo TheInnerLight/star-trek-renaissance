@@ -1,0 +1,35 @@
+component_set = {
+	key = "STR_MEDIUM_PHO_TORP_TYPE4"
+	
+	icon = "GFX_ship_weapon_photon_torpedoes"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_MEDIUM_PHO_TORP_TYPE5"
+	
+	icon = "GFX_ship_weapon_photon_torpedoes"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_MEDIUM_PHO_TORP_TYPE6"
+	
+	icon = "GFX_ship_weapon_photon_torpedoes"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_MEDIUM_QUAN_TORP_TYPE1"
+	
+	icon = "GFX_ship_weapon_photon_torpedoes"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_MEDIUM_QUAN_TORP_TYPE2"
+	
+	icon = "GFX_ship_weapon_photon_torpedoes"
+	icon_frame = 1	
+}
+

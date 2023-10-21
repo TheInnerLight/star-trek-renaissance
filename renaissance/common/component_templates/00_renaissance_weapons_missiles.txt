@@ -8,7 +8,7 @@ weapon_component_template = {
 	type = missile
 	
 	prerequisites = { "tech_torpedo_1" }
-	component_set = "PHOTON_TORPEDOES"
+	component_set = "STR_MEDIUM_PHO_TORP_TYPE4"
 	projectile_gfx = "photon_torpedoes_m"
 	tags = { weapon_type_explosive }
 	ai_tags = { weapon_role_artillery }
@@ -57,12 +57,12 @@ weapon_component_template = {
 	type = missile
 	
 	prerequisites = { "tech_torpedo_1" }
-	component_set = "PHOTON_TORPEDOES"
+	component_set = "STR_MEDIUM_PHO_TORP_TYPE5"
 	projectile_gfx = "photon_torpedoes_m"
 	tags = { weapon_type_explosive }
 	ai_tags = { weapon_role_artillery }
 	ai_tag_weight = 0
-	upgrades_to = "STR_MEDIUM_PHO_TORP_TYPE5"
+	upgrades_to = "STR_MEDIUM_PHO_TORP_TYPE6"
 	resources = {
 		category = ship_components
 		cost = {
@@ -106,7 +106,7 @@ weapon_component_template = {
 	type = missile
 	
 	prerequisites = { "tech_torpedo_1" }
-	component_set = "PHOTON_TORPEDOES"
+	component_set = "STR_MEDIUM_PHO_TORP_TYPE6"
 	projectile_gfx = "photon_torpedoes_m"
 	tags = { weapon_type_explosive }
 	ai_tags = { weapon_role_artillery }
@@ -155,12 +155,12 @@ weapon_component_template = {
 	type = missile
 	
 	prerequisites = { "tech_torpedo_1" }
-	component_set = "PHOTON_TORPEDOES"
+	component_set = "STR_MEDIUM_QUAN_TORP_TYPE1"
 	projectile_gfx = "photon_torpedoes_m"
 	tags = { weapon_type_explosive }
 	ai_tags = { weapon_role_artillery }
 	ai_tag_weight = 0
-	upgrades_to = "STR_MEDIUM_PHO_TORP_TYPE5"
+	upgrades_to = "STR_MEDIUM_QUAN_TORP_TYPE2"
 	resources = {
 		category = ship_components
 		cost = {
@@ -204,7 +204,7 @@ weapon_component_template = {
 	type = missile
 	
 	prerequisites = { "tech_torpedo_1" }
-	component_set = "PHOTON_TORPEDOES"
+	component_set = "STR_MEDIUM_QUAN_TORP_TYPE2"
 	projectile_gfx = "photon_torpedoes_m"
 	tags = { weapon_type_explosive }
 	ai_tags = { weapon_role_artillery }
