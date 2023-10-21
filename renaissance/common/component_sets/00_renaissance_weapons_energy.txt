@@ -1,0 +1,34 @@
+component_set = {
+	key = "STR_SPIRAL_WAVE_DISRUPTOR1"
+	
+	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_SPIRAL_WAVE_DISRUPTOR2"
+	
+	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_SPIRAL_WAVE_DISRUPTOR3"
+	
+	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_SPIRAL_WAVE_DISRUPTOR4"
+	
+	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_SPIRAL_WAVE_DISRUPTOR5"
+	
+	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon_frame = 1	
+}
