@@ -1,0 +1,299 @@
+## Spiral Wave Disruptor 1
+weapon_component_template = {
+	key = "STR_SPIRAL_WAVE_DISRUPTOR1"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon_frame = 1
+
+	entity = "invisible_turret_entity"
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	#prerequisites = { "tech_lance_1" }
+	component_set = "STR_SPIRAL_WAVE_DISRUPTOR1"
+	projectile_gfx = "phaser_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "STR_SPIRAL_WAVE_DISRUPTOR2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			dilithium = @xl_t5_rare
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @xl_t5_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+## Spiral Wave Disruptor 2
+weapon_component_template = {
+	key = "STR_SPIRAL_WAVE_DISRUPTOR2"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon_frame = 1
+
+	entity = "invisible_turret_entity"
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	#prerequisites = { "tech_lance_1" }
+	component_set = "STR_SPIRAL_WAVE_DISRUPTOR2"
+	projectile_gfx = "phaser_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "STR_SPIRAL_WAVE_DISRUPTOR3"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			dilithium = @xl_t5_rare
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @xl_t5_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+## Spiral Wave Disruptor 3
+weapon_component_template = {
+	key = "STR_SPIRAL_WAVE_DISRUPTOR3"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon_frame = 1
+
+	entity = "invisible_turret_entity"
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	#prerequisites = { "tech_lance_1" }
+	component_set = "STR_SPIRAL_WAVE_DISRUPTOR3"
+	projectile_gfx = "phaser_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "STR_SPIRAL_WAVE_DISRUPTOR4"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			dilithium = @xl_t5_rare
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @xl_t5_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+## Spiral Wave Disruptor 4
+weapon_component_template = {
+	key = "STR_SPIRAL_WAVE_DISRUPTOR4"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon_frame = 1
+
+	entity = "invisible_turret_entity"
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	#prerequisites = { "tech_lance_1" }
+	component_set = "STR_SPIRAL_WAVE_DISRUPTOR4"
+	projectile_gfx = "phaser_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "STR_SPIRAL_WAVE_DISRUPTOR5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			dilithium = @xl_t5_rare
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @xl_t5_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+## Spiral Wave Disruptor 5
+weapon_component_template = {
+	key = "STR_SPIRAL_WAVE_DISRUPTOR5"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon_frame = 1
+
+	entity = "invisible_turret_entity"
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	#prerequisites = { "tech_lance_1" }
+	component_set = "STR_SPIRAL_WAVE_DISRUPTOR5"
+	projectile_gfx = "phaser_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	#upgrades_to = "PHASER_OBLITERATOR_LANCE"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			dilithium = @xl_t5_rare
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @xl_t5_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
