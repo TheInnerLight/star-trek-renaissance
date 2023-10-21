@@ -7,7 +7,7 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 	
-	prerequisites = { "tech_torpedo_1" }
+	#prerequisites = { "tech_torpedo_1" }
 	component_set = "STR_MEDIUM_PHO_TORP_TYPE4"
 	projectile_gfx = "photon_torpedoes_m"
 	tags = { weapon_type_explosive }
@@ -56,7 +56,7 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 	
-	prerequisites = { "tech_torpedo_1" }
+	#prerequisites = { "tech_torpedo_1" }
 	component_set = "STR_MEDIUM_PHO_TORP_TYPE5"
 	projectile_gfx = "photon_torpedoes_m"
 	tags = { weapon_type_explosive }
@@ -105,7 +105,7 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 	
-	prerequisites = { "tech_torpedo_1" }
+	#prerequisites = { "tech_torpedo_1" }
 	component_set = "STR_MEDIUM_PHO_TORP_TYPE6"
 	projectile_gfx = "photon_torpedoes_m"
 	tags = { weapon_type_explosive }
@@ -154,7 +154,7 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 	
-	prerequisites = { "tech_torpedo_1" }
+	#prerequisites = { "tech_torpedo_1" }
 	component_set = "STR_MEDIUM_QUAN_TORP_TYPE1"
 	projectile_gfx = "photon_torpedoes_m"
 	tags = { weapon_type_explosive }
@@ -203,7 +203,7 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 	
-	prerequisites = { "tech_torpedo_1" }
+	#prerequisites = { "tech_torpedo_1" }
 	component_set = "STR_MEDIUM_QUAN_TORP_TYPE2"
 	projectile_gfx = "photon_torpedoes_m"
 	tags = { weapon_type_explosive }
