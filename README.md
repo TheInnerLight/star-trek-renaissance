@@ -39,5 +39,9 @@ More speculative ideas:
 - Transwarp
   - Techs to pass through transwarp conduits increasingly safely?
   - Quantum Slipstream drives?
+ 
+## Implementation
+
+You can find the current state of the implementation in the [Renaissance](renaissance) folder.
 
 
