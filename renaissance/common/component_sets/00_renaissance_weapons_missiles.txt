@@ -33,3 +33,52 @@ component_set = {
 	icon_frame = 1	
 }
 
+component_set = {
+	key = "STR_MEDIUM_TRICOBALT_DEVICE_TYPE1"
+	
+	icon = "GFX_ship_weapon_tricobalt_mines"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_MEDIUM_TRICOBALT_DEVICE_TYPE2"
+	
+	icon = "GFX_ship_weapon_tricobalt_mines"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_MEDIUM_PLASMA_TORP_TYPE1"
+	
+	icon = "GFX_ship_weapon_plasma_charge"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_MEDIUM_PLASMA_TORP_TYPE2"
+	
+	icon = "GFX_ship_weapon_plasma_charge"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_MEDIUM_PLASMA_TORP_TYPE3"
+	
+	icon = "GFX_ship_weapon_plasma_charge"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_MEDIUM_PLASMA_TORP_TYPE4"
+	
+	icon = "GFX_ship_weapon_plasma_charge"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_MEDIUM_PLASMA_TORP_TYPE5"
+	
+	icon = "GFX_ship_weapon_plasma_charge"
+	icon_frame = 1	
+}
+
