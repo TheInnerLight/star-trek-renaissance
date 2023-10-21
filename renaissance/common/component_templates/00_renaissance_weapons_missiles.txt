@@ -150,13 +150,13 @@ weapon_component_template = {
 	size = medium
 	entity = "invisible_turret_entity"
 	
-	icon = "GFX_ship_weapon_photon_torpedoes"
+	icon = "GFX_ship_weapon_quantum_torpedoes"
 	icon_frame = 1
 	type = missile
 	
 	#prerequisites = { "tech_torpedo_1" }
 	component_set = "STR_MEDIUM_QUAN_TORP_TYPE1"
-	projectile_gfx = "photon_torpedoes_m"
+	projectile_gfx = "quantum_torpedoes_m"
 	tags = { weapon_type_explosive }
 	ai_tags = { weapon_role_artillery }
 	ai_tag_weight = 0
@@ -199,13 +199,13 @@ weapon_component_template = {
 	size = medium
 	entity = "invisible_turret_entity"
 	
-	icon = "GFX_ship_weapon_photon_torpedoes"
+	icon = "GFX_ship_weapon_quantum_torpedoes"
 	icon_frame = 1
 	type = missile
 	
 	#prerequisites = { "tech_torpedo_1" }
 	component_set = "STR_MEDIUM_QUAN_TORP_TYPE2"
-	projectile_gfx = "photon_torpedoes_m"
+	projectile_gfx = "quantum_torpedoes_m"
 	tags = { weapon_type_explosive }
 	ai_tags = { weapon_role_artillery }
 	ai_tag_weight = 0

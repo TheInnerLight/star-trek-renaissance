@@ -22,14 +22,14 @@ component_set = {
 component_set = {
 	key = "STR_MEDIUM_QUAN_TORP_TYPE1"
 	
-	icon = "GFX_ship_weapon_photon_torpedoes"
+	icon = "GFX_ship_weapon_quantum_torpedoes"
 	icon_frame = 1	
 }
 
 component_set = {
 	key = "STR_MEDIUM_QUAN_TORP_TYPE2"
 	
-	icon = "GFX_ship_weapon_photon_torpedoes"
+	icon = "GFX_ship_weapon_quantum_torpedoes"
 	icon_frame = 1	
 }
 
