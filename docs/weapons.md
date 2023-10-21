@@ -39,8 +39,8 @@ Design characteristics
 
 | Weapon                       | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Tetryons | Power |
 | ---------------------------- | ----------------- | -------------------- | -------------------- | ------ | -------- | ----- |
-| Tricobalt Torpedoes (Type I) | 489-2200 (1344.5) | 16%                  | 125%                 | 65     | N/A      | 35    |
-| Tricobalt Torpedoes (Type 2) | 538-2420 (1479)   | 18%                  | 127%                 | 64     | N/A      | 34    |
+| Tricobalt Torpedoes (Type I) | 489-2200 (1344.5) | 16%                  | 171%                 | 65     | N/A      | 35    |
+| Tricobalt Torpedoes (Type 2) | 538-2420 (1479)   | 18%                  | 174%                 | 64     | N/A      | 34    |
 
 ### Tricobalt Torpedoes
 
@@ -109,8 +109,8 @@ Design characteristics
 
 | Weapon                       | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Tetryons | Power |
 | ---------------------------- | ----------------- | -------------------- | -------------------- | ------ | -------- | ----- |
-| Tricobalt Torpedoes (Type I) | 489-2200 (1344.5) | 16%                  | 125%                 | 65     | N/A      | 35    |
-| Tricobalt Torpedoes (Type 2) | 538-2420 (1479)   | 18%                  | 127%                 | 64     | N/A      | 34    |
+| Tricobalt Torpedoes (Type I) | 489-2200 (1344.5) | 16%                  | 171%                 | 65     | N/A      | 35    |
+| Tricobalt Torpedoes (Type 2) | 538-2420 (1479)   | 18%                  | 174%                 | 64     | N/A      | 34    |
 
 ## Cardassian
 
