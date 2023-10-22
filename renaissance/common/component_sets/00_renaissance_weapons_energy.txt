@@ -92,3 +92,38 @@ component_set = {
 	icon_frame = 1	
 }
 
+ # Disruptor
+component_set = {
+	key = "STR_DISRUPTOR_TYPE1"
+	
+	icon = "GFX_ship_weapon_plasma_launcher"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_DISRUPTOR_TYPE2"
+	
+	icon = "GFX_ship_weapon_plasma_launcher"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_DISRUPTOR_TYPE3"
+	
+	icon = "GFX_ship_weapon_plasma_launcher"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_DISRUPTOR_TYPE4"
+	
+	icon = "GFX_ship_weapon_plasma_launcher"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_DISRUPTOR_TYPE5"
+	
+	icon = "GFX_ship_weapon_plasma_launcher"
+	icon_frame = 1	
+}

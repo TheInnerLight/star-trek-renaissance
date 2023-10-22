@@ -81,6 +81,21 @@ Design characteristics
     - 2x generations
     - Better against shields
 
+### Disruptors
+
+| Weapon                               | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Power |
+| ------------------------------------ | ----------------- | -------------------- | -------------------- | ------ | ----- |
+| Small Disruptor (Type I)             | 13-40 (26.5)      | 180%                 | 33%                  | --     | 7     |
+| Small Disruptor (Type II)            | 16-48 (32)        | 180%                 | 34%                  | --     | 7     |
+| Small Disruptor (Type III)           | 17-53 (35)        | 180%                 | 35%                  | --     | 7     |
+| Small Disruptor (Type IV)            | 18-56 (33)        | 180%                 | 35%                  | --     | 7     |
+| Small Disruptor (Type V)             | 18-57 (37)        | 180%                 | 36%                  | --     | 7     |
+| Large Disruptor (Type I)             | 57-177 (117)      | 180%                 | 33%                  | --     | 25    |
+| Large Disruptor (Type II)            | 68-212 (140)      | 180%                 | 34%                  | --     | 25    |
+| Large Disruptor (Type III)           | 75-233 (154)      | 180%                 | 35%                  | --     | 25    |
+| Large Disruptor (Type IV)            | 79-245 (162)      | 180%                 | 35%                  | --     | 25    |
+| Large Disruptor (Type V)             | 81-251 (166.5)    | 180%                 | 36%                  | --     | 25    |
+
 ### Photon/Quantum Torpedoes
 
 | Weapon                      | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Tetryons | Power |
@@ -112,6 +127,21 @@ Design characteristics
 - Torpedoes
   - Plasma Torpedoes
     - 5x generations
+
+### Disruptors
+
+| Weapon                               | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Power |
+| ------------------------------------ | ----------------- | -------------------- | -------------------- | ------ | ----- |
+| Small Disruptor (Type I)             | 13-40 (26.5)      | 180%                 | 33%                  | --     | 7     |
+| Small Disruptor (Type II)            | 16-48 (32)        | 180%                 | 34%                  | --     | 7     |
+| Small Disruptor (Type III)           | 17-53 (35)        | 180%                 | 35%                  | --     | 7     |
+| Small Disruptor (Type IV)            | 18-56 (33)        | 180%                 | 35%                  | --     | 7     |
+| Small Disruptor (Type V)             | 18-57 (37)        | 180%                 | 36%                  | --     | 7     |
+| Large Disruptor (Type I)             | 57-177 (117)      | 180%                 | 33%                  | --     | 25    |
+| Large Disruptor (Type II)            | 68-212 (140)      | 180%                 | 34%                  | --     | 25    |
+| Large Disruptor (Type III)           | 75-233 (154)      | 180%                 | 35%                  | --     | 25    |
+| Large Disruptor (Type IV)            | 79-245 (162)      | 180%                 | 35%                  | --     | 25    |
+| Large Disruptor (Type V)             | 81-251 (166.5)    | 180%                 | 36%                  | --     | 25    |
 
 ### Plasma Torpedoes
 

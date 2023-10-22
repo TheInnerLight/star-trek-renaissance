@@ -486,4 +486,465 @@ weapon_component_template = {
 	}
 }
 
+##################### Disruptors
+
+weapon_component_template = {
+	key = "STR_SMALL_DISRUPTOR_TYPE1"
+	size = small
+	entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_ship_weapon_plasma_launcher"
+	icon_frame = 1
+	#prerequisites = { "tech_phaser_2" }
+	component_set = "STR_DISRUPTOR_TYPE1"
+	projectile_gfx = "xray_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "STR_SMALL_DISRUPTOR_TYPE2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t2_cost
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @s_t2_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "STR_LARGE_DISRUPTOR_TYPE1"
+	size = large
+	entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_ship_weapon_plasma_launcher"
+	icon_frame = 1
+	#prerequisites = { "tech_phaser_2" }
+	component_set = "STR_DISRUPTOR_TYPE1"
+	projectile_gfx = "xray_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "STR_LARGE_DISRUPTOR_TYPE2"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t2_cost
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @l_t2_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @l_t2_upkeep_alloys
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "STR_SMALL_DISRUPTOR_TYPE2"
+	size = small
+	entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_ship_weapon_plasma_launcher"
+	icon_frame = 1
+	#prerequisites = { "tech_phaser_2" }
+	component_set = "STR_DISRUPTOR_TYPE2"
+	projectile_gfx = "xray_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "STR_SMALL_DISRUPTOR_TYPE3"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t2_cost
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @s_t2_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "STR_LARGE_DISRUPTOR_TYPE2"
+	size = large
+	entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_ship_weapon_plasma_launcher"
+	icon_frame = 1
+	#prerequisites = { "tech_phaser_2" }
+	component_set = "STR_DISRUPTOR_TYPE2"
+	projectile_gfx = "xray_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "STR_LARGE_DISRUPTOR_TYPE3"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t2_cost
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @l_t2_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @l_t2_upkeep_alloys
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "STR_SMALL_DISRUPTOR_TYPE3"
+	size = small
+	entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_ship_weapon_plasma_launcher"
+	icon_frame = 1
+	#prerequisites = { "tech_phaser_2" }
+	component_set = "STR_DISRUPTOR_TYPE3"
+	projectile_gfx = "xray_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "STR_SMALL_DISRUPTOR_TYPE4"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t2_cost
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @s_t2_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "STR_LARGE_DISRUPTOR_TYPE3"
+	size = large
+	entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_ship_weapon_plasma_launcher"
+	icon_frame = 1
+	#prerequisites = { "tech_phaser_2" }
+	component_set = "STR_DISRUPTOR_TYPE3"
+	projectile_gfx = "xray_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "STR_LARGE_DISRUPTOR_TYPE4"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t2_cost
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @l_t2_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @l_t2_upkeep_alloys
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "STR_SMALL_DISRUPTOR_TYPE4"
+	size = small
+	entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_ship_weapon_plasma_launcher"
+	icon_frame = 1
+	#prerequisites = { "tech_phaser_2" }
+	component_set = "STR_DISRUPTOR_TYPE4"
+	projectile_gfx = "xray_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "STR_SMALL_DISRUPTOR_TYPE5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t2_cost
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @s_t2_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "STR_LARGE_DISRUPTOR_TYPE4"
+	size = large
+	entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_ship_weapon_plasma_launcher"
+	icon_frame = 1
+	#prerequisites = { "tech_phaser_2" }
+	component_set = "STR_DISRUPTOR_TYPE4"
+	projectile_gfx = "xray_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	upgrades_to = "STR_LARGE_DISRUPTOR_TYPE5"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t2_cost
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @l_t2_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @l_t2_upkeep_alloys
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "STR_SMALL_DISRUPTOR_TYPE5"
+	size = small
+	entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_ship_weapon_plasma_launcher"
+	icon_frame = 1
+	#prerequisites = { "tech_phaser_2" }
+	component_set = "STR_DISRUPTOR_TYPE5"
+	projectile_gfx = "xray_laser_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t2_cost
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @s_t2_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "STR_LARGE_DISRUPTOR_TYPE5"
+	size = large
+	entity = "invisible_turret_entity"
+	type = instant
+	icon = "GFX_ship_weapon_plasma_launcher"
+	icon_frame = 1
+	#prerequisites = { "tech_phaser_2" }
+	component_set = "STR_DISRUPTOR_TYPE5"
+	projectile_gfx = "xray_laser_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t2_cost
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @l_t2_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @l_t2_upkeep_alloys
+		}
+	}
+}
 
