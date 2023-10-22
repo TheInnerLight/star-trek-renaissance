@@ -1,34 +1,94 @@
 component_set = {
 	key = "STR_SPIRAL_WAVE_DISRUPTOR1"
 	
-	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon = "GFX_ship_weapon_cutting_beam"
 	icon_frame = 1	
 }
 
 component_set = {
 	key = "STR_SPIRAL_WAVE_DISRUPTOR2"
 	
-	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon = "GFX_ship_weapon_cutting_beam"
 	icon_frame = 1	
 }
 
 component_set = {
 	key = "STR_SPIRAL_WAVE_DISRUPTOR3"
 	
-	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon = "GFX_ship_weapon_cutting_beam"
 	icon_frame = 1	
 }
 
 component_set = {
 	key = "STR_SPIRAL_WAVE_DISRUPTOR4"
 	
-	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon = "GFX_ship_weapon_cutting_beam"
 	icon_frame = 1	
 }
 
 component_set = {
 	key = "STR_SPIRAL_WAVE_DISRUPTOR5"
 	
-	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon = "GFX_ship_weapon_cutting_beam"
 	icon_frame = 1	
 }
+
+ # Phaser Bank
+component_set = {
+	key = "STR_PHASER_BANK_TYPE8"
+	
+	icon = "GFX_ship_weapon_phaser_bank"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_PHASER_BANK_TYPE9"
+	
+	icon = "GFX_ship_weapon_phaser_bank"
+	icon_frame = 1	
+}
+
+# Phaser Array
+component_set = {
+	key = "STR_PHASER_ARRAY_TYPE10"
+	
+	icon = "GFX_ship_weapon_phaser_burstfire_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_PHASER_ARRAY_TYPE11"
+	
+	icon = "GFX_ship_weapon_phaser_burstfire_5"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_PHASER_ARRAY_TYPE12"
+	
+	icon = "GFX_ship_weapon_phaser_array"
+	icon_frame = 1	
+}
+
+# Galaxy Phaser Array
+component_set = {
+	key = "STR_GALAXY_PHASER_ARRAY_TYPE10"
+	
+	icon = "GFX_ship_weapon_phaser_battery"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_GALAXY_PHASER_ARRAY_TYPE11"
+	
+	icon = "GFX_ship_weapon_phaser_battery"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "STR_GALAXY_PHASER_ARRAY_TYPE12"
+	
+	icon = "GFX_ship_weapon_phaser_battery"
+	icon_frame = 1	
+}
+

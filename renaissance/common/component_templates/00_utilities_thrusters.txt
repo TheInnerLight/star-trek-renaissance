@@ -1,0 +1,1023 @@
+# Icons set here are the ones show in the actual slot.
+
+#############
+#	POWER	#
+#############
+
+@power_1 = -10
+@power_2 = -15
+@power_3 = -20
+@power_4 = -25
+@power_5 = -30
+
+@destroyer_power_1 = -20
+@destroyer_power_2 = -30
+@destroyer_power_3 = -40
+@destroyer_power_4 = -50
+@destroyer_power_5 = -60
+
+@cruiser_power_1 = -40
+@cruiser_power_2 = -60
+@cruiser_power_3 = -80
+@cruiser_power_4 = -100
+@cruiser_power_5 = -120
+
+@battleship_power_1 = -80
+@battleship_power_2 = -120
+@battleship_power_3 = -160
+@battleship_power_4 = -200
+@battleship_power_5 = -240
+
+@titan_power_1 = -160
+@titan_power_2 = -240
+@titan_power_3 = -320
+@titan_power_4 = -400
+@titan_power_5 = -480
+
+# UFOP
+@miranda_power_1 = -10
+@miranda_power_2 = -15
+@miranda_power_3 = -20
+@miranda_power_4 = -25
+@miranda_power_5 = -30
+
+@intrepid_power_1 = -20
+@intrepid_power_2 = -30
+@intrepid_power_3 = -40
+@intrepid_power_4 = -50
+@intrepid_power_5 = -60
+
+@excelsior_power_1 = -40
+@excelsior_power_2 = -60
+@excelsior_power_3 = -80
+@excelsior_power_4 = -100
+@excelsior_power_5 = -120
+
+@galaxy_power_1 = -80
+@galaxy_power_2 = -120
+@galaxy_power_4 = -160
+@galaxy_power_3 = -200
+@galaxy_power_5 = -240
+
+@sovereign_power_1 = -160
+@sovereign_power_2 = -240
+@sovereign_power_3 = -320
+@sovereign_power_4 = -400
+@sovereign_power_5 = -480
+
+# Klingon
+@bird_of_prey_power_1 = -10
+@bird_of_prey_power_2 = -15
+@bird_of_prey_power_3 = -20
+@bird_of_prey_power_4 = -25
+@bird_of_prey_power_5 = -30
+
+@warbird_power_1 = -20
+@warbird_power_2 = -30
+@warbird_power_3 = -40
+@warbird_power_4 = -50
+@warbird_power_5 = -60
+
+@ktinga_power_1 = -40
+@ktinga_power_2 = -60
+@ktinga_power_3 = -80
+@ktinga_power_4 = -100
+@ktinga_power_5 = -120
+
+@vorcha_power_1 = -80
+@vorcha_power_2 = -120
+@vorcha_power_4 = -160
+@vorcha_power_3 = -200
+@vorcha_power_5 = -240
+
+@neghvar_power_1 = -160
+@neghvar_power_2 = -240
+@neghvar_power_3 = -320
+@neghvar_power_4 = -400
+@neghvar_power_5 = -480
+
+# Romulan
+@ferrax_power_1 = -10
+@ferrax_power_2 = -15
+@ferrax_power_3 = -20
+@ferrax_power_4 = -25
+@ferrax_power_5 = -30
+
+@vindius_power_1 = -20
+@vindius_power_2 = -30
+@vindius_power_3 = -40
+@vindius_power_4 = -50
+@vindius_power_5 = -60
+
+@valdore_power_1 = -40
+@valdore_power_2 = -60
+@valdore_power_3 = -80
+@valdore_power_4 = -100
+@valdore_power_5 = -120
+
+@dderidex_power_1 = -80
+@dderidex_power_2 = -120
+@dderidex_power_4 = -160
+@dderidex_power_3 = -200
+@dderidex_power_5 = -240
+
+@majestus_power_1 = -160
+@majestus_power_2 = -240
+@majestus_power_3 = -320
+@majestus_power_4 = -400
+@majestus_power_5 = -480
+
+# Cardassian
+@hideki_power_1 = -10
+@hideki_power_2 = -15
+@hideki_power_3 = -20
+@hideki_power_4 = -25
+@hideki_power_5 = -30
+
+@galor_power_1 = -20
+@galor_power_2 = -30
+@galor_power_3 = -40
+@galor_power_4 = -50
+@galor_power_5 = -60
+
+@keldon_power_1 = -40
+@keldon_power_2 = -60
+@keldon_power_3 = -80
+@keldon_power_4 = -100
+@keldon_power_5 = -120
+
+@kazikai_power_1 = -80
+@kazikai_power_2 = -120
+@kazikai_power_4 = -160
+@kazikai_power_3 = -200
+@kazikai_power_5 = -240
+
+@nokoram_power_1 = -160
+@nokoram_power_2 = -240
+@nokoram_power_3 = -320
+@nokoram_power_4 = -400
+@nokoram_power_5 = -480
+
+#############
+#	COST	#
+#############
+
+@cost1 = 3
+@cost2 = 6
+@cost3 = 9
+@cost4 = 12
+@cost5 = 15
+
+@destroyer_cost1 = 6
+@destroyer_cost2 = 12
+@destroyer_cost3 = 18
+@destroyer_cost4 = 24
+@destroyer_cost5 = 30
+
+@cruiser_cost1 = 12
+@cruiser_cost2 = 24
+@cruiser_cost3 = 36
+@cruiser_cost4 = 48
+@cruiser_cost5 = 60
+
+@battleship_cost1 = 24
+@battleship_cost2 = 48
+@battleship_cost3 = 72
+@battleship_cost4 = 96
+@battleship_cost5 = 120
+
+@titan_cost1 = 48
+@titan_cost2 = 96
+@titan_cost3 = 144
+@titan_cost4 = 192
+@titan_cost5 = 240
+
+# UFOP
+@miranda_cost1 = 3
+@miranda_cost2 = 6
+@miranda_cost3 = 9
+@miranda_cost4 = 12
+@miranda_cost5 = 15
+
+@intrepid_cost1 = 6
+@intrepid_cost2 = 12
+@intrepid_cost3 = 18
+@intrepid_cost4 = 24
+@intrepid_cost5 = 30
+
+@excelsior_cost1 = 12
+@excelsior_cost2 = 24
+@excelsior_cost3 = 36
+@excelsior_cost4 = 48
+@excelsior_cost5 = 60
+
+@galaxy_cost1 = 24
+@galaxy_cost2 = 48
+@galaxy_cost3 = 72
+@galaxy_cost4 = 96
+@galaxy_cost5 = 120
+
+@sovereign_cost1 = 48
+@sovereign_cost2 = 96
+@sovereign_cost3 = 144
+@sovereign_cost4 = 192
+@sovereign_cost5 = 240
+
+# Klingon
+@bird_of_prey_cost1 = 3
+@bird_of_prey_cost2 = 6
+@bird_of_prey_cost3 = 9
+@bird_of_prey_cost4 = 12
+@bird_of_prey_cost5 = 15
+
+@warbird_cost1 = 6
+@warbird_cost2 = 12
+@warbird_cost3 = 18
+@warbird_cost4 = 24
+@warbird_cost5 = 30
+
+@ktinga_cost1 = 12
+@ktinga_cost2 = 24
+@ktinga_cost3 = 36
+@ktinga_cost4 = 48
+@ktinga_cost5 = 60
+
+@vorcha_cost1 = 24
+@vorcha_cost2 = 48
+@vorcha_cost3 = 72
+@vorcha_cost4 = 96
+@vorcha_cost5 = 120
+
+@neghvar_cost1 = 48
+@neghvar_cost2 = 96
+@neghvar_cost3 = 144
+@neghvar_cost4 = 192
+@neghvar_cost5 = 240
+
+# Romulan
+@ferrax_cost1 = 3
+@ferrax_cost2 = 6
+@ferrax_cost3 = 9
+@ferrax_cost4 = 12
+@ferrax_cost5 = 15
+
+@vindius_cost1 = 6
+@vindius_cost2 = 12
+@vindius_cost3 = 18
+@vindius_cost4 = 24
+@vindius_cost5 = 30
+
+@valdore_cost1 = 12
+@valdore_cost2 = 24
+@valdore_cost3 = 36
+@valdore_cost4 = 48
+@valdore_cost5 = 60
+
+@dderidex_cost1 = 24
+@dderidex_cost2 = 48
+@dderidex_cost3 = 72
+@dderidex_cost4 = 96
+@dderidex_cost5 = 120
+
+@majestus_cost1 = 48
+@majestus_cost2 = 96
+@majestus_cost3 = 144
+@majestus_cost4 = 192
+@majestus_cost5 = 240
+
+# Cardassian
+@hideki_cost1 = 3
+@hideki_cost2 = 6
+@hideki_cost3 = 9
+@hideki_cost4 = 12
+@hideki_cost5 = 15
+
+@galor_cost1 = 6
+@galor_cost2 = 12
+@galor_cost3 = 18
+@galor_cost4 = 24
+@galor_cost5 = 30
+
+@keldon_cost1 = 12
+@keldon_cost2 = 24
+@keldon_cost3 = 36
+@keldon_cost4 = 48
+@keldon_cost5 = 60
+
+@kazikai_cost1 = 24
+@kazikai_cost2 = 48
+@kazikai_cost3 = 72
+@kazikai_cost4 = 96
+@kazikai_cost5 = 120
+
+@nokoram_cost1 = 48
+@nokoram_cost2 = 96
+@nokoram_cost3 = 144
+@nokoram_cost4 = 192
+@nokoram_cost5 = 240
+
+#############
+# OFFICERS  #
+#############
+@operative_officers1 = 10
+
+#############
+# THRUSTERS #
+#############
+
+### Impulse Engine
+
+utility_component_template = {
+	key = "CORVETTE_IMPULSE_ENGINE"
+	size = small
+	icon = "GFX_ship_part_impulse_engine"
+	icon_frame = 1
+	power = @power_1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost1
+		}
+	}
+	
+	modifier = {
+	}
+		
+	prerequisites = { "tech_engine_1" }
+	component_set = "thruster_components"
+	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science spy_ship governor_ship transport crisis_corvette miranda defiant bird_of_prey ferrax hideki small_minor small_nausicaan }
+	upgrades_to = "CORVETTE_ADVANCED_IMPULSE_ENGINE"
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_IMPULSE_ENGINE"
+	size = small
+	icon = "GFX_ship_part_impulse_engine"
+	icon_frame = 1
+	power = @destroyer_power_1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost1
+		}
+	}
+	
+	modifier = {
+	}
+		
+	prerequisites = { "tech_engine_1" }
+	component_set = "thruster_components"
+	size_restriction = { destroyer crisis_destroyer intrepid california ktinga vindius galor medium_minor medium_nausicaan }
+	upgrades_to = "DESTROYER_ADVANCED_IMPULSE_ENGINE"
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_IMPULSE_ENGINE"
+	size = small
+	icon = "GFX_ship_part_impulse_engine"
+	icon_frame = 1
+	power = @cruiser_power_1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost1
+		}
+	}
+	
+	modifier = {
+	}
+		
+	prerequisites = { "tech_engine_1" }
+	component_set = "thruster_components"
+	size_restriction = { cruiser crisis_cruiser excelsior warbird valdore keldon }
+	upgrades_to = "CRUISER_ADVANCED_IMPULSE_ENGINE"
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_IMPULSE_ENGINE"
+	size = small
+	icon = "GFX_ship_part_impulse_engine"
+	icon_frame = 1
+	power = @battleship_power_1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @battleship_cost1
+		}
+	}
+	
+	modifier = {
+	}
+		
+	prerequisites = { "tech_engine_1" }
+	component_set = "thruster_components"
+	size_restriction = { battleship sovereign vorcha dderidex kazikai large_minor large_nausicaan }
+	upgrades_to = "BATTLESHIP_ADVANCED_IMPULSE_ENGINE"
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_IMPULSE_ENGINE"
+	size = small
+	icon = "GFX_ship_part_impulse_engine"
+	icon_frame = 1
+	power = @titan_power_1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost1
+		}
+	}
+	
+	modifier = {
+	}
+		
+	prerequisites = { "tech_engine_1" }
+	component_set = "thruster_components"
+	size_restriction = { titan galaxy neghvar majestus nokoram }
+	upgrades_to = "TITAN_ADVANCED_IMPULSE_ENGINE"
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+# utility_component_template = {
+# 	key = "MIRANDA_IMPULSE_ENGINE"
+# 	size = small
+# 	icon = "GFX_ship_part_thruster_1"
+# 	icon_frame = 1
+# 	power = @miranda_power_1
+#	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @miranda_cost1
+# 		}
+# 	}
+	
+# 	modifier = {
+# 	}
+		
+# 	prerequisites = { "tech_thrusters_1" }
+# 	component_set = "thruster_components"
+# 	size_restriction = { miranda }
+# 	upgrades_to = "ADVANCED_IMPULSE_ENGINE"
+	
+# 	ai_weight = {
+# 		weight = 1
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "INTREPID_IMPULSE_ENGINE"
+# 	size = small
+# 	icon = "GFX_ship_part_thruster_1"
+# 	icon_frame = 1
+# 	power = @intrepid_power_1
+#	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @intrepid_cost1
+# 		}
+# 	}
+	
+# 	modifier = {
+# 	}
+		
+# 	prerequisites = { "tech_thrusters_1" }
+# 	component_set = "thruster_components"
+# 	size_restriction = { intrepid }
+# 	upgrades_to = "ADVANCED_IMPULSE_ENGINE"
+	
+# 	ai_weight = {
+# 		weight = 1
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "EXCELSIOR_IMPULSE_ENGINE"
+# 	size = small
+# 	icon = "GFX_ship_part_thruster_1"
+# 	icon_frame = 1
+# 	power = @excelsior_power_1
+#	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @excelsior_cost1
+# 		}
+# 	}
+	
+# 	modifier = {
+# 	}
+		
+# 	prerequisites = { "tech_thrusters_1" }
+# 	component_set = "thruster_components"
+# 	size_restriction = { excelsior }
+# 	upgrades_to = "ADVANCED_IMPULSE_ENGINE"
+	
+# 	ai_weight = {
+# 		weight = 1
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "GALAXY_IMPULSE_ENGINE"
+# 	size = small
+# 	icon = "GFX_ship_part_thruster_1"
+# 	icon_frame = 1
+# 	power = @galaxy_power_1
+#	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @galaxy_cost1
+# 		}
+# 	}
+	
+# 	modifier = {
+# 	}
+		
+# 	prerequisites = { "tech_thrusters_1" }
+# 	component_set = "thruster_components"
+# 	size_restriction = { galaxy }
+# 	upgrades_to = "ADVANCED_IMPULSE_ENGINE"
+	
+# 	ai_weight = {
+# 		weight = 1
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "SOVEREIGN_IMPULSE_ENGINE"
+# 	size = small
+# 	icon = "GFX_ship_part_thruster_1"
+# 	icon_frame = 1
+# 	power = @sovereign_power_1
+#	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @sovereign_cost1
+# 		}
+# 	}
+	
+# 	modifier = {
+# 	}
+		
+# 	prerequisites = { "tech_thrusters_1" }
+# 	component_set = "thruster_components"
+# 	size_restriction = { sovereign }
+# 	upgrades_to = "ADVANCED_IMPULSE_ENGINE"
+	
+# 	ai_weight = {
+# 		weight = 1
+# 	}
+# }
+
+### Advanced Impulse Engine
+
+utility_component_template = {
+	key = "CORVETTE_ADVANCED_IMPULSE_ENGINE"
+	size = small
+	icon = "GFX_ship_part_advanced_impulse_engine"
+	icon_frame = 1
+	power = @power_2
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost2
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.25
+		ship_evasion_add = 5
+	}
+
+	prerequisites = { "tech_engine_2" }
+	component_set = "thruster_components"
+	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science spy_ship governor_ship transport crisis_corvette miranda defiant bird_of_prey ferrax hideki small_minor small_nausicaan }
+	upgrades_to = "CORVETTE_HIGH_ENERGY_IMPULSE_ENGINE"
+	
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_ADVANCED_IMPULSE_ENGINE"
+	size = small
+	icon = "GFX_ship_part_advanced_impulse_engine"
+	icon_frame = 1
+	power = @destroyer_power_2
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost2
+		}
+	}
+	
+	modifier = {
+		ship_base_speed_mult = 0.25
+		ship_evasion_add = 4
+	}
+		
+	prerequisites = { "tech_engine_2" }
+	component_set = "thruster_components"
+	size_restriction = { destroyer crisis_destroyer intrepid california ktinga vindius galor medium_minor medium_nausicaan }
+	upgrades_to = "DESTROYER_HIGH_ENERGY_IMPULSE_ENGINE"
+	
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_ADVANCED_IMPULSE_ENGINE"
+	size = small
+	icon = "GFX_ship_part_advanced_impulse_engine"
+	icon_frame = 1
+	power = @cruiser_power_2
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost2
+		}
+	}
+	
+	modifier = {
+		ship_base_speed_mult = 0.25
+		ship_evasion_add = 3
+	}
+		
+	prerequisites = { "tech_engine_2" }
+	component_set = "thruster_components"
+	size_restriction = { cruiser crisis_cruiser excelsior warbird valdore keldon }
+	upgrades_to = "CRUISER_HIGH_ENERGY_IMPULSE_ENGINE"
+	
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_ADVANCED_IMPULSE_ENGINE"
+	size = small
+	icon = "GFX_ship_part_advanced_impulse_engine"
+	icon_frame = 1
+	power = @battleship_power_2
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @battleship_cost2
+		}
+	}
+	
+	modifier = {
+		ship_base_speed_mult = 0.25
+		ship_evasion_add = 2
+	}
+		
+	prerequisites = { "tech_engine_2" }
+	component_set = "thruster_components"
+	size_restriction = { battleship sovereign vorcha dderidex kazikai large_minor large_nausicaan }
+	upgrades_to = "BATTLESHIP_HIGH_ENERGY_IMPULSE_ENGINE"
+	
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_ADVANCED_IMPULSE_ENGINE"
+	size = small
+	icon = "GFX_ship_part_advanced_impulse_engine"
+	icon_frame = 1
+	power = @titan_power_2
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost2
+		}
+	}
+	
+	modifier = {
+		ship_base_speed_mult = 0.25
+		ship_evasion_add = 1
+	}
+		
+	prerequisites = { "tech_engine_2" }
+	component_set = "thruster_components"
+	size_restriction = { titan galaxy neghvar majestus nokoram }
+	upgrades_to = "TITAN_HIGH_ENERGY_IMPULSE_ENGINE"
+	
+	ai_weight = {
+		weight = 2
+	}
+}
+
+### High Energy Impulse Engine
+
+utility_component_template = {
+	key = "CORVETTE_HIGH_ENERGY_IMPULSE_ENGINE"
+	size = small
+	icon = "GFX_ship_part_high_energy_impulse_engine"
+	icon_frame = 1
+	power = @power_3
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost3
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.50
+		ship_evasion_add = 10
+	}
+
+	prerequisites = { "tech_engine_3" }
+	component_set = "thruster_components"
+	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science spy_ship governor_ship transport crisis_corvette miranda defiant bird_of_prey ferrax hideki small_minor small_nausicaan }
+	upgrades_to = "CORVETTE_OMEGA_ENGINE"
+	
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_HIGH_ENERGY_IMPULSE_ENGINE"
+	size = small
+	icon = "GFX_ship_part_high_energy_impulse_engine"
+	icon_frame = 1
+	power = @destroyer_power_3
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost3
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.50
+		ship_evasion_add = 8
+	}
+
+	prerequisites = { "tech_engine_3" }
+	component_set = "thruster_components"
+	size_restriction = { destroyer crisis_destroyer intrepid california ktinga vindius galor medium_minor medium_nausicaan }
+	upgrades_to = "DESTROYER_OMEGA_ENGINE"
+	
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_HIGH_ENERGY_IMPULSE_ENGINE"
+	size = small
+	icon = "GFX_ship_part_high_energy_impulse_engine"
+	icon_frame = 1
+	power = @cruiser_power_3
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost3
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.50
+		ship_evasion_add = 6
+	}
+
+	prerequisites = { "tech_engine_3" }
+	component_set = "thruster_components"
+	size_restriction = { cruiser crisis_cruiser excelsior warbird valdore keldon }
+	upgrades_to = "CRUISER_OMEGA_ENGINE"
+	
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_HIGH_ENERGY_IMPULSE_ENGINE"
+	size = small
+	icon = "GFX_ship_part_high_energy_impulse_engine"
+	icon_frame = 1
+	power = @battleship_power_3
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @battleship_cost3
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.50
+		ship_evasion_add = 4
+	}
+
+	prerequisites = { "tech_engine_3" }
+	component_set = "thruster_components"
+	size_restriction = { battleship sovereign vorcha dderidex kazikai large_minor large_nausicaan }
+	upgrades_to = "BATTLESHIP_OMEGA_ENGINE"
+	
+	ai_weight = {
+		weight = 3
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_HIGH_ENERGY_IMPULSE_ENGINE"
+	size = small
+	icon = "GFX_ship_part_high_energy_impulse_engine"
+	icon_frame = 1
+	power = @titan_power_3
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost3
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.50
+		ship_evasion_add = 2
+	}
+
+	prerequisites = { "tech_engine_3" }
+	component_set = "thruster_components"
+	size_restriction = { titan galaxy neghvar majestus nokoram }
+	upgrades_to = "TITAN_OMEGA_ENGINE"
+	
+	ai_weight = {
+		weight = 3
+	}
+}
+
+### Omega Engine
+
+utility_component_template = {
+	key = "CORVETTE_OMEGA_ENGINE"
+	size = small
+	icon = "GFX_ship_part_omega_engine"
+	icon_frame = 1
+	power = @power_4
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost4
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.75
+		ship_evasion_add = 15
+	}
+
+	prerequisites = { "tech_engine_4" }
+	component_set = "thruster_components"
+	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science spy_ship governor_ship transport crisis_corvette miranda defiant bird_of_prey ferrax hideki small_minor small_nausicaan }
+	
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "DESTROYER_OMEGA_ENGINE"
+	size = small
+	icon = "GFX_ship_part_omega_engine"
+	icon_frame = 1
+	power = @destroyer_power_4
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @destroyer_cost4
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.75
+		ship_evasion_add = 12
+	}
+
+	prerequisites = { "tech_engine_4" }
+	component_set = "thruster_components"
+	size_restriction = { destroyer crisis_destroyer intrepid california ktinga vindius galor medium_minor medium_nausicaan }
+	
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "CRUISER_OMEGA_ENGINE"
+	size = small
+	icon = "GFX_ship_part_omega_engine"
+	icon_frame = 1
+	power = @cruiser_power_4
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_cost4
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.75
+		ship_evasion_add = 9
+	}
+
+	prerequisites = { "tech_engine_4" }
+	component_set = "thruster_components"
+	size_restriction = { cruiser crisis_cruiser excelsior warbird valdore keldon }
+	
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_OMEGA_ENGINE"
+	size = small
+	icon = "GFX_ship_part_omega_engine"
+	icon_frame = 1
+	power = @battleship_power_4
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @battleship_cost4
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.75
+		ship_evasion_add = 6
+	}
+
+	prerequisites = { "tech_engine_4" }
+	component_set = "thruster_components"
+	size_restriction = { battleship  sovereign vorcha dderidex kazikai large_minor large_nausicaan }
+	
+	ai_weight = {
+		weight = 4
+	}
+}
+
+utility_component_template = {
+	key = "TITAN_OMEGA_ENGINE"
+	size = small
+	icon = "GFX_ship_part_omega_engine"
+	icon_frame = 1
+	power = @titan_power_4
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titan_cost4
+		}
+	}
+	modifier = {
+		ship_base_speed_mult = 0.75
+		ship_evasion_add = 3
+	}
+
+	prerequisites = { "tech_engine_4" }
+	component_set = "thruster_components"
+	size_restriction = { titan galaxy neghvar majestus nokoram }
+	
+	ai_weight = {
+		weight = 4
+	}
+}

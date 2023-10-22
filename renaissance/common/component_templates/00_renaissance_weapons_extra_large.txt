@@ -4,7 +4,7 @@ weapon_component_template = {
 	size = extra_large
 	type = instant
 	
-	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon = "GFX_ship_weapon_cutting_beam"
 	icon_frame = 1
 
 	entity = "invisible_turret_entity"
@@ -64,7 +64,7 @@ weapon_component_template = {
 	size = extra_large
 	type = instant
 	
-	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon = "GFX_ship_weapon_cutting_beam"
 	icon_frame = 1
 
 	entity = "invisible_turret_entity"
@@ -124,7 +124,7 @@ weapon_component_template = {
 	size = extra_large
 	type = instant
 	
-	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon = "GFX_ship_weapon_cutting_beam"
 	icon_frame = 1
 
 	entity = "invisible_turret_entity"
@@ -184,7 +184,7 @@ weapon_component_template = {
 	size = extra_large
 	type = instant
 	
-	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon = "GFX_ship_weapon_cutting_beam"
 	icon_frame = 1
 
 	entity = "invisible_turret_entity"
@@ -244,7 +244,7 @@ weapon_component_template = {
 	size = extra_large
 	type = instant
 	
-	icon = "GFX_ship_weapon_phaser_spinal_lance"
+	icon = "GFX_ship_weapon_cutting_beam"
 	icon_frame = 1
 
 	entity = "invisible_turret_entity"
@@ -260,6 +260,184 @@ weapon_component_template = {
 	ai_tags = { weapon_role_artillery }
 	ai_tag_weight = 0
 	#upgrades_to = "PHASER_OBLITERATOR_LANCE"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			dilithium = @xl_t5_rare
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @xl_t5_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+## Galaxy Class Phaser Type 10
+weapon_component_template = {
+	key = "STR_XLARGE_PHASER_ARRAY_TYPE10"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_ship_weapon_phaser_battery"
+	icon_frame = 1
+
+	entity = "invisible_turret_entity"
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	#prerequisites = { "tech_lance_1" }
+	component_set = "STR_GALAXY_PHASER_ARRAY_TYPE10"
+	projectile_gfx = "phaser_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "STR_XLARGE_PHASER_ARRAY_TYPE11"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			dilithium = @xl_t5_rare
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @xl_t5_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+weapon_component_template = {
+	key = "STR_XLARGE_PHASER_ARRAY_TYPE11"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_ship_weapon_phaser_battery"
+	icon_frame = 1
+
+	entity = "invisible_turret_entity"
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	#prerequisites = { "tech_lance_1" }
+	component_set = "STR_GALAXY_PHASER_ARRAY_TYPE11"
+	projectile_gfx = "phaser_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+	upgrades_to = "STR_XLARGE_PHASER_ARRAY_TYPE12"
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t5_cost
+			dilithium = @xl_t5_rare
+		}
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @xl_t5_upkeep_deuterium
+		}
+						
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+		
+		upkeep = {
+			alloys = @xl_t5_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+weapon_component_template = {
+	key = "STR_XLARGE_PHASER_ARRAY_TYPE12"
+	size = extra_large
+	type = instant
+	
+	icon = "GFX_ship_weapon_phaser_battery"
+	icon_frame = 1
+
+	entity = "invisible_turret_entity"
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	use_ship_kill_target = no
+	
+	#prerequisites = { "tech_lance_1" }
+	component_set = "STR_GALAXY_PHASER_ARRAY_TYPE12"
+	projectile_gfx = "phaser_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_artillery }
+	ai_tag_weight = 0
+
 	resources = {
 		category = ship_components
 		cost = {

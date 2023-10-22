@@ -25,6 +25,24 @@ Design characteristics
   - Tricobalt warheads
     - Could be anti-armour?
 
+### Phasers
+
+| Weapon                               | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Power |
+| ------------------------------------ | ----------------- | -------------------- | -------------------- | ------ | ----- |
+| Small Phaser Bank (Type VIII)        | 10-27 (18.5)      | 200%                 | 25%                  | --     | 7     |
+| Small Phaser Bank (Type IX)          | 11-28 (19.5)      | 200%                 | 27%                  | --     | 7     |
+| Small Phaser Array (Type X)          | 15-40 (27.5)      | 200%                 | 31%                  | --     | 9     |
+| Small Phaser Array (Type XI)         | 18-48 (33)        | 200%                 | 33%                  | --     | 9     |
+| Small Phaser Array (Type XII)        | 20-53 (36.5)      | 200%                 | 34%                  | --     | 9     |
+| Large Phaser Bank (Type VIII)        | 44-119 (81.5)     | 200%                 | 25%                  | --     | 26    |
+| Large Phaser Bank (Type IX)          | 46-125 (85.5)     | 200%                 | 27%                  | --     | 26    |
+| Large Phaser Array (Type X)          | 65-175 (120)      | 200%                 | 31%                  | --     | 33    |
+| Large Phaser Array (Type XI)         | 78-210 (144)      | 200%                 | 33%                  | --     | 33    |
+| Large Phaser Array (Type XII)        | 85-231 (158)      | 200%                 | 34%                  | --     | 33    |
+| Galaxy Class Phaser Array (Type X)   | 143-385 (264)     | 200%                 | 31%                  | --     | 63    |
+| Galaxy Class Phaser Array (Type XI)  | 171-462 (316.5)   | 200%                 | 33%                  | --     | 63    |
+| Galaxy Class Phaser Array (Type XII) | 188-508 (348)     | 200%                 | 34%                  | --     | 63    |
+
 ### Photon/Quantum Torpedoes
 
 | Weapon                      | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Tetryons | Power |
@@ -123,4 +141,10 @@ Design characteristics
 - Phasers
   - Slower progression than Starfleet
 
-
+| Weapon                               | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Power |
+| ------------------------------------ | ----------------- | -------------------- | -------------------- | ------ | ----- |
+| Spiral Wave Disruptor (Type I)       | 225-698 (461.5)   | 150%                 | 75%                  | --     | 68    |
+| Spiral Wave Disruptor (Type II)      | 270-838 (554)     | 152%                 | 77%                  | --     | 62    |
+| Spiral Wave Disruptor (Type III)     | 297-921 (609)     | 154%                 | 79%                  | --     | 59    |
+| Spiral Wave Disruptor (Type IV)      | 312-967 (639.5)   | 155%                 | 80%                  | --     | 58    |
+| Spiral Wave Disruptor (Type V)       | 320-992 (656)     | 156%                 | 81%                  | --     | 57    |
