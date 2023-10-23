@@ -55,6 +55,23 @@
   STR_LARGE_DISRUPTOR_TYPE4: "Large Disruptor (Type IV)"
   STR_LARGE_DISRUPTOR_TYPE5: "Large Disruptor (Type V)"
 
+  STR_DISRUPTOR_CANNON_TYPE1: "Disruptor Cannons (Type I)" # Component Set
+  STR_DISRUPTOR_CANNON_TYPE1_DESC: "Disruptor Cannons are directed energy weapons. They fire powerful bolts of energy capable of collapsing shields and disrupting hull-plating."
+  STR_DISRUPTOR_CANNON_TYPE2: "Disruptor Cannons (Type II)" # Component Set
+  STR_DISRUPTOR_CANNON_TYPE2_DESC: "Disruptor Cannons are directed energy weapons. They fire powerful bolts of energy capable of collapsing shields and disrupting hull-plating."
+  STR_DISRUPTOR_CANNON_TYPE3: "Disruptor Cannons (Type III)" # Component Set
+  STR_DISRUPTOR_CANNON_TYPE3_DESC: "Disruptor Cannons are directed energy weapons. They fire powerful bolts of energy capable of collapsing shields and disrupting hull-plating."
+  STR_DISRUPTOR_CANNON_TYPE4: "Disruptor Cannons (Type IV)" # Component Set
+  STR_DISRUPTOR_CANNON_TYPE4_DESC: "Disruptor Cannons are directed energy weapons. They fire powerful bolts of energy capable of collapsing shields and disrupting hull-plating."
+  STR_DISRUPTOR_CANNON_TYPE5: "Disruptor Cannons (Type V)" # Component Set
+  STR_DISRUPTOR_CANNON_TYPE5_DESC: "Disruptor Cannons are directed energy weapons. They fire powerful bolts of energy capable of collapsing shields and disrupting hull-plating."
+
+  STR_MEDIUM_DISRUPTOR_CANNON_TYPE1: "Disruptor Cannon (Type I)"
+  STR_MEDIUM_DISRUPTOR_CANNON_TYPE2: "Disruptor Cannon (Type II)"
+  STR_MEDIUM_DISRUPTOR_CANNON_TYPE3: "Disruptor Cannon (Type III)"
+  STR_MEDIUM_DISRUPTOR_CANNON_TYPE4: "Disruptor Cannon (Type IV)"
+  STR_MEDIUM_DISRUPTOR_CANNON_TYPE5: "Disruptor Cannon (Type V)"
+
   STR_SPIRAL_WAVE_DISRUPTOR1: "Spiral Wave Disruptor (Type I)" # Component Set
   STR_SPIRAL_WAVE_DISRUPTOR1_DESC: "Spiral wave disruptors are the primary high energy weapon of the Cardassian union. They exploit novel resonances to amplify the destructive power of traditional disruptor weapons at the cost of a bulkier weapon assembly."
   STR_SPIRAL_WAVE_DISRUPTOR2: "Spiral Wave Disruptor (Type II)" # Component Set

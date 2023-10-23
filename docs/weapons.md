@@ -96,6 +96,16 @@ Design characteristics
 | Large Disruptor (Type IV)            | 79-245 (162)      | 180%                 | 35%                  | --     | 25    |
 | Large Disruptor (Type V)             | 81-251 (166.5)    | 180%                 | 36%                  | --     | 25    |
 
+### Disruptor Cannons
+
+| Weapon                               | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Power |
+| ------------------------------------ | ----------------- | -------------------- | -------------------- | ------ | ----- |
+| Disruptor Cannon (Type I)            | 120-444 (282)     | 165%                 | 45%                  | --     | 40    |
+| Disruptor Cannon (Type II)           | 144-533 (338.5)   | 165%                 | 47%                  | --     | 40    |
+| Disruptor Cannon (Type III)          | 158-586 (372)     | 166%                 | 48%                  | --     | 40    |
+| Disruptor Cannon (Type IV)           | 166-615 (390.5)   | 167%                 | 49%                  | --     | 40    |
+| Disruptor Cannon (Type V)            | 170-631 (400.5)   | 167%                 | 50%                  | --     | 40    |
+
 ### Photon/Quantum Torpedoes
 
 | Weapon                      | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Tetryons | Power |
@@ -170,6 +180,8 @@ Design characteristics
   - X-slot
 - Phasers
   - Slower progression than Starfleet
+
+### Spiral Wave Disruptors
 
 | Weapon                               | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Power |
 | ------------------------------------ | ----------------- | -------------------- | -------------------- | ------ | ----- |
