@@ -1,0 +1,1370 @@
+@cost0 = 0
+@cost1 = 5
+@cost2 = 10
+@cost3 = 20
+
+@power0 = -5
+@power1 = -10
+@power2 = -15
+@power3 = -25
+
+#############
+# OFFICERS  #
+#############
+@operative_officers1 = -10
+
+################
+# HRB DEFAULTS #
+################
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_HRB_LINE_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_default_line"
+	icon_frame = 1
+
+	power = @power0
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost0
+		}
+	}
+	ship_behavior = "hrb_line"
+	class_restriction = { shipclass_military }
+
+	prerequisites = { "tech_computer_1" }
+	
+	size_restriction = {
+		galaxy # UFOP
+		vorcha neghvar # KLINGON
+		dderidex majestus # ROMULAN
+		kazikai nokoram # CARDASSIAN
+		small_minor medium_minor large_minor # MINORS
+		small_nausicaan medium_nausicaan large_nausicaan # Nausicaan
+		corvette destroyer crisis_destroyer # VANILLA 
+	}
+	
+	component_set = "combat_computers"
+	upgrades_to = "COMBAT_COMPUTER_HRB_LINE_BASIC"
+
+	# HRB_TODO: balance ship modifiers
+	ship_modifier = {
+		ship_fire_rate_mult = 0.10
+		ship_accuracy_add = 10
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_HRB_ARTILLERY_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_default_artillery"
+	icon_frame = 1
+	power = @power0
+
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost0
+		}
+	}
+	ship_behavior = "hrb_artillery"
+	class_restriction = { shipclass_military }
+
+	prerequisites = { "tech_computer_1" }
+	
+	size_restriction = {
+		galaxy # UFOP
+		vorcha neghvar # KLINGON
+		dderidex majestus # ROMULAN
+		kazikai nokoram # CARDASSIAN
+		small_minor medium_minor large_minor # MINORS
+		small_nausicaan medium_nausicaan large_nausicaan # Nausicaan
+		corvette destroyer crisis_destroyer # VANILLA 
+	}
+	
+	component_set = "combat_computers"
+	upgrades_to = "COMBAT_COMPUTER_HRB_ARTILLERY_BASIC"
+
+	# HRB_TODO: balance ship modifiers
+	ship_modifier = {
+		ship_fire_rate_mult = 0.10
+		ship_weapon_range_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_HRB_WAR_BIRD_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_default_warbird"
+	icon_frame = 1
+
+	power = @power0
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost0
+		}
+	}
+	ship_behavior = "hrb_war_bird"
+	class_restriction = { shipclass_military }
+
+	prerequisites = { "tech_computer_1" }
+	
+	# HRB_TODO: no restriction for now
+	size_restriction = {
+		intrepid california excelsior  # UFOP
+		warbird ktinga  # KLINGON
+		vindius valdore  # ROMULAN
+		galor keldon # CARDASSIAN
+		small_minor medium_minor # MINORS
+		small_nausicaan medium_nausicaan # NAUSICAAN
+		corvette destroyer crisis_destroyer # VANILLA 
+	}
+
+	component_set = "combat_computers"
+	upgrades_to = "COMBAT_COMPUTER_HRB_WAR_BIRD_BASIC"
+	
+	# HRB_TODO: balance ship modifiers
+	ship_modifier = {
+		ship_fire_rate_mult = 0.10
+		ship_evasion_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_HRB_BOMBER_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_default_bomber"
+	icon_frame = 1
+
+	power = @power0
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost0
+		}
+	}
+	ship_behavior = "hrb_bomber"
+	class_restriction = { shipclass_military }
+
+	prerequisites = { "tech_computer_1" }
+	
+	# HRB_TODO: no restriction for now
+	size_restriction = {
+		excelsior sovereign # UFOP
+		ktinga  # KLINGON
+		valdore  # ROMULAN
+		keldon # CARDASSIAN
+		small_minor medium_minor # MINORS
+		small_nausicaan medium_nausicaan # NAUSICAAN
+		corvette destroyer crisis_destroyer # VANILLA 
+	}
+
+	component_set = "combat_computers"
+	upgrades_to = "COMBAT_COMPUTER_HRB_BOMBER_BASIC"
+
+	# HRB_TODO: balance ship modifiers
+	ship_modifier = {
+		ship_fire_rate_mult = 0.05
+		ship_tracking_add = 10
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_HRB_ESCORT_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_default_escort"
+	icon_frame = 1
+
+	power = @power0
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost0
+		}
+	}
+	ship_behavior = "hrb_escort"
+	class_restriction = { shipclass_military }
+
+	prerequisites = { "tech_computer_1" }
+	
+	# HRB_TODO: no restriction for now
+	size_restriction = {
+		miranda defiant intrepid california excelsior sovereign # UFOP
+		bird_of_prey warbird ktinga # KLINGON
+		ferrax vindius valdore # ROMULAN
+		hideki galor keldon # CARDASSIAN
+		small_minor medium_minor # MINORS
+		small_nausicaan medium_nausicaan # NAUSICAAN
+		corvette destroyer crisis_destroyer # VANILLA
+	}
+
+	component_set = "combat_computers"
+	upgrades_to = "COMBAT_COMPUTER_HRB_ESCORT_BASIC"
+	
+	# HRB_TODO: balance ship modifiers
+	ship_modifier = {
+		ship_fire_rate_mult = 0.05
+		ship_shield_mult = 0.15
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_HRB_INTERCEPTOR_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_default_interceptor"
+	icon_frame = 1
+
+	power = @power0
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost0
+		}
+	}
+	ship_behavior = "hrb_interceptor"
+	class_restriction = { shipclass_military }
+
+	prerequisites = { "tech_computer_1" }
+	
+	# HRB_TODO: no restriction for now
+	size_restriction = {
+		miranda defiant intrepid california  # UFOP
+		warbird bird_of_prey # KLINGON
+		ferrax vindius # ROMULAN
+		hideki galor # CARDASSIAN
+		small_minor medium_minor # MINORS
+		small_nausicaan medium_nausicaan # NAUSICAAN
+		corvette destroyer crisis_destroyer # VANILLA
+	}
+
+	component_set = "combat_computers"
+	upgrades_to = "COMBAT_COMPUTER_HRB_INTERCEPTOR_BASIC"
+	
+	# HRB_TODO: balance ship modifiers
+	ship_modifier = {
+		ship_fire_rate_mult = 0.05
+		ship_speed_mult = 0.10
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+######################
+# HRB LINE COMPUTERS #
+######################
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_HRB_LINE_BASIC"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_basic_line"
+	icon_frame = 1
+
+	power = @power1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost1
+		}
+	}
+	ship_behavior = "hrb_line"
+	class_restriction = { shipclass_military }
+
+	prerequisites = { "tech_computer_2" }
+	
+	size_restriction = {
+		galaxy # UFOP
+		vorcha neghvar # KLINGON
+		dderidex majestus # ROMULAN
+		kazikai nokoram # CARDASSIAN
+		small_minor medium_minor large_minor # MINORS
+		small_nausicaan medium_nausicaan large_nausicaan # Nausicaan
+		corvette destroyer crisis_destroyer # VANILLA 
+	}
+
+	component_set = "combat_computers"
+	upgrades_to = "COMBAT_COMPUTER_HRB_LINE_ADVANCED"
+
+	# HRB_TODO: balance ship modifiers
+	ship_modifier = {
+		ship_fire_rate_mult = 0.25
+		ship_accuracy_add = 25
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_HRB_LINE_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_advanced_line"
+	icon_frame = 1
+
+	power = @power2
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost2
+		}
+	}
+	ship_behavior = "hrb_line"
+	class_restriction = { shipclass_military }
+
+	prerequisites = { "tech_computer_3" }
+
+	size_restriction = {
+		galaxy # UFOP
+		corvette destroyer crisis_destroyer # VANILLA 
+	}
+
+	component_set = "combat_computers"
+
+	# HRB_TODO: balance ship modifiers
+	ship_modifier = {
+		ship_fire_rate_mult = 0.30
+		ship_accuracy_add = 30
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+# utility_component_template = {
+# 	key = "COMBAT_COMPUTER_HRB_LINE_SAPIENT"
+# 	size = small
+# 	icon = "GFX_ship_part_computer_hrb_line_sapient"
+# 	icon_frame = 1
+
+# 	power = @power3
+# 	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost3
+# 		}
+# 	}
+# 	ship_behavior = "hrb_line"
+# 	class_restriction = { shipclass_military }
+
+# 	prerequisites = { "tech_computer_4" }
+
+# 	size_restriction = {
+# 		galaxy sovereign # UFOP
+# 		vorcha neghvar # KLINGON
+# 		dderidex majestus # ROMULAN
+# 		kazikai nokoram # CARDASSIAN
+# 		small_minor medium_minor large_minor # MINORS
+#		small_nausicaan medium_nausicaan large_nausicaan # Nausicaan
+# 		corvette destroyer crisis_destroyer # VANILLA 
+# 	}
+
+# 	component_set = "combat_computers"
+
+# 	# HRB_TODO: balance ship modifiers
+# 	ship_modifier = {
+# 		ship_fire_rate_mult = 0.20
+# 		ship_accuracy_add = 20
+# 	}
+
+# 	ai_weight = {
+# 		weight = 5
+# 		modifier = {
+# 			factor = 0
+# 			OR = {
+# 				has_global_flag = ghost_signal_5_flag
+# 				has_global_flag = ghost_signal_4_flag
+# 				has_global_flag = ghost_signal_3_flag
+# 				has_global_flag = ghost_signal_2_flag
+# 				has_global_flag = ghost_signal_1_flag
+# 			}
+# 		}
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "COMBAT_COMPUTER_HRB_LINE_AUTONOMOUS"
+# 	size = small
+# 	icon = "GFX_ship_part_computer_carrier_sapient"
+# 	icon_frame = 1
+	
+# 	power = @power3
+# 	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost3
+# 		}
+# 	}
+# 	ship_behavior = "hrb_line"
+# 	class_restriction = { shipclass_military }
+
+# 	prerequisites = { "tech_computer_4" }
+
+# 	size_restriction = {
+# 		galaxy sovereign # UFOP
+# 		vorcha neghvar # KLINGON
+# 		dderidex majestus # ROMULAN
+# 		kazikai nokoram # CARDASSIAN
+# 		small_minor medium_minor large_minor # MINORS
+#		small_nausicaan medium_nausicaan large_nausicaan # Nausicaan
+# 		corvette destroyer crisis_destroyer # VANILLA 
+# 	}
+
+# 	component_set = "combat_computers"
+
+# 	# HRB_TODO: balance ship modifiers
+# 	ship_modifier = {
+# 		ship_fire_rate_mult = 0.20
+# 		ship_accuracy_add = 20
+# 	}
+
+# 	ai_weight = {
+# 		weight = 5
+# 	}
+# }
+
+###########################
+# HRB ARTILLERY COMPUTERS #
+###########################
+ 
+utility_component_template = {
+	key = "COMBAT_COMPUTER_HRB_ARTILLERY_BASIC"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_basic_artillery"
+	icon_frame = 1
+
+	power = @power1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost1
+		}
+	}
+	ship_behavior = "hrb_artillery"
+	class_restriction = { shipclass_military }
+
+	prerequisites = { "tech_computer_2" }
+	
+	size_restriction = {
+		galaxy # UFOP
+		vorcha neghvar # KLINGON
+		dderidex majestus # ROMULAN
+		kazikai nokoram # CARDASSIAN
+		small_minor medium_minor large_minor # MINORS
+		small_nausicaan medium_nausicaan large_nausicaan # Nausicaan
+		corvette destroyer crisis_destroyer # VANILLA 
+	}
+
+	component_set = "combat_computers"
+	upgrades_to = "COMBAT_COMPUTER_HRB_ARTILLERY_ADVANCED"
+
+	# HRB_TODO: balance ship modifiers
+	ship_modifier = {
+		ship_fire_rate_mult = 0.20
+		ship_weapon_range_mult = 0.20
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_HRB_ARTILLERY_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_advanced_artillery"
+	icon_frame = 1
+
+	power = @power2
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost2
+		}
+	}
+	ship_behavior = "hrb_artillery"
+	class_restriction = { shipclass_military }
+
+	prerequisites = { "tech_computer_3" }
+
+	size_restriction = {
+		galaxy # UFOP
+		corvette destroyer crisis_destroyer # VANILLA 
+	}
+
+	component_set = "combat_computers"
+
+	# HRB_TODO: balance ship modifiers
+	ship_modifier = {
+		ship_fire_rate_mult = 0.25
+		ship_weapon_range_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+# utility_component_template = {
+# 	key = "COMBAT_COMPUTER_HRB_ARTILLERY_SAPIENT"
+# 	size = small
+# 	icon = "GFX_ship_part_computer_hrb_artillery_sapient"
+# 	icon_frame = 1
+
+# 	power = @power3
+# 	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost3
+# 		}
+# 	}
+# 	ship_behavior = "hrb_artillery"
+# 	class_restriction = { shipclass_military }
+
+# 	prerequisites = { "tech_computer_4" }
+
+# 	size_restriction = {
+# 		galaxy sovereign # UFOP
+# 		vorcha neghvar # KLINGON
+# 		dderidex majestus # ROMULAN
+# 		kazikai nokoram # CARDASSIAN
+# 		small_minor medium_minor large_minor # MINORS
+#		small_nausicaan medium_nausicaan large_nausicaan # Nausicaan
+# 		corvette destroyer crisis_destroyer # VANILLA 
+# 	}
+
+# 	component_set = "combat_computers"
+
+# 	# HRB_TODO: balance ship modifiers
+# 	ship_modifier = {
+# 		ship_fire_rate_mult = 0.25
+# 		ship_weapon_range_mult = 0.25
+# 	}
+
+# 	ai_weight = {
+# 		weight = 5
+# 		modifier = {
+# 			factor = 0
+# 			OR = {
+# 				has_global_flag = ghost_signal_5_flag
+# 				has_global_flag = ghost_signal_4_flag
+# 				has_global_flag = ghost_signal_3_flag
+# 				has_global_flag = ghost_signal_2_flag
+# 				has_global_flag = ghost_signal_1_flag
+# 			}
+# 		}
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "COMBAT_COMPUTER_HRB_ARTILLERY_AUTONOMOUS"
+# 	size = small
+# 	icon = "GFX_ship_part_computer_hrb_artillery_sapient"
+# 	icon_frame = 1
+	
+# 	power = @power3
+# 	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost3
+# 		}
+# 	}
+# 	ship_behavior = "hrb_artillery"
+# 	class_restriction = { shipclass_military }
+
+# 	prerequisites = { "tech_computer_4" }
+
+# 	size_restriction = {
+# 		galaxy sovereign # UFOP
+# 		vorcha neghvar # KLINGON
+# 		dderidex majestus # ROMULAN
+# 		kazikai nokoram # CARDASSIAN
+# 		small_minor medium_minor large_minor # MINORS
+#		small_nausicaan medium_nausicaan large_nausicaan # Nausicaan
+# 		corvette destroyer crisis_destroyer # VANILLA 
+# 	}
+
+# 	component_set = "combat_computers"
+
+# 	# HRB_TODO: balance ship modifiers
+# 	ship_modifier = {
+# 		ship_fire_rate_mult = 0.25
+# 		ship_weapon_range_mult = 0.25
+# 	}
+
+# 	ai_weight = {
+# 		weight = 5
+# 	}
+# }
+
+##########################
+# HRB WAR BIRD COMPUTERS #
+##########################
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_HRB_WAR_BIRD_BASIC"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_basic_warbird"
+	icon_frame = 1
+
+	power = @power1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost1
+		}
+	}
+	ship_behavior = "hrb_war_bird"
+	class_restriction = { shipclass_military }
+
+	prerequisites = { "tech_computer_2" }
+	
+	# HRB_TODO: no restriction for now
+	size_restriction = {
+		intrepid california excelsior  # UFOP
+		warbird ktinga  # KLINGON
+		vindius valdore  # ROMULAN
+		galor keldon # CARDASSIAN
+		small_minor medium_minor # MINORS
+		small_nausicaan medium_nausicaan # NAUSICAAN
+		corvette destroyer crisis_destroyer # VANILLA 
+	}
+
+	component_set = "combat_computers"
+	upgrades_to = "COMBAT_COMPUTER_HRB_WAR_BIRD_ADVANCED"
+	
+	# HRB_TODO: balance ship modifiers
+	ship_modifier = {
+		ship_fire_rate_mult = 0.20
+		ship_evasion_mult = 0.20
+	}
+	
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_HRB_WAR_BIRD_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_advanced_warbird"
+	icon_frame = 1
+
+	power = @power2
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost2
+		}
+	}
+	ship_behavior = "hrb_war_bird"
+	class_restriction = { shipclass_military }
+
+	prerequisites = { "tech_computer_3" }
+
+	# HRB_TODO: no restriction for now
+	size_restriction = {
+	    ktinga  # KLINGON
+		corvette destroyer crisis_destroyer # VANILLA 
+	}
+
+	component_set = "combat_computers"
+
+	# HRB_TODO: balance ship modifiers
+	ship_modifier = {
+		ship_fire_rate_mult = 0.25
+		ship_evasion_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+# utility_component_template = {
+# 	key = "COMBAT_COMPUTER_HRB_WAR_BIRD_SAPIENT"
+# 	size = small
+# 	icon = "GFX_ship_part_computer_hrb_war_bird_sapient"
+# 	icon_frame = 1
+
+# 	power = @power3
+# 	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost3
+# 		}
+# 	}
+# 	ship_behavior = "hrb_war_bird"
+# 	class_restriction = { shipclass_military }
+
+# 	prerequisites = { "tech_computer_4" }
+
+# 	# HRB_TODO: no restriction for now
+# 	size_restriction = {
+# 		intrepid excelsior  # UFOP
+# 		warbird ktinga  # KLINGON
+# 		vindius valdore  # ROMULAN
+# 		galor keldon # CARDASSIAN
+# 		small_minor medium_minor # MINORS
+#		small_nausicaan medium_nausicaan # NAUSICAAN
+# 		corvette destroyer crisis_destroyer # VANILLA 
+# 	}
+
+# 	component_set = "combat_computers"
+
+# 	# HRB_TODO: balance ship modifiers
+# 	modifier = {
+# 		ship_evasion_mult = 0.20
+# 	}
+# 	ship_modifier = {
+# 		ship_fire_rate_mult = 0.20
+# 	}
+
+# 	ai_weight = {
+# 		weight = 5
+# 		modifier = {
+# 			factor = 0
+# 			OR = {
+# 				has_global_flag = ghost_signal_5_flag
+# 				has_global_flag = ghost_signal_4_flag
+# 				has_global_flag = ghost_signal_3_flag
+# 				has_global_flag = ghost_signal_2_flag
+# 				has_global_flag = ghost_signal_1_flag
+# 			}
+# 		}
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "COMBAT_COMPUTER_HRB_WAR_BIRD_AUTONOMOUS"
+# 	size = small
+# 	icon = "GFX_ship_part_computer_hrb_war_bird_sapient"
+# 	icon_frame = 1
+	
+# 	power = @power3
+# 	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost3
+# 		}
+# 	}
+# 	ship_behavior = "hrb_war_bird"
+# 	class_restriction = { shipclass_military }
+
+# 	prerequisites = { "tech_computer_4" }
+
+# 	# HRB_TODO: no restriction for now
+# 	size_restriction = {
+# 		intrepid excelsior  # UFOP
+# 		warbird ktinga  # KLINGON
+# 		vindius valdore  # ROMULAN
+# 		galor keldon # CARDASSIAN
+# 		small_minor medium_minor # MINORS
+#		small_nausicaan medium_nausicaan # NAUSICAAN
+# 		corvette destroyer crisis_destroyer # VANILLA 
+# 	}
+
+# 	component_set = "combat_computers"
+
+# 	# HRB_TODO: balance ship modifiers
+# 	modifier = {
+# 		ship_evasion_mult = 0.20
+# 	}
+# 	ship_modifier = {
+# 		ship_fire_rate_mult = 0.20
+# 	}
+
+# 	ai_weight = {
+# 		weight = 5
+# 	}
+# }
+
+########################
+# HRB BOMBER COMPUTERS #
+########################
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_HRB_BOMBER_BASIC"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_basic_bomber"
+	icon_frame = 1
+
+	power = @power1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost1
+		}
+	}
+	ship_behavior = "hrb_bomber"
+	class_restriction = { shipclass_military }
+
+	prerequisites = { "tech_computer_2" }
+	
+	# HRB_TODO: no restriction for now
+	size_restriction = {
+		excelsior sovereign # UFOP
+		ktinga  # KLINGON
+		valdore  # ROMULAN
+		keldon # CARDASSIAN
+		small_minor medium_minor # MINORS
+		small_nausicaan medium_nausicaan # NAUSICAAN
+		corvette destroyer crisis_destroyer # VANILLA 
+	}
+	
+	component_set = "combat_computers"
+	upgrades_to = "COMBAT_COMPUTER_HRB_BOMBER_ADVANCED"
+
+	# HRB_TODO: balance ship modifiers
+	ship_modifier = {
+		ship_fire_rate_mult = 0.20
+		ship_tracking_add = 20
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_HRB_BOMBER_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_advanced_bomber"
+	icon_frame = 1
+
+	power = @power2
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost2
+		}
+	}
+	ship_behavior = "hrb_bomber"
+	class_restriction = { shipclass_military }
+
+	prerequisites = { "tech_computer_3" }
+
+	# HRB_TODO: no restriction for now
+	size_restriction = {
+		ktinga  # KLINGON
+		corvette destroyer crisis_destroyer # VANILLA 
+	}
+
+	component_set = "combat_computers"
+
+	# HRB_TODO: balance ship modifiers
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_tracking_add = 25
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+# utility_component_template = {
+# 	key = "COMBAT_COMPUTER_HRB_BOMBER_SAPIENT"
+# 	size = small
+# 	icon = "GFX_ship_part_computer_hrb_bomber_sapient"
+# 	icon_frame = 1
+
+# 	power = @power3
+# 	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost3
+# 		}
+# 	}
+# 	ship_behavior = "hrb_bomber"
+# 	class_restriction = { shipclass_military }
+
+# 	prerequisites = { "tech_computer_4" }
+
+# 	# HRB_TODO: no restriction for now
+# 	size_restriction = {
+# 		miranda intrepid excelsior galaxy sovereign # UFOP
+# 		bird_of_prey warbird ktinga vorcha neghvar # KLINGON
+# 		ferrax vindius valdore dderidex majestus # ROMULAN
+# 		hideki galor keldon kazikai nokoram # CARDASSIAN
+# 		small_minor medium_minor large_minor # MINORS
+#		small_nausicaan medium_nausicaan large_nausicaan # Nausicaan
+# 		corvette destroyer crisis_destroyer # VANILLA
+# 	}
+
+# 	component_set = "combat_computers"
+
+# 	# HRB_TODO: balance ship modifiers
+# 	ship_modifier = {
+# 		ship_fire_rate_mult = 0.20
+# 		ship_tracking_add = 30
+# 	}
+
+# 	ai_weight = {
+# 		weight = 5
+# 		modifier = {
+# 			factor = 0
+# 			OR = {
+# 				has_global_flag = ghost_signal_5_flag
+# 				has_global_flag = ghost_signal_4_flag
+# 				has_global_flag = ghost_signal_3_flag
+# 				has_global_flag = ghost_signal_2_flag
+# 				has_global_flag = ghost_signal_1_flag
+# 			}
+# 		}
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "COMBAT_COMPUTER_HRB_BOMBER_AUTONOMOUS"
+# 	size = small
+# 	icon = "GFX_ship_part_computer_hrb_bomber_sapient"
+# 	icon_frame = 1
+	
+# 	power = @power3
+# 	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost3
+# 		}
+# 	}
+# 	ship_behavior = "hrb_bomber"
+# 	class_restriction = { shipclass_military }
+
+# 	prerequisites = { "tech_computer_4" }
+
+# 	# HRB_TODO: no restriction for now
+# 	size_restriction = {
+# 		miranda intrepid excelsior galaxy sovereign # UFOP
+# 		bird_of_prey warbird ktinga vorcha neghvar # KLINGON
+# 		ferrax vindius valdore dderidex majestus # ROMULAN
+# 		hideki galor keldon kazikai nokoram # CARDASSIAN
+# 		small_minor medium_minor large_minor # MINORS
+#		small_nausicaan medium_nausicaan large_nausicaan # Nausicaan
+# 		corvette destroyer crisis_destroyer # VANILLA
+# 	}
+
+# 	component_set = "combat_computers"
+
+# 	# HRB_TODO: balance ship modifiers
+# 	ship_modifier = {
+# 		ship_fire_rate_mult = 0.20
+# 		ship_tracking_add = 30
+# 	}
+
+# 	ai_weight = {
+# 		weight = 5
+# 	}
+# }
+
+########################
+# HRB ESCORT COMPUTERS #
+########################
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_HRB_ESCORT_BASIC"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_basic_escort"
+	icon_frame = 1
+
+	power = @power1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost1
+		}
+	}
+	ship_behavior = "hrb_escort"
+	class_restriction = { shipclass_military }
+
+	prerequisites = { "tech_computer_2" }
+	
+	# HRB_TODO: no restriction for now
+	size_restriction = {
+		miranda defiant intrepid california excelsior sovereign # UFOP
+		bird_of_prey warbird ktinga # KLINGON
+		ferrax vindius valdore # ROMULAN
+		hideki galor keldon # CARDASSIAN
+		small_minor medium_minor # MINORS
+		small_nausicaan medium_nausicaan # NAUSICAAN
+		corvette destroyer crisis_destroyer # VANILLA
+	}
+	
+	component_set = "combat_computers"
+	upgrades_to = "COMBAT_COMPUTER_HRB_ESCORT_ADVANCED"
+
+	# HRB_TODO: balance ship modifiers
+	ship_modifier = {
+		ship_fire_rate_mult = 0.10
+		ship_shield_mult = 0.20
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_HRB_ESCORT_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_advanced_escort"
+	icon_frame = 1
+
+	power = @power2
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost2
+		}
+	}
+	ship_behavior = "hrb_escort"
+	class_restriction = { shipclass_military }
+
+	prerequisites = { "tech_computer_3" }
+
+	# HRB_TODO: no restriction for now
+	size_restriction = {
+		hideki # CARDASSIAN
+		ferrax # ROMULAN
+		corvette destroyer crisis_destroyer # VANILLA
+	}
+
+	component_set = "combat_computers"
+
+	# HRB_TODO: balance ship modifiers
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_shield_mult = 0.25
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+}
+
+# utility_component_template = {
+# 	key = "COMBAT_COMPUTER_HRB_ESCORT_SAPIENT"
+# 	size = small
+# 	icon = "GFX_ship_part_computer_hrb_escort_sapient"
+# 	icon_frame = 1
+
+# 	power = @power3
+# 	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost3
+# 		}
+# 	}
+# 	ship_behavior = "hrb_escort"
+# 	class_restriction = { shipclass_military }
+
+# 	prerequisites = { "tech_computer_4" }
+
+# 	# HRB_TODO: no restriction for now
+# 	size_restriction = {
+# 		miranda intrepid excelsior # UFOP
+# 		bird_of_prey warbird ktinga # KLINGON
+# 		ferrax vindius valdore # ROMULAN
+# 		hideki galor keldon # CARDASSIAN
+# 		small_minor medium_minor # MINORS
+#		small_nausicaan medium_nausicaan # NAUSICAAN
+# 		corvette destroyer crisis_destroyer # VANILLA
+# 	}
+
+# 	component_set = "combat_computers"
+
+# 	# HRB_TODO: balance ship modifiers
+# 	ship_modifier = {
+# 		ship_fire_rate_mult = 0.20
+# 		ship_shield_mult = 0.30
+# 	}
+
+# 	ai_weight = {
+# 		weight = 5
+# 		modifier = {
+# 			factor = 0
+# 			OR = {
+# 				has_global_flag = ghost_signal_5_flag
+# 				has_global_flag = ghost_signal_4_flag
+# 				has_global_flag = ghost_signal_3_flag
+# 				has_global_flag = ghost_signal_2_flag
+# 				has_global_flag = ghost_signal_1_flag
+# 			}
+# 		}
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "COMBAT_COMPUTER_HRB_ESCORT_AUTONOMOUS"
+# 	size = small
+# 	icon = "GFX_ship_part_computer_hrb_escort_sapient"
+# 	icon_frame = 1
+	
+# 	power = @power3
+# 	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost3
+# 		}
+# 	}
+# 	ship_behavior = "hrb_escort"
+# 	class_restriction = { shipclass_military }
+
+# 	prerequisites = { "tech_computer_4" }
+
+# 	# HRB_TODO: no restriction for now
+# 	size_restriction = {
+# 		miranda intrepid excelsior # UFOP
+# 		bird_of_prey warbird ktinga # KLINGON
+# 		ferrax vindius valdore # ROMULAN
+# 		hideki galor keldon # CARDASSIAN
+# 		small_minor medium_minor # MINORS
+#		small_nausicaan medium_nausicaan # NAUSICAAN
+# 		corvette destroyer crisis_destroyer # VANILLA
+# 	}
+
+# 	component_set = "combat_computers"
+
+# 	# HRB_TODO: balance ship modifiers
+# 	ship_modifier = {
+# 		ship_fire_rate_mult = 0.20
+# 		ship_shield_mult = 0.30
+# 	}
+
+# 	ai_weight = {
+# 		weight = 5
+# 	}
+# }
+
+#############################
+# HRB INTERCEPTOR COMPUTERS #
+#############################
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_HRB_INTERCEPTOR_BASIC"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_basic_interceptor"
+	icon_frame = 1
+
+	power = @power1
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost1
+		}
+	}
+	ship_behavior = "hrb_interceptor"
+	class_restriction = { shipclass_military }
+
+	prerequisites = { "tech_computer_2" }
+	
+	# HRB_TODO: no restriction for now
+	size_restriction = {
+		miranda defiant intrepid california  # UFOP
+		warbird bird_of_prey # KLINGON
+		ferrax vindius # ROMULAN
+		hideki galor # CARDASSIAN
+		small_minor medium_minor # MINORS
+		small_nausicaan medium_nausicaan # NAUSICAAN
+		corvette destroyer crisis_destroyer # VANILLA
+	}
+	
+	component_set = "combat_computers"
+	upgrades_to = "COMBAT_COMPUTER_HRB_INTERCEPTOR_ADVANCED"
+
+	# HRB_TODO: balance ship modifiers
+	ship_modifier = {
+		ship_fire_rate_mult = 0.10
+		ship_speed_mult = 0.20
+	}
+
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_HRB_INTERCEPTOR_ADVANCED"
+	size = small
+	icon = "GFX_ship_part_computer_hrb_advanced_interceptor"
+	icon_frame = 1
+
+	power = @power2
+	operative_officers = @operative_officers1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost2
+		}
+	}
+	ship_behavior = "hrb_interceptor"
+	class_restriction = { shipclass_military }
+
+	prerequisites = { "tech_computer_3" }
+
+	# HRB_TODO: no restriction for now
+	size_restriction = {
+		hideki # CARDASSIAN
+		ferrax # ROMULAN
+		corvette destroyer crisis_destroyer # VANILLA
+	}
+
+	component_set = "combat_computers"
+
+	# HRB_TODO: balance ship modifiers
+	ship_modifier = {
+		ship_fire_rate_mult = 0.15
+		ship_speed_mult = 0.25
+	}
+ 
+	ai_weight = {
+		weight = 3
+	}
+}
+
+# utility_component_template = {
+# 	key = "COMBAT_COMPUTER_HRB_INTERCEPTOR_SAPIENT"
+# 	size = small
+# 	icon = "GFX_ship_part_computer_hrb_interceptor_sapient"
+# 	icon_frame = 1
+
+# 	power = @power3
+# 	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost3
+# 		}
+# 	}
+# 	ship_behavior = "hrb_interceptor"
+# 	class_restriction = { shipclass_military }
+
+# 	prerequisites = { "tech_computer_4" }
+
+# 	# HRB_TODO: no restriction for now
+# 	size_restriction = {
+# 		miranda intrepid  # UFOP
+# 		bird_of_prey # KLINGON
+# 		ferrax vindius # ROMULAN
+# 		hideki galor # CARDASSIAN
+# 		small_minor medium_minor # MINORS
+#		small_nausicaan medium_nausicaan # NAUSICAAN
+# 		corvette destroyer crisis_destroyer # VANILLA
+# 	}
+
+# 	component_set = "combat_computers"
+
+# 	# HRB_TODO: balance ship modifiers
+# 	ship_modifier = {
+# 		ship_fire_rate_mult = 0.20
+# 		ship_speed_mult = 0.20
+# 	}
+
+# 	ai_weight = {
+# 		weight = 5
+# 		modifier = {
+# 			factor = 0
+# 			OR = {
+# 				has_global_flag = ghost_signal_5_flag
+# 				has_global_flag = ghost_signal_4_flag
+# 				has_global_flag = ghost_signal_3_flag
+# 				has_global_flag = ghost_signal_2_flag
+# 				has_global_flag = ghost_signal_1_flag
+# 			}
+# 		}
+# 	}
+# }
+
+# utility_component_template = {
+# 	key = "COMBAT_COMPUTER_HRB_INTERCEPTOR_AUTONOMOUS"
+# 	size = small
+# 	icon = "GFX_ship_part_computer_hrb_interceptor_sapient"
+# 	icon_frame = 1
+	
+# 	power = @power3
+# 	operative_officers = @operative_officers1
+# 	resources = {
+# 		category = ship_components
+# 		cost = {
+# 			alloys = @cost3
+# 		}
+# 	}
+# 	ship_behavior = "hrb_interceptor"
+# 	class_restriction = { shipclass_military }
+
+# 	prerequisites = { "tech_computer_4" }
+
+# 	# HRB_TODO: no restriction for now
+# 	size_restriction = {
+# 		miranda intrepid  # UFOP
+# 		bird_of_prey # KLINGON
+# 		ferrax vindius # ROMULAN
+# 		hideki galor # CARDASSIAN
+# 		small_minor medium_minor # MINORS
+#		small_nausicaan medium_nausicaan # NAUSICAAN
+# 		corvette destroyer crisis_destroyer # VANILLA
+# 	}
+
+# 	component_set = "combat_computers"
+
+# 	# HRB_TODO: balance ship modifiers
+# 	ship_modifier = {
+# 		ship_fire_rate_mult = 0.20
+# 		ship_speed_mult = 0.20
+# 	}
+
+# 	ai_weight = {
+# 		weight = 5
+# 	}
+# }

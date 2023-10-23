@@ -25,6 +25,24 @@ Design characteristics
   - Tricobalt warheads
     - Could be anti-armour?
 
+### Phasers
+
+| Weapon                               | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Power |
+| ------------------------------------ | ----------------- | -------------------- | -------------------- | ------ | ----- |
+| Small Phaser Bank (Type VIII)        | 10-27 (18.5)      | 200%                 | 25%                  | --     | 7     |
+| Small Phaser Bank (Type IX)          | 11-28 (19.5)      | 200%                 | 27%                  | --     | 7     |
+| Small Phaser Array (Type X)          | 15-40 (27.5)      | 200%                 | 31%                  | --     | 9     |
+| Small Phaser Array (Type XI)         | 18-48 (33)        | 200%                 | 33%                  | --     | 9     |
+| Small Phaser Array (Type XII)        | 20-53 (36.5)      | 200%                 | 34%                  | --     | 9     |
+| Large Phaser Bank (Type VIII)        | 44-119 (81.5)     | 200%                 | 25%                  | --     | 26    |
+| Large Phaser Bank (Type IX)          | 46-125 (85.5)     | 200%                 | 27%                  | --     | 26    |
+| Large Phaser Array (Type X)          | 65-175 (120)      | 200%                 | 31%                  | --     | 33    |
+| Large Phaser Array (Type XI)         | 78-210 (144)      | 200%                 | 33%                  | --     | 33    |
+| Large Phaser Array (Type XII)        | 85-231 (158)      | 200%                 | 34%                  | --     | 33    |
+| Galaxy Class Phaser Array (Type X)   | 143-385 (264)     | 200%                 | 31%                  | --     | 63    |
+| Galaxy Class Phaser Array (Type XI)  | 171-462 (316.5)   | 200%                 | 33%                  | --     | 63    |
+| Galaxy Class Phaser Array (Type XII) | 188-508 (348)     | 200%                 | 34%                  | --     | 63    |
+
 ### Photon/Quantum Torpedoes
 
 | Weapon                      | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Tetryons | Power |
@@ -63,6 +81,31 @@ Design characteristics
     - 2x generations
     - Better against shields
 
+### Disruptors
+
+| Weapon                               | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Power |
+| ------------------------------------ | ----------------- | -------------------- | -------------------- | ------ | ----- |
+| Small Disruptor (Type I)             | 13-40 (26.5)      | 180%                 | 33%                  | --     | 7     |
+| Small Disruptor (Type II)            | 16-48 (32)        | 180%                 | 34%                  | --     | 7     |
+| Small Disruptor (Type III)           | 17-53 (35)        | 180%                 | 35%                  | --     | 7     |
+| Small Disruptor (Type IV)            | 18-56 (33)        | 180%                 | 35%                  | --     | 7     |
+| Small Disruptor (Type V)             | 18-57 (37)        | 180%                 | 36%                  | --     | 7     |
+| Large Disruptor (Type I)             | 57-177 (117)      | 180%                 | 33%                  | --     | 25    |
+| Large Disruptor (Type II)            | 68-212 (140)      | 180%                 | 34%                  | --     | 25    |
+| Large Disruptor (Type III)           | 75-233 (154)      | 180%                 | 35%                  | --     | 25    |
+| Large Disruptor (Type IV)            | 79-245 (162)      | 180%                 | 35%                  | --     | 25    |
+| Large Disruptor (Type V)             | 81-251 (166.5)    | 180%                 | 36%                  | --     | 25    |
+
+### Disruptor Cannons
+
+| Weapon                               | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Power |
+| ------------------------------------ | ----------------- | -------------------- | -------------------- | ------ | ----- |
+| Disruptor Cannon (Type I)            | 120-444 (282)     | 165%                 | 45%                  | --     | 40    |
+| Disruptor Cannon (Type II)           | 144-533 (338.5)   | 165%                 | 47%                  | --     | 40    |
+| Disruptor Cannon (Type III)          | 158-586 (372)     | 166%                 | 48%                  | --     | 40    |
+| Disruptor Cannon (Type IV)           | 166-615 (390.5)   | 167%                 | 49%                  | --     | 40    |
+| Disruptor Cannon (Type V)            | 170-631 (400.5)   | 167%                 | 50%                  | --     | 40    |
+
 ### Photon/Quantum Torpedoes
 
 | Weapon                      | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Tetryons | Power |
@@ -95,6 +138,21 @@ Design characteristics
   - Plasma Torpedoes
     - 5x generations
 
+### Disruptors
+
+| Weapon                               | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Power |
+| ------------------------------------ | ----------------- | -------------------- | -------------------- | ------ | ----- |
+| Small Disruptor (Type I)             | 13-40 (26.5)      | 180%                 | 33%                  | --     | 7     |
+| Small Disruptor (Type II)            | 16-48 (32)        | 180%                 | 34%                  | --     | 7     |
+| Small Disruptor (Type III)           | 17-53 (35)        | 180%                 | 35%                  | --     | 7     |
+| Small Disruptor (Type IV)            | 18-56 (33)        | 180%                 | 35%                  | --     | 7     |
+| Small Disruptor (Type V)             | 18-57 (37)        | 180%                 | 36%                  | --     | 7     |
+| Large Disruptor (Type I)             | 57-177 (117)      | 180%                 | 33%                  | --     | 25    |
+| Large Disruptor (Type II)            | 68-212 (140)      | 180%                 | 34%                  | --     | 25    |
+| Large Disruptor (Type III)           | 75-233 (154)      | 180%                 | 35%                  | --     | 25    |
+| Large Disruptor (Type IV)            | 79-245 (162)      | 180%                 | 35%                  | --     | 25    |
+| Large Disruptor (Type V)             | 81-251 (166.5)    | 180%                 | 36%                  | --     | 25    |
+
 ### Plasma Torpedoes
 
 | Weapon                      | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Tetryons | Power |
@@ -123,4 +181,12 @@ Design characteristics
 - Phasers
   - Slower progression than Starfleet
 
+### Spiral Wave Disruptors
 
+| Weapon                               | Damage            | Shield Effectiveness | Armour Effectiveness | Alloys | Power |
+| ------------------------------------ | ----------------- | -------------------- | -------------------- | ------ | ----- |
+| Spiral Wave Disruptor (Type I)       | 225-698 (461.5)   | 150%                 | 75%                  | --     | 68    |
+| Spiral Wave Disruptor (Type II)      | 270-838 (554)     | 152%                 | 77%                  | --     | 62    |
+| Spiral Wave Disruptor (Type III)     | 297-921 (609)     | 154%                 | 79%                  | --     | 59    |
+| Spiral Wave Disruptor (Type IV)      | 312-967 (639.5)   | 155%                 | 80%                  | --     | 58    |
+| Spiral Wave Disruptor (Type V)       | 320-992 (656)     | 156%                 | 81%                  | --     | 57    |

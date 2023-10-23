@@ -1,0 +1,98 @@
+﻿l_english:
+ ###########################
+ ##  Component Templates  ##
+ ###########################
+
+  STR_PHASER_BANK_TYPE8: "Phaser Bank (Type VIII)" # Component Set
+  STR_PHASER_BANK_TYPE8_DESC: "Phasers are directed energy weapons that fire a nadion particle beam. They can be tuned and configured very precisely for both high accuracy and dealing precisely the desired level of damage."
+  STR_PHASER_BANK_TYPE9: "Phaser Bank (Type IX)" # Component Set
+  STR_PHASER_BANK_TYPE9_DESC: "Phasers are directed energy weapons that fire a nadion particle beam. They can be tuned and configured very precisely for both high accuracy and dealing precisely the desired level of damage."
+  STR_PHASER_ARRAY_TYPE10: "Phaser Array (Type X)" # Component Set
+  STR_PHASER_ARRAY_TYPE10_DESC: "Phasers are directed energy weapons that fire a nadion particle beam. They can be tuned and configured very precisely for both high accuracy and dealing precisely the desired level of damage."
+  STR_PHASER_ARRAY_TYPE11: "Phaser Array (Type XI)" # Component Set
+  STR_PHASER_ARRAY_TYPE11_DESC: "Phasers are directed energy weapons that fire a nadion particle beam. They can be tuned and configured very precisely for both high accuracy and dealing precisely the desired level of damage."
+  STR_PHASER_ARRAY_TYPE12: "Phaser Array (Type XII)" # Component Set
+  STR_PHASER_ARRAY_TYPE12_DESC: "Phasers are directed energy weapons that fire a nadion particle beam. They can be tuned and configured very precisely for both high accuracy and dealing precisely the desired level of damage."
+
+  STR_SMALL_PHASER_BANK_TYPE8: "Small Phaser Bank (Type VIII)"
+  STR_SMALL_PHASER_BANK_TYPE9: "Small Phaser Bank (Type IX)"
+  STR_SMALL_PHASER_ARRAY_TYPE10: "Small Phaser Array (Type X)"
+  STR_SMALL_PHASER_ARRAY_TYPE11: "Small Phaser Array (Type XI)"
+  STR_SMALL_PHASER_ARRAY_TYPE12: "Small Phaser Array (Type XII)"
+
+  STR_LARGE_PHASER_BANK_TYPE8: "Large Phaser Bank (Type VIII)"
+  STR_LARGE_PHASER_BANK_TYPE9: "Large Phaser Bank (Type IX)"
+  STR_LARGE_PHASER_ARRAY_TYPE10: "Large Phaser Array (Type X)"
+  STR_LARGE_PHASER_ARRAY_TYPE11: "Large Phaser Array (Type XI)"
+  STR_LARGE_PHASER_ARRAY_TYPE12: "Large Phaser Array (Type XII)"
+
+  STR_GALAXY_PHASER_ARRAY_TYPE10: "Galaxy Class Phaser Array (Type X)" # Component Set
+  STR_GALAXY_PHASER_ARRAY_TYPE10_DESC: "Phasers are directed energy weapons that fire a nadion particle beam. They can be tuned and configured very precisely for both high accuracy and dealing precisely the desired level of damage."
+  STR_GALAXY_PHASER_ARRAY_TYPE11: "Galaxy Class Phaser Array (Type XI)" # Component Set
+  STR_GALAXY_PHASER_ARRAY_TYPE11_DESC: "Phasers are directed energy weapons that fire a nadion particle beam. They can be tuned and configured very precisely for both high accuracy and dealing precisely the desired level of damage."
+  STR_GALAXY_PHASER_ARRAY_TYPE12: "Galaxy Class Phaser Array (Type XII)" # Component Set
+  STR_GALAXY_PHASER_ARRAY_TYPE12_DESC: "Phasers are directed energy weapons that fire a nadion particle beam. They can be tuned and configured very precisely for both high accuracy and dealing precisely the desired level of damage."
+
+  STR_DISRUPTOR_TYPE1: "Disruptor (Type I)" # Component Set
+  STR_DISRUPTOR_TYPE1_DESC: "Disruptors are directed energy weapons. They are less configurable and precise than phasers but possess greater damage potential."
+  STR_DISRUPTOR_TYPE2: "Disruptor (Type II)" # Component Set
+  STR_DISRUPTOR_TYPE2_DESC: "Disruptors are directed energy weapons. They are less configurable and precise than phasers but possess greater damage potential."
+  STR_DISRUPTOR_TYPE3: "Disruptor (Type III)" # Component Set
+  STR_DISRUPTOR_TYPE3_DESC: "Disruptors are directed energy weapons. They are less configurable and precise than phasers but possess greater damage potential."
+  STR_DISRUPTOR_TYPE4: "Disruptor (Type IV)" # Component Set
+  STR_DISRUPTOR_TYPE4_DESC: "Disruptors are directed energy weapons. They are less configurable and precise than phasers but possess greater damage potential."
+  STR_DISRUPTOR_TYPE5: "Disruptor (Type V)" # Component Set
+  STR_DISRUPTOR_TYPE5_DESC: "Disruptors are directed energy weapons. They are less configurable and precise than phasers but possess greater damage potential."
+
+  STR_SMALL_DISRUPTOR_TYPE1: "Small Disruptor (Type I)"
+  STR_SMALL_DISRUPTOR_TYPE2: "Small Disruptor (Type II)"
+  STR_SMALL_DISRUPTOR_TYPE3: "Small Disruptor (Type III)"
+  STR_SMALL_DISRUPTOR_TYPE4: "Small Disruptor (Type IV)"
+  STR_SMALL_DISRUPTOR_TYPE5: "Small Disruptor (Type V)"
+  STR_LARGE_DISRUPTOR_TYPE1: "Large Disruptor (Type I)"
+  STR_LARGE_DISRUPTOR_TYPE2: "Large Disruptor (Type II)"
+  STR_LARGE_DISRUPTOR_TYPE3: "Large Disruptor (Type III)"
+  STR_LARGE_DISRUPTOR_TYPE4: "Large Disruptor (Type IV)"
+  STR_LARGE_DISRUPTOR_TYPE5: "Large Disruptor (Type V)"
+
+  STR_DISRUPTOR_CANNON_TYPE1: "Disruptor Cannons (Type I)" # Component Set
+  STR_DISRUPTOR_CANNON_TYPE1_DESC: "Disruptor Cannons are directed energy weapons. They fire powerful bolts of energy capable of collapsing shields and disrupting hull-plating."
+  STR_DISRUPTOR_CANNON_TYPE2: "Disruptor Cannons (Type II)" # Component Set
+  STR_DISRUPTOR_CANNON_TYPE2_DESC: "Disruptor Cannons are directed energy weapons. They fire powerful bolts of energy capable of collapsing shields and disrupting hull-plating."
+  STR_DISRUPTOR_CANNON_TYPE3: "Disruptor Cannons (Type III)" # Component Set
+  STR_DISRUPTOR_CANNON_TYPE3_DESC: "Disruptor Cannons are directed energy weapons. They fire powerful bolts of energy capable of collapsing shields and disrupting hull-plating."
+  STR_DISRUPTOR_CANNON_TYPE4: "Disruptor Cannons (Type IV)" # Component Set
+  STR_DISRUPTOR_CANNON_TYPE4_DESC: "Disruptor Cannons are directed energy weapons. They fire powerful bolts of energy capable of collapsing shields and disrupting hull-plating."
+  STR_DISRUPTOR_CANNON_TYPE5: "Disruptor Cannons (Type V)" # Component Set
+  STR_DISRUPTOR_CANNON_TYPE5_DESC: "Disruptor Cannons are directed energy weapons. They fire powerful bolts of energy capable of collapsing shields and disrupting hull-plating."
+
+  STR_MEDIUM_DISRUPTOR_CANNON_TYPE1: "Disruptor Cannon (Type I)"
+  STR_MEDIUM_DISRUPTOR_CANNON_TYPE2: "Disruptor Cannon (Type II)"
+  STR_MEDIUM_DISRUPTOR_CANNON_TYPE3: "Disruptor Cannon (Type III)"
+  STR_MEDIUM_DISRUPTOR_CANNON_TYPE4: "Disruptor Cannon (Type IV)"
+  STR_MEDIUM_DISRUPTOR_CANNON_TYPE5: "Disruptor Cannon (Type V)"
+
+  STR_SPIRAL_WAVE_DISRUPTOR1: "Spiral Wave Disruptor (Type I)" # Component Set
+  STR_SPIRAL_WAVE_DISRUPTOR1_DESC: "Spiral wave disruptors are the primary high energy weapon of the Cardassian union. They exploit novel resonances to amplify the destructive power of traditional disruptor weapons at the cost of a bulkier weapon assembly."
+  STR_SPIRAL_WAVE_DISRUPTOR2: "Spiral Wave Disruptor (Type II)" # Component Set
+  STR_SPIRAL_WAVE_DISRUPTOR2_DESC: "Spiral wave disruptors are the primary high energy weapon of the Cardassian union. They exploit novel resonances to amplify the destructive power of traditional disruptor weapons at the cost of a bulkier weapon assembly."
+  STR_SPIRAL_WAVE_DISRUPTOR3: "Spiral Wave Disruptor (Type III)" # Component Set
+  STR_SPIRAL_WAVE_DISRUPTOR3_DESC: "Spiral wave disruptors are the primary high energy weapon of the Cardassian union. They exploit novel resonances to amplify the destructive power of traditional disruptor weapons at the cost of a bulkier weapon assembly."
+  STR_SPIRAL_WAVE_DISRUPTOR4: "Spiral Wave Disruptor (Type IV)" # Component Set
+  STR_SPIRAL_WAVE_DISRUPTOR4_DESC: "Spiral wave disruptors are the primary high energy weapon of the Cardassian union. They exploit novel resonances to amplify the destructive power of traditional disruptor weapons at the cost of a bulkier weapon assembly."
+  STR_SPIRAL_WAVE_DISRUPTOR5: "Spiral Wave Disruptor (Type V)" # Component Set
+  STR_SPIRAL_WAVE_DISRUPTOR5_DESC: "Spiral wave disruptors are the primary high energy weapon of the Cardassian union. They exploit novel resonances to amplify the destructive power of traditional disruptor weapons at the cost of a bulkier weapon assembly."
+
+  ## Torpedoes
+
+  STR_MEDIUM_PHO_TORP_TYPE4: "Photon Torpedoes (Type IV)"
+  STR_MEDIUM_PHO_TORP_TYPE4_DESC: "Photon Torpedoes are tactical matter/antimatter weapons. The antimatter warhead is hugely destructive to unshielded targets but is less effective against shielded targets."
+  STR_MEDIUM_PHO_TORP_TYPE5: "Photon Torpedoes (Type V)"
+  STR_MEDIUM_PHO_TORP_TYPE5_DESC: "Photon Torpedoes are tactical matter/antimatter weapons. The antimatter warhead is hugely destructive to unshielded targets but is less effective against shielded targets."
+  STR_MEDIUM_PHO_TORP_TYPE6: "Photon Torpedoes (Type VI)"
+  STR_MEDIUM_PHO_TORP_TYPE6_DESC: "Photon Torpedoes are tactical matter/antimatter weapons. The antimatter warhead is hugely destructive to unshielded targets but is less effective against shielded targets."
+  STR_MEDIUM_QUAN_TORP_TYPE1: "Quantum Torpedoes (Type I)"
+  STR_MEDIUM_QUAN_TORP_TYPE1_DESC: "Quantum Torpedoes are an evolution of photon torpedoes designed to exploit quantum fluctuations to repurpose wasted energy from an antimatter explosion to create damage. The resulting frequency spread makes them far more effective against shielded targets."
+  STR_MEDIUM_QUAN_TORP_TYPE2: "Quantum Torpedoes (Type II)"
+  STR_MEDIUM_QUAN_TORP_TYPE2_DESC: "Quantum Torpedoes are an evolution of photon torpedoes designed to exploit quantum fluctuations to repurpose wasted energy from an antimatter explosion to create damage. The resulting frequency spread makes them far more effective against shielded targets."
+
