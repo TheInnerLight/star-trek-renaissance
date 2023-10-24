@@ -15,24 +15,24 @@ objectTypes = {
 		animation = { id = "warp_03"			type = "small_warp_03_animation" }
 
 	}
-}
 
-pdxmesh = {
-    name = "klingon_02_ktinga_mesh"
-    file = "gfx/models/ships/klingon_01/klingon_01_ktinga.mesh"
-    scale = 0.8
+    pdxmesh = {
+        name = "klingon_02_ktinga_mesh"
+        file = "gfx/models/ships/klingon_01/klingon_01_ktinga.mesh"
+        scale = 0.8
 
-    animation = { id = "idle"				type = "medium_idle_animation" }
+        animation = { id = "idle"				type = "medium_idle_animation" }
 
-    animation = { id = "death"				type = "medium_death_animation" }
+        animation = { id = "death"				type = "medium_death_animation" }
 
-    animation = { id = "warp_01"			type = "medium_warp_01_animation" }
+        animation = { id = "warp_01"			type = "medium_warp_01_animation" }
 
-    animation = { id = "warp_02"			type = "medium_warp_02_animation" }
+        animation = { id = "warp_02"			type = "medium_warp_02_animation" }
 
-    animation = { id = "warp_03"			type = "medium_warp_03_animation" }
+        animation = { id = "warp_03"			type = "medium_warp_03_animation" }
 
-    meshsettings = {
-        shader = "PdxMeshShip"
+        meshsettings = {
+            shader = "PdxMeshShip"
+        }
     }
 }
