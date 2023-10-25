@@ -1,3 +1,115 @@
+# UFOP Initializer
+country_event = {
+	id = country.9000
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = ufop
+	}
+
+	immediate = {
+		hidden_effect = {
+
+			every_owned_fleet = {
+				limit = {
+					is_ship_class = shipclass_military
+				}
+				
+				delete_fleet = {
+					target = THIS
+					destroy_template = yes
+				}
+			}
+
+			event_target:ufop_primary_star = {
+				solar_system = {
+					every_fleet_in_system = {
+						limit = {
+							OR = {
+								is_ship_class = shipclass_starbase
+							}
+						}
+						save_global_event_target_as = ufop_military_station
+					}
+
+					random_ship_in_system = {
+						limit = {
+							is_ship_class = shipclass_starbase
+						}
+						save_global_event_target_as = ufop_sol_starbase_ship
+					}
+				}
+			}
+
+			# UFOP Starbase orbits the Earth----------------------
+			event_target:ufop_military_station = {
+				set_location = event_target:ufop_homeworld
+
+				# External Name
+				set_name = "NAME_UFOP_Sol_Starbase"
+
+				# Station (ship) Name
+				random_owned_ship = {
+					set_name = "NAME_UFOP_Sol_Starbase"
+				}
+			}
+			#-----------------------------------------------------
+			
+			if = {
+				limit = { is_tutorial = no }
+
+				create_fleet = {
+					name = "NAME_UFOP_First_Fleet"
+					settings = {
+						spawn_debris = no
+					}
+				
+					effect = {
+						set_fleet_stance = passive
+						set_owner = root
+						
+						while = {
+							count = 3
+
+							create_ship = {
+								name = ""
+								prefix = no
+								random_existing_design = excelsior
+								#design = "NAME_Miranda" # HRB_TODO: The game is not recognising this design. For now, we are using "random_existing_design = "
+								initial_officers_perc = 1
+								graphical_culture = prev
+							}
+						}
+
+						set_location = event_target:ufop_military_station
+					}
+				}
+
+				last_created_fleet = {
+					save_global_event_target_as = ufop_main_fleet
+				}
+			}
+
+			# Fleets Orbit the Starbase
+			event_target:ufop_primary_star = {
+				solar_system = {
+					every_fleet_in_system = {
+						limit = {
+							OR = {
+								is_ship_class = shipclass_science_ship
+								is_ship_class = shipclass_constructor
+								is_ship_class = shipclass_governor_ship
+							}
+						}
+						set_location = event_target:ufop_military_station
+					}
+				}
+			}
+		}
+	}
+}
+
 # Klingon Initializer
 country_event = {
 	id = country.9001

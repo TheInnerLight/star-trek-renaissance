@@ -1,4 +1,4 @@
-create_ufop_starting_military_fleet = {
+renaissance_create_ufop_starting_military_fleet = {
 	create_fleet = {
 		name = "NAME_UFOP_First_Fleet"
 		settings = {
