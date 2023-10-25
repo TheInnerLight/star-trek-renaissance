@@ -13,7 +13,7 @@ weapon_component_template = {
 	min_range = 10.0
 	use_ship_kill_target = no
 	
-	#prerequisites = { "tech_lance_1" }
+	prerequisites = { "tech_str_spiral_wave_disruptor_type1" }
 	component_set = "STR_SPIRAL_WAVE_DISRUPTOR1"
 	projectile_gfx = "phaser_lance"
 	tags = { weapon_type_energy }
@@ -24,7 +24,6 @@ weapon_component_template = {
 		category = ship_components
 		cost = {
 			alloys = @xl_t5_cost
-			dilithium = @xl_t5_rare
 		}
 		upkeep = {
 			trigger = {
@@ -73,7 +72,7 @@ weapon_component_template = {
 	min_range = 10.0
 	use_ship_kill_target = no
 	
-	#prerequisites = { "tech_lance_1" }
+	prerequisites = { "tech_str_spiral_wave_disruptor_type2" }
 	component_set = "STR_SPIRAL_WAVE_DISRUPTOR2"
 	projectile_gfx = "phaser_lance"
 	tags = { weapon_type_energy }
@@ -84,7 +83,6 @@ weapon_component_template = {
 		category = ship_components
 		cost = {
 			alloys = @xl_t5_cost
-			dilithium = @xl_t5_rare
 		}
 		upkeep = {
 			trigger = {
@@ -133,7 +131,7 @@ weapon_component_template = {
 	min_range = 10.0
 	use_ship_kill_target = no
 	
-	#prerequisites = { "tech_lance_1" }
+	prerequisites = { "tech_str_spiral_wave_disruptor_type3" }
 	component_set = "STR_SPIRAL_WAVE_DISRUPTOR3"
 	projectile_gfx = "phaser_lance"
 	tags = { weapon_type_energy }
@@ -144,7 +142,6 @@ weapon_component_template = {
 		category = ship_components
 		cost = {
 			alloys = @xl_t5_cost
-			dilithium = @xl_t5_rare
 		}
 		upkeep = {
 			trigger = {
@@ -193,7 +190,7 @@ weapon_component_template = {
 	min_range = 10.0
 	use_ship_kill_target = no
 	
-	#prerequisites = { "tech_lance_1" }
+	prerequisites = { "tech_str_spiral_wave_disruptor_type4" }
 	component_set = "STR_SPIRAL_WAVE_DISRUPTOR4"
 	projectile_gfx = "phaser_lance"
 	tags = { weapon_type_energy }
@@ -204,7 +201,6 @@ weapon_component_template = {
 		category = ship_components
 		cost = {
 			alloys = @xl_t5_cost
-			dilithium = @xl_t5_rare
 		}
 		upkeep = {
 			trigger = {
@@ -253,7 +249,7 @@ weapon_component_template = {
 	min_range = 10.0
 	use_ship_kill_target = no
 	
-	#prerequisites = { "tech_lance_1" }
+	prerequisites = { "tech_str_spiral_wave_disruptor_type5" }
 	component_set = "STR_SPIRAL_WAVE_DISRUPTOR5"
 	projectile_gfx = "phaser_lance"
 	tags = { weapon_type_energy }
@@ -264,7 +260,6 @@ weapon_component_template = {
 		category = ship_components
 		cost = {
 			alloys = @xl_t5_cost
-			dilithium = @xl_t5_rare
 		}
 		upkeep = {
 			trigger = {
@@ -313,7 +308,7 @@ weapon_component_template = {
 	min_range = 10.0
 	use_ship_kill_target = no
 	
-	#prerequisites = { "tech_lance_1" }
+	prerequisites = { "tech_str_phaser_array_type10" }
 	component_set = "STR_GALAXY_PHASER_ARRAY_TYPE10"
 	projectile_gfx = "phaser_lance"
 	tags = { weapon_type_energy }
@@ -372,7 +367,7 @@ weapon_component_template = {
 	min_range = 10.0
 	use_ship_kill_target = no
 	
-	#prerequisites = { "tech_lance_1" }
+	prerequisites = { "tech_str_phaser_array_type11" }
 	component_set = "STR_GALAXY_PHASER_ARRAY_TYPE11"
 	projectile_gfx = "phaser_lance"
 	tags = { weapon_type_energy }
@@ -431,7 +426,7 @@ weapon_component_template = {
 	min_range = 10.0
 	use_ship_kill_target = no
 	
-	#prerequisites = { "tech_lance_1" }
+	prerequisites = { "tech_str_phaser_array_type12" }
 	component_set = "STR_GALAXY_PHASER_ARRAY_TYPE12"
 	projectile_gfx = "phaser_lance"
 	tags = { weapon_type_energy }

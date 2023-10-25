@@ -68,12 +68,22 @@ ship_design = {
 		#WEAPONS
 		component = {
 			slot = "SMALL_GUN_01"
-			template = "SMALL_PHASER_CANNON"
+			template = "STR_SMALL_PHASER_BANK_TYPE8"
+		}
+
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "STR_SMALL_PHASER_BANK_TYPE8"
+		}
+
+		component = {
+			slot = "SMALL_GUN_03"
+			template = "STR_SMALL_PHASER_BANK_TYPE8"
 		}
 
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_PHOTON_TORPEDOES_1"
+			template = "STR_MEDIUM_PHO_TORP_TYPE4"
 		}
 		
 		# ARMOR (UTILITIES)
@@ -94,7 +104,7 @@ ship_design = {
 
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "SHIELD_BOOSTER"
+			template = "REACTOR_SUB_BATTERY"
 		}
 	}
 
@@ -117,12 +127,12 @@ ship_design = {
 
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_PHASER_CANNON"
+			template = "STR_MEDIUM_PHO_TORP_TYPE4"
 		}
 
 		component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_PHASER_CANNON"
+			template = "STR_MEDIUM_PHO_TORP_TYPE4"
 		}
 
 		component = {
@@ -183,22 +193,22 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_PHASER_CANNON"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
 		}
 
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_PHASER_CANNON"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
 		}
 
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_PHASER_CANNON"
+			template = "STR_MEDIUM_PHO_TORP_TYPE4"
 		}
 
         component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_PHASER_CANNON"
+			template = "STR_MEDIUM_PHO_TORP_TYPE4"
 		}
 
 		# ARMOR (UTILITIES)
@@ -266,42 +276,42 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_PHASER_CANNON"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
 		}
 
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_PHASER_CANNON"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
 		}
 
 		component = {
 			slot = "LARGE_GUN_03"
-			template = "LARGE_PHASER_CANNON"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
 		}
 
 		component = {
 			slot = "LARGE_GUN_04"
-			template = "LARGE_PHASER_CANNON"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
 		}
 
 		component = {
 			slot = "LARGE_GUN_05"
-			template = "LARGE_PHASER_CANNON"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
 		}
 
 		component = {
 			slot = "LARGE_GUN_06"
-			template = "LARGE_PHASER_CANNON"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
 		}
 
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_PHASER_CANNON"
+			template = "STR_MEDIUM_PHO_TORP_TYPE4"
 		}
 
 		component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_PHASER_CANNON"
+			template = "STR_MEDIUM_PHO_TORP_TYPE4"
 		}
 
 		# ARMOR (UTILITIES)
@@ -341,7 +351,7 @@ ship_design = {
 
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "CLOAKING_DEVICE_1"
+			template = "REACTOR_SUB_BATTERY"
 		}
 
 		component = {
@@ -369,32 +379,32 @@ ship_design = {
 
 		component = {
 			slot = "EXTRA_LARGE_GUN_01"
-			template = "PHASER_SPINAL_LANCE" 
+			template = "STR_XLARGE_PHASER_ARRAY_TYPE10" 
 		}
 
 		component = {
 			slot = "EXTRA_LARGE_GUN_02"
-			template = "PHASER_SPINAL_LANCE" 
+			template = "STR_XLARGE_PHASER_ARRAY_TYPE10" 
 		}
 
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_PHASER_CANNON"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
 		}
 
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_PHASER_CANNON"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
 		}
 
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_PHASER_CANNON"
+			template = "STR_MEDIUM_PHO_TORP_TYPE4"
 		}
 
         component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_PHASER_CANNON"
+			template = "STR_MEDIUM_PHO_TORP_TYPE4"
 		}
 		
 		# ARMOR (UTILITIES)
@@ -460,7 +470,7 @@ ship_design = {
 
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "CLOAKING_DEVICE_1"
+			template = "REACTOR_SUB_BATTERY"
 		}
 
 		component = {
@@ -549,17 +559,17 @@ ship_design = {
 		
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_NEGATRON_DISRUPTOR"
+			template = "STR_MEDIUM_PHO_TORP_TYPE4"
 		}
 
 		component = {
 			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_NEGATRON_DISRUPTOR"
+			template = "STR_MEDIUM_PHO_TORP_TYPE4"
 		}
 
 		component = {
 			slot = "MEDIUM_GUN_03"
-			template = "MEDIUM_NEGATRON_DISRUPTOR"
+			template = "STR_MEDIUM_DISRUPTOR_CANNON_TYPE1"
 		}
 
 	}
@@ -1014,12 +1024,12 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_PHASER_CANNON"
+			template = "STR_LARGE_DISRUPTOR_TYPE1"
 		}
 
 		component = {
 			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_PHASER_CANNON"
+			template = "STR_MEDIUM_PLASMA_TORP_TYPE1"
 		}
 
 
@@ -1035,7 +1045,7 @@ ship_design = {
 		}
 	}
 
-	required_component = "ARTIFICIAL_SINGULARITY_REACTOR_1"
+	required_component = "FERRAX_ARTIFICIAL_SINGULARITY_REACTOR_1"
 	required_component = "WARP_DRIVE_1"
 	required_component = "CORVETTE_IMPULSE_ENGINE"
 	required_component = "SENSOR_PROBES"
@@ -1089,7 +1099,7 @@ ship_design = {
 		}
 	}
 
-	required_component = "ARTIFICIAL_SINGULARITY_REACTOR_1"
+	required_component = "VINDIUS_ARTIFICIAL_SINGULARITY_REACTOR_1"
 	required_component = "WARP_DRIVE_1"
 	required_component = "DESTROYER_IMPULSE_ENGINE"
 	required_component = "SENSOR_PROBES"
@@ -1179,7 +1189,7 @@ ship_design = {
 		}
 	}
 
-	required_component = "ARTIFICIAL_SINGULARITY_REACTOR_1"
+	required_component = "VALDORE_ARTIFICIAL_SINGULARITY_REACTOR_1"
 	required_component = "WARP_DRIVE_1"
 	required_component = "CRUISER_IMPULSE_ENGINE"
 	required_component = "SENSOR_PROBES"
@@ -1291,7 +1301,7 @@ ship_design = {
 		
 	}
 
-	required_component = "ARTIFICIAL_SINGULARITY_REACTOR_1"
+	required_component = "DDERIDEX_ARTIFICIAL_SINGULARITY_REACTOR_1"
 	required_component = "WARP_DRIVE_1"
 	required_component = "BATTLESHIP_IMPULSE_ENGINE"
 	required_component = "SENSOR_PROBES"
@@ -1428,7 +1438,7 @@ ship_design = {
 		
 	}
 
-	required_component = "ARTIFICIAL_SINGULARITY_REACTOR_1"
+	required_component = "MAJESTUS_ARTIFICIAL_SINGULARITY_REACTOR_1"
 	required_component = "WARP_DRIVE_1"
 	required_component = "TITAN_IMPULSE_ENGINE"
 	required_component = "SENSOR_PROBES"
@@ -1504,12 +1514,17 @@ ship_design = {
 
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_PHASER_CANNON"
+			template = "STR_LARGE_PHASER_BANK_TYPE8"
 		}
 
 		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_PHASER_CANNON"
+			slot = "SMALL_GUN_01"
+			template = "STR_SMALL_PHASER_BANK_TYPE8"
+		}
+
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "STR_SMALL_PHASER_BANK_TYPE8"
 		}
 
 		# ARMOR (UTILITIES)
@@ -2697,121 +2712,35 @@ ship_design = {
 		template = "ENTERPRISE_MID"
 		slot = "mid"
 
-		component = {
-			slot = "LARGE_GUN_01"
-			template = "LARGE_PHASER_BURSTFIRE_1"
-		}
-
-		component = {
-			slot = "LARGE_GUN_02"
-			template = "LARGE_PHASER_CANNON"
-		}
-
-		component = {
-			slot = "LARGE_GUN_03"
-			template = "LARGE_PHASER_AUTOCANNON_1"
-		}
-
-		component = {
-			slot = "MEDIUM_GUN_01"
-			template = "MEDIUM_PLASMA_CHARGE"
-		}
-
-		component = {
-			slot = "MEDIUM_GUN_02"
-			template = "MEDIUM_PLASMA_CHARGE"
-		}
-
-		#component = {
-		#	slot = "MEDIUM_GUN_03"
-		#	template = "PLASMA_CHARGE"
-		#}
-
-		component = {
-			slot = "SMALL_GUN_01"
-			template = "PHASER_POINT_DEFENSE"
-		}
-
-		component = {
-			slot = "LARGE_UTILITY_1"
-			template = "LARGE_DEFENSE_FIELD_SHIELDS"
-		}
-
-		component = {
-			slot = "LARGE_UTILITY_2"
-			template = "LARGE_DEFENSE_FIELD_SHIELDS"
-		}
-
-		component = {
-			slot = "LARGE_UTILITY_3"
-			template = "LARGE_DEFENSE_FIELD_SHIELDS"
-		}
-
-		component = {
-			slot = "LARGE_UTILITY_4"
-			template = "LARGE_DEFENSE_FIELD_SHIELDS"
-		}
-
-		component = {
-			slot = "LARGE_UTILITY_5"
-			template = "LARGE_DEFENSE_FIELD_SHIELDS"
-		}
-
-		component = {
-			slot = "LARGE_UTILITY_6"
-			template = "LARGE_DEFENSE_FIELD_SHIELDS"
-		}
-	}
-
-	required_component = "CRUISER_FUSION_REACTOR"
-	required_component = "WARP_DRIVE_1"
-	required_component = "CRUISER_IMPULSE_ENGINE"
-	required_component = "SENSOR_PROBES"
-	required_component = "COMBAT_COMPUTER_HRB_LINE_DEFAULT"
-}
-
-# Enterprise Sovereign
-ship_design = {
-	name = "NAME_Enterprise_Sovereign"
-	ship_size = enterprise_sovereign
-	is_event_design = yes
-
-	# Sovereign section
-	section = {
-		template = "SOVEREIGN_MID"
-		slot = "mid"
-
-		# WEAPONS
-		# component = {
-		# 	slot = "SMALL_GUN_01"
-		# 	template = "SMALL_MASS_DRIVER_1" #HRB_TODO: Mass Drivers Where Removed
-		# }
-
-		component = {
+				component = {
 			slot = "EXTRA_LARGE_GUN_01"
-			template = "PHASER_SPINAL_LANCE" 
+			template = "STR_XLARGE_PHASER_ARRAY_TYPE10" 
 		}
 
 		component = {
 			slot = "EXTRA_LARGE_GUN_02"
-			template = "PHASER_SPINAL_LANCE" 
+			template = "STR_XLARGE_PHASER_ARRAY_TYPE10" 
 		}
 
 		component = {
 			slot = "LARGE_GUN_01"
-			template = "LARGE_PHASER_CANNON"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
 		}
 
 		component = {
 			slot = "LARGE_GUN_02"
-			template = "LARGE_PHASER_CANNON"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
 		}
 
 		component = {
-			slot = "LARGE_GUN_03"
-			template = "LARGE_PHASER_CANNON"
+			slot = "MEDIUM_GUN_01"
+			template = "STR_MEDIUM_PHO_TORP_TYPE4"
 		}
 
+        component = {
+			slot = "MEDIUM_GUN_02"
+			template = "STR_MEDIUM_PHO_TORP_TYPE4"
+		}
 		
 		# ARMOR (UTILITIES)
 		component = {
@@ -2876,12 +2805,116 @@ ship_design = {
 
 		component = {
 			slot = "AUX_UTILITY_1"
-			template = "CLOAKING_DEVICE_1"
+			template = "REACTOR_SUB_BATTERY"
 		}
 
 		component = {
 			slot = "AUX_UTILITY_2"
 			template = "SHIELD_BOOSTER"
+		}
+
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "SHIELD_BOOSTER"
+		}
+	}
+
+	required_component = "CRUISER_FUSION_REACTOR"
+	required_component = "WARP_DRIVE_1"
+	required_component = "CRUISER_IMPULSE_ENGINE"
+	required_component = "SENSOR_PROBES"
+	required_component = "COMBAT_COMPUTER_HRB_LINE_DEFAULT"
+}
+
+# Enterprise Sovereign
+ship_design = {
+	name = "NAME_Enterprise_Sovereign"
+	ship_size = enterprise_sovereign
+	is_event_design = yes
+
+	# Sovereign section
+	section = {
+		template = "SOVEREIGN_MID"
+		slot = "mid"
+
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
+		}
+
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
+		}
+
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
+		}
+
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
+		}
+
+		component = {
+			slot = "LARGE_GUN_05"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
+		}
+
+		component = {
+			slot = "LARGE_GUN_06"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
+		}
+
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "STR_MEDIUM_PHO_TORP_TYPE4"
+		}
+
+		component = {
+			slot = "MEDIUM_GUN_02"
+			template = "STR_MEDIUM_PHO_TORP_TYPE4"
+		}
+
+		# ARMOR (UTILITIES)
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_DEFENSE_FIELD_SHIELDS"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_DEFENSE_FIELD_SHIELDS"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_DEFENSE_FIELD_SHIELDS"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_TRITANIUM_HULLS"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_TRITANIUM_HULLS"
+		}
+
+        component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_TRITANIUM_HULLS"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_TRITANIUM_HULLS"
+		}
+
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "REACTOR_SUB_BATTERY"
 		}
 
 		component = {

@@ -324,6 +324,26 @@
 @ferrax_cost_5 = 28
 @ferrax_cost_6 = 37
 
+@vindius_cost_1 = 20
+@vindius_cost_2 = 26
+@vindius_cost_3 = 34
+@vindius_cost_4 = 44
+
+@valdore_cost_1 = 40
+@valdore_cost_2 = 52
+@valdore_cost_3 = 68
+@valdore_cost_4 = 88
+
+@dderidex_cost_1 = 80
+@dderidex_cost_2 = 104
+@dderidex_cost_3 = 136
+@dderidex_cost_4 = 176
+
+@majestus_cost_1 = 160
+@majestus_cost_2 = 208
+@majestus_cost_3 = 272
+@majestus_cost_4 = 352
+
 @artificial_singularity_reactor_1_ship_evasion_mult = 0.025
 @artificial_singularity_reactor_2_ship_evasion_mult = 0.050
 @artificial_singularity_reactor_3_ship_evasion_mult = 0.075
@@ -2167,229 +2187,1107 @@ utility_component_template = {
 # Artificial Singularity Reactors
 ####################################
 
-utility_component_template = {
-	key = "ARTIFICIAL_SINGULARITY_REACTOR_1"
-	size = small
-	icon = "GFX_ship_part_fusion_reactor"
-	icon_frame = 1
-	power = @ferrax_power_1
-	operative_officers = @operative_officers1
-	resources = {
-		category = ship_components
-		cost = {
-			#artificial_singularities = @artificial_singularity_reactor_cost
-			artificial_singularities = 1
-			alloys = @ferrax_cost_1
-		}
-		upkeep = {
-			trigger = {
-				NOT = {
-					ROOT = {
+						
+utility_component_template = {						
+	key = "FERRAX_ARTIFICIAL_SINGULARITY_REACTOR_1"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @ferrax_power_1					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @ferrax_cost_1			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
 						exists = FROM
 						original_owner_uses_artificial_singularities = FROM
-					}
-				}
-			}
-			deuterium = 0.10
-		}
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
 						
-		upkeep = {
-			trigger = {
-				ROOT = {
-					exists = FROM
-					original_owner_uses_artificial_singularities = FROM
-				}
-			}
-			artificial_singularities = 1
-		}
-		
-		upkeep = {
-			alloys = 0.01
-		}
-	}
-
-	prerequisites = { "tech_artificial_singularities_1" }
-	component_set = "power_core"
-	size_restriction = { colonizer constructor science spy_ship governor_ship transport ferrax vindius valdore dderidex majestus }
-	upgrades_to = "ARTIFICIAL_SINGULARITY_REACTOR_2"
-
-	ship_modifier = {
-		ship_evasion_mult = @artificial_singularity_reactor_1_ship_evasion_mult
-		ship_weapon_damage = @artificial_singularity_reactor_1_ship_weapon_damage_mult
-	}
-
-	ai_weight = {
-		weight = 1
-	}
-}
-
-utility_component_template = {
-	key = "ARTIFICIAL_SINGULARITY_REACTOR_2"
-	size = small
-	icon = "GFX_ship_part_matter_antimatter_reactor"
-	icon_frame = 1
-	power = @ferrax_power_2
-	operative_officers = @operative_officers1
-	resources = {
-		category = ship_components
-		cost = {
-			#artificial_singularities = @artificial_singularity_reactor_cost
-			artificial_singularities = 3
-			alloys = @ferrax_cost_2
-		}
-		upkeep = {
-			trigger = {
-				NOT = {
-					ROOT = {
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.01			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_1" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport ferrax }					
+	upgrades_to = "FERRAX_ARTIFICIAL_SINGULARITY_REACTOR_2"					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_1_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_1_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 1				
+	}					
+}						
+utility_component_template = {						
+	key = "VINDIUS_ARTIFICIAL_SINGULARITY_REACTOR_1"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @vindius_power_1					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @vindius_cost_1			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
 						exists = FROM
 						original_owner_uses_artificial_singularities = FROM
-					}
-				}
-			}
-			deuterium = 0.13
-		}
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
 						
-		upkeep = {
-			trigger = {
-				ROOT = {
-					exists = FROM
-					original_owner_uses_artificial_singularities = FROM
-				}
-			}
-			artificial_singularities = 1
-		}
-		
-		upkeep = {
-			alloys = 0.013
-		}
-	}
-
-	prerequisites = { "tech_artificial_singularities_2" }
-	component_set = "power_core"
-	size_restriction = { colonizer constructor science spy_ship governor_ship transport ferrax vindius valdore dderidex majestus }
-	upgrades_to = "ARTIFICIAL_SINGULARITY_REACTOR_3"
-
-	ship_modifier = {
-		ship_evasion_mult = @artificial_singularity_reactor_2_ship_evasion_mult
-		ship_weapon_damage = @artificial_singularity_reactor_2_ship_weapon_damage_mult
-	}
-
-	ai_weight = {
-		weight = 2
-	}
-}
-
-utility_component_template = {
-	key = "ARTIFICIAL_SINGULARITY_REACTOR_3"
-	size = small
-	icon = "GFX_ship_part_tetryon_reactor"
-	icon_frame = 1
-	power = @valdore_power_5
-	operative_officers = @operative_officers1
-	resources = {
-		category = ship_components
-		cost = {
-			#artificial_singularities = @artificial_singularity_reactor_cost
-			artificial_singularities = 5
-			alloys = @ferrax_cost_3
-		}
-		upkeep = {
-			trigger = {
-				NOT = {
-					ROOT = {
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.02			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_1" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport vindius }					
+	upgrades_to = "VINDIUS_ARTIFICIAL_SINGULARITY_REACTOR_2"					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_2_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_2_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 1				
+	}					
+}						
+utility_component_template = {						
+	key = "VALDORE_ARTIFICIAL_SINGULARITY_REACTOR_1"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @valdore_power_1					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @valdore_cost_1			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
 						exists = FROM
 						original_owner_uses_artificial_singularities = FROM
-					}
-				}
-			}
-			deuterium = 0.17
-		}
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
 						
-		upkeep = {
-			trigger = {
-				ROOT = {
-					exists = FROM
-					original_owner_uses_artificial_singularities = FROM
-				}
-			}
-			artificial_singularities = 1
-		}
-		
-		upkeep = {
-			alloys = 0.017
-		}
-	}
-
-	prerequisites = { "tech_artificial_singularities_3" }
-	component_set = "power_core"
-	size_restriction = { colonizer constructor science spy_ship governor_ship transport ferrax vindius valdore dderidex majestus }
-	upgrades_to = "ARTIFICIAL_SINGULARITY_REACTOR_4"
-
-	ship_modifier = {
-		ship_evasion_mult = @artificial_singularity_reactor_3_ship_evasion_mult
-		ship_weapon_damage = @artificial_singularity_reactor_3_ship_weapon_damage_mult
-	}
-
-	ai_weight = {
-		weight = 3
-	}
-}
-
-utility_component_template = {
-	key = "ARTIFICIAL_SINGULARITY_REACTOR_4"
-	size = small
-	icon = "GFX_ship_part_anti_tetryon_reactor"
-	icon_frame = 1
-	power = @dderidex_power_5
-	operative_officers = @operative_officers1
-	resources = {
-		category = ship_components
-		cost = {
-			#artificial_singularities = @artificial_singularity_reactor_cost
-			artificial_singularities = 8
-			alloys = @ferrax_cost_4
-		}
-		upkeep = {
-			trigger = {
-				NOT = {
-					ROOT = {
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.04			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_1" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport valdore }					
+	upgrades_to = "VALDORE_ARTIFICIAL_SINGULARITY_REACTOR_2"					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_3_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_3_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 1				
+	}					
+}						
+utility_component_template = {						
+	key = "DDERIDEX_ARTIFICIAL_SINGULARITY_REACTOR_1"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @dderidex_power_1					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @dderidex_cost_1			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
 						exists = FROM
 						original_owner_uses_artificial_singularities = FROM
-					}
-				}
-			}
-			deuterium = 0.22
-		}
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
 						
-		upkeep = {
-			trigger = {
-				ROOT = {
-					exists = FROM
-					original_owner_uses_artificial_singularities = FROM
-				}
-			}
-			artificial_singularities = 1
-		}
-		
-		upkeep = {
-			alloys = 0.022
-		}
-	}
-
-	prerequisites = { "tech_artificial_singularities_3" }
-	component_set = "power_core"
-	size_restriction = { colonizer constructor science spy_ship governor_ship transport ferrax vindius valdore dderidex majestus }
-	# upgrades_to = "ARTIFICIAL_SINGULARITY_REACTOR_5"
-
-	ship_modifier = {
-		ship_evasion_mult = @artificial_singularity_reactor_4_ship_evasion_mult
-		ship_weapon_damage = @artificial_singularity_reactor_4_ship_weapon_damage_mult
-	}
-
-	ai_weight = {
-		weight = 4
-	}
-}
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.08			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_1" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport dderidex }					
+	upgrades_to = "DDERIDEX_ARTIFICIAL_SINGULARITY_REACTOR_2"					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_4_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_4_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 1				
+	}					
+}						
+utility_component_template = {						
+	key = "MAJESTUS_ARTIFICIAL_SINGULARITY_REACTOR_1"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @majestus_power_1					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @majestus_cost_1			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
+						
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.16			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_1" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport majestus }					
+	upgrades_to = "MAJESTUS_ARTIFICIAL_SINGULARITY_REACTOR_2"					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_5_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_5_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 1				
+	}					
+}						
+utility_component_template = {						
+	key = "FERRAX_ARTIFICIAL_SINGULARITY_REACTOR_2"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @ferrax_power_2					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @ferrax_cost_2			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
+						
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.013			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_2" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport ferrax }					
+	upgrades_to = "FERRAX_ARTIFICIAL_SINGULARITY_REACTOR_3"					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_1_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_1_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 2				
+	}					
+}						
+utility_component_template = {						
+	key = "VINDIUS_ARTIFICIAL_SINGULARITY_REACTOR_2"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @vindius_power_2					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @vindius_cost_2			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
+						
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.026			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_2" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport vindius }					
+	upgrades_to = "VINDIUS_ARTIFICIAL_SINGULARITY_REACTOR_3"					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_2_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_2_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 2				
+	}					
+}						
+utility_component_template = {						
+	key = "VALDORE_ARTIFICIAL_SINGULARITY_REACTOR_2"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @valdore_power_2					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @valdore_cost_2			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
+						
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.052			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_2" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport valdore }					
+	upgrades_to = "VALDORE_ARTIFICIAL_SINGULARITY_REACTOR_3"					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_3_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_3_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 2				
+	}					
+}						
+utility_component_template = {						
+	key = "DDERIDEX_ARTIFICIAL_SINGULARITY_REACTOR_2"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @dderidex_power_2					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @dderidex_cost_2			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
+						
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.104			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_2" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport dderidex }					
+	upgrades_to = "DDERIDEX_ARTIFICIAL_SINGULARITY_REACTOR_3"					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_4_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_4_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 2				
+	}					
+}						
+utility_component_template = {						
+	key = "MAJESTUS_ARTIFICIAL_SINGULARITY_REACTOR_2"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @majestus_power_2					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @majestus_cost_2			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
+						
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.208			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_2" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport majestus }					
+	upgrades_to = "MAJESTUS_ARTIFICIAL_SINGULARITY_REACTOR_3"					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_5_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_5_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 2				
+	}					
+}						
+utility_component_template = {						
+	key = "FERRAX_ARTIFICIAL_SINGULARITY_REACTOR_3"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @ferrax_power_3					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @ferrax_cost_3			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
+						
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.017			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_3" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport ferrax }					
+	upgrades_to = "FERRAX_ARTIFICIAL_SINGULARITY_REACTOR_4"					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_1_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_1_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 3				
+	}					
+}						
+utility_component_template = {						
+	key = "VINDIUS_ARTIFICIAL_SINGULARITY_REACTOR_3"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @vindius_power_3					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @vindius_cost_3			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
+						
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.034			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_3" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport vindius }					
+	upgrades_to = "VINDIUS_ARTIFICIAL_SINGULARITY_REACTOR_4"					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_2_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_2_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 3				
+	}					
+}						
+utility_component_template = {						
+	key = "VALDORE_ARTIFICIAL_SINGULARITY_REACTOR_3"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @valdore_power_3					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @valdore_cost_3			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
+						
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.068			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_3" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport valdore }					
+	upgrades_to = "VALDORE_ARTIFICIAL_SINGULARITY_REACTOR_4"					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_3_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_3_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 3				
+	}					
+}						
+utility_component_template = {						
+	key = "DDERIDEX_ARTIFICIAL_SINGULARITY_REACTOR_3"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @dderidex_power_3					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @dderidex_cost_3			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
+						
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.136			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_3" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport dderidex }					
+	upgrades_to = "DDERIDEX_ARTIFICIAL_SINGULARITY_REACTOR_4"					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_4_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_4_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 3				
+	}					
+}						
+utility_component_template = {						
+	key = "MAJESTUS_ARTIFICIAL_SINGULARITY_REACTOR_3"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @majestus_power_3					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @majestus_cost_3			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
+						
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.272			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_3" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport majestus }					
+	upgrades_to = "MAJESTUS_ARTIFICIAL_SINGULARITY_REACTOR_4"					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_5_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_5_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 3				
+	}					
+}						
+utility_component_template = {						
+	key = "FERRAX_ARTIFICIAL_SINGULARITY_REACTOR_4"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @ferrax_power_4					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @ferrax_cost_4			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
+						
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.022			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_3" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport ferrax }					
+	# NO UPGRADE					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_1_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_1_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 4				
+	}					
+}						
+utility_component_template = {						
+	key = "VINDIUS_ARTIFICIAL_SINGULARITY_REACTOR_4"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @vindius_power_4					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @vindius_cost_4			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
+						
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.044			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_3" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport vindius }					
+	# NO UPGRADE					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_2_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_2_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 4				
+	}					
+}						
+utility_component_template = {						
+	key = "VALDORE_ARTIFICIAL_SINGULARITY_REACTOR_4"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @valdore_power_4					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @valdore_cost_4			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
+						
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.088			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_3" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport valdore }					
+	# NO UPGRADE					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_3_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_3_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 4				
+	}					
+}						
+utility_component_template = {						
+	key = "DDERIDEX_ARTIFICIAL_SINGULARITY_REACTOR_4"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @dderidex_power_4					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @dderidex_cost_4			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
+						
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.176			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_3" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport dderidex }					
+	# NO UPGRADE					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_4_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_4_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 4				
+	}					
+}						
+utility_component_template = {						
+	key = "MAJESTUS_ARTIFICIAL_SINGULARITY_REACTOR_4"					
+	size = small					
+	icon = "GFX_ship_part_fusion_reactor"					
+	icon_frame = 1					
+	power = @majestus_power_4					
+	operative_officers = @operative_officers1					
+	resources = {					
+		category = ship_components				
+		cost = {				
+			#artificial_singularities = @artificial_singularity_reactor_cost			
+			artificial_singularities = 1			
+			alloys = @majestus_cost_4			
+		}				
+		upkeep = {				
+			trigger = {			
+				NOT = {		
+					ROOT = {	
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}	
+				}		
+			}			
+			deuterium = 0.10			
+		}				
+						
+		upkeep = {				
+			trigger = {			
+				ROOT = {		
+					exists = FROM	
+					original_owner_uses_artificial_singularities = FROM	
+				}		
+			}			
+			artificial_singularities = 1			
+		}				
+						
+		upkeep = {				
+			alloys = 0.352			
+		}				
+	}					
+						
+	prerequisites = { "tech_artificial_singularities_3" }					
+	component_set = "power_core"					
+	size_restriction = { colonizer constructor science spy_ship governor_ship transport majestus }					
+	# NO UPGRADE					
+						
+	ship_modifier = {					
+		ship_evasion_mult = @artificial_singularity_reactor_5_ship_evasion_mult				
+		ship_weapon_damage = @artificial_singularity_reactor_5_ship_weapon_damage_mult				
+	}					
+						
+	ai_weight = {					
+		weight = 4				
+	}					
+}								
 
 #utility_component_template = {
 #	key = "ARTIFICIAL_SINGULARITY_REACTOR_5"
@@ -2799,7 +3697,7 @@ utility_component_template = {
 #				NOT = {
 #					ROOT = {
 #						exists = FROM
-						original_owner_uses_artificial_singularities = FROM
+						# original_owner_uses_artificial_singularities = FROM
 #					}
 #				}
 #			}

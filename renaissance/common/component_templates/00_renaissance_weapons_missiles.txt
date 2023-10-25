@@ -7,7 +7,7 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 	
-	#prerequisites = { "tech_torpedo_1" }
+	prerequisites = { "tech_str_photon_torpedo_type4" }
 	component_set = "STR_MEDIUM_PHO_TORP_TYPE4"
 	projectile_gfx = "photon_torpedoes_m"
 	tags = { weapon_type_explosive }
@@ -56,7 +56,7 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 	
-	#prerequisites = { "tech_torpedo_1" }
+	prerequisites = { "tech_str_photon_torpedo_type5" }
 	component_set = "STR_MEDIUM_PHO_TORP_TYPE5"
 	projectile_gfx = "photon_torpedoes_m"
 	tags = { weapon_type_explosive }
@@ -105,7 +105,7 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 	
-	#prerequisites = { "tech_torpedo_1" }
+	prerequisites = { "tech_str_photon_torpedo_type6" }
 	component_set = "STR_MEDIUM_PHO_TORP_TYPE6"
 	projectile_gfx = "photon_torpedoes_m"
 	tags = { weapon_type_explosive }
@@ -154,7 +154,7 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 	
-	#prerequisites = { "tech_torpedo_1" }
+	prerequisites = { "tech_str_quantum_torpedo_type1" }
 	component_set = "STR_MEDIUM_QUAN_TORP_TYPE1"
 	projectile_gfx = "quantum_torpedoes_m"
 	tags = { weapon_type_explosive }
@@ -204,7 +204,7 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 	
-	#prerequisites = { "tech_torpedo_1" }
+	prerequisites = { "tech_str_quantum_torpedo_type2" }
 	component_set = "STR_MEDIUM_QUAN_TORP_TYPE2"
 	projectile_gfx = "quantum_torpedoes_m"
 	tags = { weapon_type_explosive }
@@ -254,7 +254,7 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 	
-	#prerequisites = { "tech_big_bomb_3" }
+	prerequisites = { "tech_str_tricobalt_torpedo_type1" }
 	component_set = "STR_MEDIUM_TRICOBALT_DEVICE_TYPE1"
 	projectile_gfx = "plasma_charge_t3_m"
 	tags = { weapon_type_explosive }
@@ -310,7 +310,7 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 	
-	#prerequisites = { "tech_big_bomb_3" }
+	prerequisites = { "tech_str_tricobalt_torpedo_type2" }
 	component_set = "STR_MEDIUM_TRICOBALT_DEVICE_TYPE2"
 	projectile_gfx = "plasma_charge_t3_m"
 	tags = { weapon_type_explosive }
@@ -366,7 +366,7 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 	
-	prerequisites = { "tech_big_bomb_1" }
+	prerequisites = { "tech_str_plasma_torpedo_type1" }
 	component_set = "STR_MEDIUM_PLASMA_TORP_TYPE1"
 	projectile_gfx = "plasma_charge_t1_m"
 	tags = { weapon_type_explosive }
@@ -415,7 +415,7 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 	
-	prerequisites = { "tech_big_bomb_1" }
+	prerequisites = { "tech_str_plasma_torpedo_type2" }
 	component_set = "STR_MEDIUM_PLASMA_TORP_TYPE2"
 	projectile_gfx = "plasma_charge_t1_m"
 	tags = { weapon_type_explosive }
@@ -464,7 +464,7 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 	
-	prerequisites = { "tech_big_bomb_1" }
+	prerequisites = { "tech_str_plasma_torpedo_type3" }
 	component_set = "STR_MEDIUM_PLASMA_TORP_TYPE3"
 	projectile_gfx = "plasma_charge_t1_m"
 	tags = { weapon_type_explosive }
@@ -513,7 +513,7 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 	
-	prerequisites = { "tech_big_bomb_1" }
+	prerequisites = { "tech_str_plasma_torpedo_type4" }
 	component_set = "STR_MEDIUM_PLASMA_TORP_TYPE4"
 	projectile_gfx = "plasma_charge_t1_m"
 	tags = { weapon_type_explosive }
@@ -562,7 +562,7 @@ weapon_component_template = {
 	icon_frame = 1
 	type = missile
 	
-	prerequisites = { "tech_big_bomb_1" }
+	prerequisites = { "tech_str_plasma_torpedo_type5" }
 	component_set = "STR_MEDIUM_PLASMA_TORP_TYPE5"
 	projectile_gfx = "plasma_charge_t1_m"
 	tags = { weapon_type_explosive }

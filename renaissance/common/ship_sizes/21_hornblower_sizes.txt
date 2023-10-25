@@ -161,7 +161,7 @@ intrepid = {
 
 	default_behavior = "hrb_interceptor"
 
-	#prerequisites = { "tech_destroyer_unlock" }
+	prerequisites = { "tech_battleship_unlock" }
 
 	potential_country = {
 		has_country_id = ufop
@@ -248,7 +248,7 @@ excelsior = {
 
 	default_behavior = "hrb_bomber"
 
-	#prerequisites = { "tech_cruiser_unlock" }
+	prerequisites =	{ "tech_corvette_unlock" }
 
 	potential_country = {
 		has_country_id = ufop
@@ -337,7 +337,7 @@ sovereign = {
 	#default_behavior = "hrb_artillery"
     default_behavior = "hrb_artillery"
 
-	#prerequisites = { "tech_titan_unlock" }
+	prerequisites = { "tech_titan_unlock" }
 
 	potential_country = {
 		has_country_id = ufop
@@ -425,7 +425,7 @@ galaxy = {
 	#default_behavior = "hrb_line"
     default_behavior = "hrb_artillery"
 
-	#prerequisites = { "tech_battleship_unlock" }
+	prerequisites = { "tech_cruiser_unlock" }
 
 	potential_country = {
 		has_country_id = ufop
@@ -531,7 +531,7 @@ bird_of_prey = {
 
 	default_behavior = "hrb_escort"
 
-	prerequisites = { "tech_corvette_unlock" }
+	prerequisites = { "tech_destroyer_unlock" }
 
 	potential_country = {
 		has_country_id = klingon
@@ -619,7 +619,7 @@ warbird = {
 
 	default_behavior = "hrb_interceptor"
 
-	#prerequisites = { "tech_destroyer_unlock" }
+	prerequisites = { "tech_cruiser_unlock" }
 
 	potential_country = {
 		has_country_id = klingon
@@ -709,7 +709,7 @@ ktinga = {
 
 	default_behavior = "hrb_bomber"
 
-	#prerequisites = { "tech_cruiser_unlock" }
+	prerequisites = { "tech_corvette_unlock" }
 
 	potential_country = {
 		has_country_id = klingon
@@ -795,7 +795,7 @@ vorcha = {
 
 	default_behavior = "hrb_line"
 
-	#prerequisites = { "tech_battleship_unlock" }
+	prerequisites = { "tech_battleship_unlock" }
 
 	potential_country = {
 		has_country_id = klingon
@@ -881,7 +881,7 @@ neghvar = {
 
 	default_behavior = "hrb_artillery"
 
-	#prerequisites = { "tech_titan_unlock" }
+	prerequisites = { "tech_titan_unlock" }
 
 	potential_country = {
 		has_country_id = klingon
@@ -985,7 +985,7 @@ ferrax = {
 
 	default_behavior = "hrb_escort"
 
-	prerequisites = { "tech_corvette_unlock" }
+	prerequisites = { "tech_destroyer_unlock" }
 
 	potential_country = {
 		has_country_id = romulan
@@ -1071,7 +1071,7 @@ vindius = {
 
 	default_behavior = "hrb_interceptor"
 
-	prerequisites = { "tech_destroyer_unlock" }
+	prerequisites = { "tech_cruiser_unlock" }
 
 	potential_country = {
 		has_country_id = romulan
@@ -1157,7 +1157,7 @@ valdore = {
 
 	default_behavior = "hrb_bomber"
 
-	prerequisites = { "tech_cruiser_unlock" }
+	prerequisites = { "tech_battleship_unlock" }
 
 	potential_country = {
 		has_country_id = romulan
@@ -1243,7 +1243,7 @@ dderidex = {
 
 	default_behavior = "hrb_line"
 
-	prerequisites = { "tech_battleship_unlock" }
+	prerequisites = { "tech_corvette_unlock" }
 
 	potential_country = {
 		has_country_id = romulan
@@ -1437,7 +1437,7 @@ hideki = {
 
 	default_behavior = "hrb_escort"
 
-	prerequisites = { "tech_corvette_unlock" }
+	prerequisites = { "tech_destroyer_unlock" }
 
 	potential_country = {
 		has_country_id = cardassian
@@ -1527,7 +1527,7 @@ galor = {
 
 	default_behavior = "hrb_interceptor"
 
-	#prerequisites = { "tech_destroyer_unlock" }
+	prerequisites = { "tech_corvette_unlock" }
 
 	potential_country = {
 		has_country_id = cardassian
@@ -1616,7 +1616,7 @@ keldon = {
 
 	default_behavior = "hrb_bomber"
 
-	#prerequisites = { "tech_cruiser_unlock" }
+	prerequisites = { "tech_cruiser_unlock" }
 
 	potential_country = {
 		has_country_id = cardassian
@@ -1706,7 +1706,7 @@ kazikai = {
 
 	default_behavior = "hrb_line"
 
-	#prerequisites = { "tech_battleship_unlock" }
+	prerequisites = { "tech_battleship_unlock" }
 
 	potential_country = {
 		has_country_id = cardassian
@@ -1792,7 +1792,7 @@ nokoram = {
 
 	default_behavior = "hrb_artillery"
 
-	#prerequisites = { "tech_titan_unlock" }
+	prerequisites = { "tech_titan_unlock" }
 
 	potential_country = {
 		has_country_id = cardassian
@@ -2508,8 +2508,8 @@ enterprise = {
 		#ship_piracy_suppression_add = 10
 	}
 
-	size_multiplier = 8
-	fleet_slot_size = 4
+	size_multiplier = 13
+	fleet_slot_size = 8
 
 	section_slots = { "mid" = { locator = "part1" } }
 
@@ -2589,8 +2589,8 @@ enterprise_sovereign = {
 		#ship_piracy_suppression_add = 160
 	}
     
-	size_multiplier = 13
-	fleet_slot_size = 8
+	size_multiplier = 8
+	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 2
 	is_space_station = no
@@ -2603,7 +2603,7 @@ enterprise_sovereign = {
 	is_destroyable = no
 	ignores_warp_range = yes
 	
-	default_behavior = "hrb_line"
+	default_behavior = "hrb_bomber"
 	prerequisites = { }
 	potential_country = {
 		has_country_id = ufop
@@ -3083,6 +3083,7 @@ defiant = {
 	default_behavior = "hrb_escort"
 
 	# prerequisites = {  "tech_defiant"  }
+	prerequisites = { "tech_destroyer_unlock" }
 
 	potential_country = {
 		has_country_id = ufop
