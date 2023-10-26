@@ -6,6 +6,7 @@ tags={
 	"Species"
 	"Tech"
 }
-name="Renaissance"
-supported_version="1.0.0"
+name="Star Trek: Renaissance"
+supported_version="1.0.1"
 path="C:/users/steamuser/Documents/Paradox Interactive/Infinite/mod/renaissance"
+remote_file_id="3061275551"

@@ -6,5 +6,6 @@ tags={
 	"Species"
 	"Tech"
 }
-name="Renaissance"
-supported_version="1.0.0"
+name="Star Trek: Renaissance"
+supported_version="1.0.1"
+remote_file_id="3061275551"
