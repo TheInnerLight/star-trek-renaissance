@@ -425,7 +425,7 @@ galaxy = {
 	#default_behavior = "hrb_line"
     default_behavior = "hrb_artillery"
 
-	prerequisites = { "tech_cruiser_unlock" }
+	prerequisites = { "tech_destroyer_unlock" }
 
 	potential_country = {
 		has_country_id = ufop
@@ -3083,7 +3083,7 @@ defiant = {
 	default_behavior = "hrb_escort"
 
 	# prerequisites = {  "tech_defiant"  }
-	prerequisites = { "tech_destroyer_unlock" }
+	prerequisites = { "tech_cruiser_unlock" }
 
 	potential_country = {
 		has_country_id = ufop

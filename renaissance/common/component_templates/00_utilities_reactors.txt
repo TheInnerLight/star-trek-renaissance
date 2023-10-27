@@ -409,7 +409,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_reactor_1" }
 	component_set = "power_core"
-	size_restriction = { corvette colonizer lithoid_colonizer lithoid_colonizer sponsored_colonizer constructor science spy_ship governor_ship transport crisis_corvette miranda defiant bird_of_prey hideki small_minor small_nausicaan}
+	size_restriction = { corvette colonizer lithoid_colonizer lithoid_colonizer sponsored_colonizer constructor science spy_ship governor_ship transport crisis_corvette miranda bird_of_prey hideki small_minor small_nausicaan}
 	upgrades_to = "CORVETTE_MATTER_ANTIMATTER_REACTOR"
 
 	ai_weight = {
@@ -507,7 +507,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_reactor_1" }
 	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser excelsior warbird keldon }
+	size_restriction = { cruiser crisis_cruiser defiant excelsior warbird keldon }
 	upgrades_to = "CRUISER_MATTER_ANTIMATTER_REACTOR"
 
 	ai_weight = {
@@ -884,7 +884,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_reactor_2" }
 	component_set = "power_core"
-	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science spy_ship governor_ship transport crisis_corvette miranda defiant bird_of_prey hideki small_minor small_nausicaan }
+	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science spy_ship governor_ship transport crisis_corvette miranda bird_of_prey hideki small_minor small_nausicaan }
 	upgrades_to = "CORVETTE_TETRYON_REACTOR"
 
 	ai_weight = {
@@ -982,7 +982,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_reactor_2" }
 	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser excelsior warbird keldon }
+	size_restriction = { cruiser crisis_cruiser defiant excelsior warbird keldon }
 	upgrades_to = "CRUISER_TETRYON_REACTOR"
 
 	ai_weight = {
@@ -1351,7 +1351,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_reactor_3" }
 	component_set = "power_core"
-	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science spy_ship governor_ship transport crisis_corvette miranda defiant bird_of_prey hideki small_minor small_nausicaan }
+	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science spy_ship governor_ship transport crisis_corvette miranda bird_of_prey hideki small_minor small_nausicaan }
 	upgrades_to = "CORVETTE_ANTI_TETRYON_REACTOR"
 
 	ai_weight = {
@@ -1449,7 +1449,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_reactor_3" }
 	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser excelsior keldon warbird }
+	size_restriction = { cruiser crisis_cruiser defiant excelsior keldon warbird }
 	upgrades_to = "CRUISER_ANTI_TETRYON_REACTOR"
 
 	ai_weight = {
@@ -1678,7 +1678,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_reactor_4" }
 	component_set = "power_core"
-	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science spy_ship governor_ship transport crisis_corvette miranda defiant bird_of_prey hideki small_minor small_nausicaan }
+	size_restriction = { corvette colonizer lithoid_colonizer sponsored_colonizer constructor science spy_ship governor_ship transport crisis_corvette miranda bird_of_prey hideki small_minor small_nausicaan }
 
 	ai_weight = {
 		weight = 4
@@ -1774,7 +1774,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_reactor_4" }
 	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser excelsior keldon warbird }
+	size_restriction = { cruiser crisis_cruiser defiant excelsior keldon warbird }
 
 	ai_weight = {
 		weight = 4
