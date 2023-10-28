@@ -1123,13 +1123,13 @@ tech_cruiser_unlock = {
 		trigger = {		
 			is_ufop = yes	
 		}		
-		title = tech_defiant		
-		desc = tech_defiant_desc		
-		icon = tech_defiant # HRB_TODO: placeholder		
+		title = tech_renaissance_akira
+		desc = tech_renaissance_akira_desc		
+		icon = tech_renaissance_akira # HRB_TODO: placeholder		
 		prereqfor_desc = {		
 			ship = {	
-				title = TECH_UNLOCK_DEFIANT_CONSTRUCTION_TITLE
-				desc = tech_defiant_desc
+				title = TECH_UNLOCK_RENAISSANCE_AKIRA_CONSTRUCTION_TITLE
+				desc = tech_renaissance_akira_desc
 			}	
 		}		
 	}

@@ -96,3 +96,20 @@
   STR_MEDIUM_QUAN_TORP_TYPE2: "Quantum Torpedoes (Type II)"
   STR_MEDIUM_QUAN_TORP_TYPE2_DESC: "Quantum Torpedoes are an evolution of photon torpedoes designed to exploit quantum fluctuations to repurpose wasted energy from an antimatter explosion to create damage. The resulting frequency spread makes them far more effective against shielded targets."
 
+  STR_MEDIUM_TRICOBALT_DEVICE_TYPE1: "Tricobalt Device (Type I)"
+  STR_MEDIUM_TRICOBALT_DEVICE_TYPE2: "Tricobalt Device (Type 2)"
+
+  ## Ships
+
+  NAME_Renaissance_Akira: "Akira"
+
+  tech_renaissance_akira: "Akira Schematics"
+  tech_renaissance_akira_desc: "Akira-class starships§! that are powerful multi-role heavy cruisers designed for a variety of exploratory and fleet missions."
+  TECH_UNLOCK_RENAISSANCE_AKIRA_CONSTRUCTION_TITLE: "§HUnlocks Ship Type:§! Akira"
+
+  ## Hull Sizes
+
+  renaissance_akira: "Akira"
+  renaissance_akira_pural: "Akiras"
+
+

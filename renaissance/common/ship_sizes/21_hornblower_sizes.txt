@@ -310,6 +310,8 @@ renaissance_akira = {
 	officers_escape_perc = @base_officers_escape_perc
 	fleet_view_background = "military_excelsior"
 
+	prerequisites = { "tech_cruiser_unlock" }
+
 	ship_modifier = {
 		ship_fire_rate_mult = @no_admiral_fire_rate_mult
 		ship_shield_mult = @no_admiral_shield_mult
@@ -3170,8 +3172,7 @@ defiant = {
 
 	default_behavior = "hrb_escort"
 
-	# prerequisites = {  "tech_defiant"  }
-	prerequisites = { "tech_cruiser_unlock" }
+	prerequisites = {  "tech_defiant"  }
 
 	potential_country = {
 		has_country_id = ufop

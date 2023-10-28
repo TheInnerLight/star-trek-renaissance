@@ -1,0 +1,172 @@
+﻿### United Nations of Earth
+
+UFP1 = {
+	category = "Humanoid"
+	randomized = no
+	alias = "Federated"
+
+	ship_names = {
+
+		constructor = {
+			Al-Batani Angelou Billings Chicago Challenger Curie Gallico "Le Guin" Sentinel Silversides Valorous Ervolina Lionheart Kahlo Nova Dauntless Mikita Resolute Oyama Legionnaire Burton Hanley Rue Nimble Walters Eliel Riegel Alexandria Strother 
+		}
+		
+		colonizer = {
+			Al-Batani Angelou Billings Chicago Challenger Curie Gallico "Le Guin" Sentinel Silversides Valorous Ervolina Lionheart Kahlo Nova Dauntless Mikita Resolute Oyama Legionnaire Burton Hanley Rue Nimble Walters Eliel Riegel Alexandria Strother 
+		}
+
+		sponsored_colonizer = { # needed when there are no generic names
+			Al-Batani Angelou Billings Chicago Challenger Curie Gallico "Le Guin" Sentinel Silversides Valorous Ervolina Lionheart Kahlo Nova Dauntless Mikita Resolute Oyama Legionnaire Burton Hanley Rue Nimble Walters Eliel Riegel Alexandria Strother 
+		}
+
+		science = {
+			Al-Batani Angelou Billings Chicago Challenger Curie Gallico "Le Guin" Sentinel Silversides Valorous Ervolina Lionheart Kahlo Nova Dauntless Mikita Resolute Oyama Legionnaire Burton Hanley Rue Nimble Walters Eliel Riegel Alexandria Strother 
+		}
+		
+		governor_ship = {
+			Al-Batani Angelou Billings Chicago Challenger Curie Gallico "Le Guin" Sentinel Silversides Valorous Ervolina Lionheart Kahlo Nova Dauntless Mikita Resolute Oyama Legionnaire Burton Hanley Rue Nimble Walters Eliel Riegel Alexandria Strother 
+		}
+
+		spy_ship = {
+			Al-Batani Angelou Billings Chicago Challenger Curie Gallico "Le Guin" Sentinel Silversides Valorous Ervolina Lionheart Kahlo Nova Dauntless Mikita Resolute Oyama Legionnaire Burton Hanley Rue Nimble Walters Eliel Riegel Alexandria Strother 
+		}
+
+		transport = {
+			Al-Batani Angelou Billings Chicago Challenger Curie Gallico "Le Guin" Sentinel Silversides Valorous Ervolina Lionheart Kahlo Nova Dauntless Mikita Resolute Oyama Legionnaire Burton Hanley Rue Nimble Walters Eliel Riegel Alexandria Strother 
+		}
+
+		bulk_carrier = {
+			Al-Batani Angelou Billings Chicago Challenger Curie Gallico "Le Guin" Sentinel Silversides Valorous Ervolina Lionheart Kahlo Nova Dauntless Mikita Resolute Oyama Legionnaire Burton Hanley Rue Nimble Walters Eliel Riegel Alexandria Strother 
+		}
+
+		military_station_small = {
+			Al-Batani Angelou Billings Chicago Challenger Curie Gallico "Le Guin" Sentinel Silversides Valorous Ervolina Lionheart Kahlo Nova Dauntless Mikita Resolute Oyama Legionnaire Burton Hanley Rue Nimble Walters Eliel Riegel Alexandria Strother 
+		}
+
+		miranda = {
+			Al-Batani Angelou Billings Chicago Challenger Curie Gallico "Le Guin" Sentinel Silversides Valorous Ervolina Lionheart Kahlo Nova Dauntless Mikita Resolute Oyama Legionnaire Burton Hanley Rue Nimble Walters Eliel Riegel Alexandria Strother 
+		}
+
+		defiant = {
+			Defiant Al-Batani Angelou Billings Chicago Challenger Curie Gallico "Le Guin" Sentinel Silversides Valorous Ervolina Lionheart Kahlo Nova Dauntless Mikita Resolute Oyama Legionnaire Burton Hanley Rue Nimble Walters Eliel Riegel Alexandria Strother 
+		}
+
+		intrepid = {
+			Al-Batani Angelou Billings Chicago Challenger Curie Gallico "Le Guin" Sentinel Silversides Valorous Ervolina Lionheart Kahlo Nova Dauntless Mikita Resolute Oyama Legionnaire Burton Hanley Rue Nimble Walters Eliel Riegel Alexandria Strother 
+		}
+
+		excelsior = { # classic constitution/excelsior names
+			Atlantis Berlin Cairo "Crazy Horse" Excalibur Excelsior Exeter Farragut Hood Lakota Lexington Melbourne Potemkin Republic Repulse Roosevelt Tecumseh
+		}
+
+		galaxy = { # Names of astronomical objects, famous individuals, etc.
+			Andromeda Azetbur Challenger Constellation Endeavour Galaxy Gorkon Kahless Odyssey Sarek Shras Surak Syracuse T'Pau Venture Victory Yamato
+		}
+
+		sovereign = { # classic constitution/excelsior names
+			Atlantis Berlin Cairo "Crazy Horse" Excalibur Exeter Farragut Hood Lakota Lexington Melbourne Paris Potemkin Republic Repulse Roosevelt Sovereign Tecumseh
+		}
+
+		renaissance_akira = { # names from science fiction and mythology
+			Agamemnon Akira Biliskner Eagle Jupiter Lakota Mateo Nautilus Orville Rabin Saratoga Templar Thunderchild Valen
+		}
+
+		enterprise = {
+			Enterprise
+		}
+
+		enterprise_sovereign = {
+			Enterprise
+		}
+
+		california = {
+			Cerritos Al-Batani Angelou Billings Chicago Challenger Curie Gallico "Le Guin" Sentinel Silversides Valorous Ervolina Lionheart Kahlo Nova Dauntless Mikita Resolute Oyama Legionnaire Burton Hanley Rue Nimble Walters Eliel Riegel Alexandria Strother  
+		}
+	}
+
+	fleet_names = {
+		sequential_name = "%O% Fleet"
+	}
+	
+	army_names = {
+
+		machine_defense = {
+			sequential_name = "%O% Planetary Guard"
+		}
+		
+		machine_assault_1 = {
+			sequential_name = "%O% Expeditionary Force"
+		}
+	
+		defense_army = {
+			sequential_name = "%O% Planetary Guard"
+		}
+
+		assault_army = {
+			sequential_name = "%O% Expeditionary Force"
+		}
+		
+		clone_army = { 
+			sequential_name = "%O% Clone Army"
+		}
+		
+		undead_army = {
+			sequential_name = "%O% Dread Commando"
+		}
+
+		robotic_army = {
+			sequential_name = "%O% Hunter-Killer Group"
+		}
+
+		robotic_defense_army = {
+			sequential_name = "%O% Ground Defense Matrix"
+		}
+		
+		gene_warrior_army = {
+			random_names = {
+				"SARC-A 'Gladiators'" "SARC-B 'Widowmakers'" "SARC-C 'Immortals'" "SARC-D 'Berserkers'" "SARC-E 'Assassins'"
+				"SARC-F 'Reapers'" "SARC-G 'Nighthawks'" "SARC-H 'Desperados'" "SARC-I 'Grey Knights'" "SARC-J 'Roughnecks'" 
+			}
+			sequential_name = "%O% Bio-Engineered Squadron"
+		}
+
+		occupation_army = {
+			sequential_name = "%O% Garrison Force"
+		}
+
+		robotic_occupation_army = {
+			sequential_name = "%O% Mechanized Garrison"
+		}
+
+		primitive_army = {
+			sequential_name = "Primitive Army %C%"
+		}
+		industrial_army = {
+			sequential_name = "Industrial Army %C%"
+		}
+		postatomic_army = {
+			sequential_name = "Post-Atomic Army %C%"
+		}
+	}
+
+
+
+
+	### CHARACTERS
+
+	character_names = {
+
+		names1 = {
+			weight = 40
+			first_names_male = {
+				Jean-Marc Anders Kwame Omar Yahya Sean Josue Krzysztof Deitrich Ezequiel Akash Takoda Misael Joep John Germán Giovanni José
+			}
+			first_names_female = {
+				Susanna Marie-Claude Nadia Cecilia Aabria Priyanka Hilary Iwona Azul Berenika Heidi Afia Catalina Teresa Paula Micaela Isabella Lucila 
+			}
+			second_names = {
+				Atkins Brenner Chandra Chen Huang Patel García Silvestro Gomez Krin Connor Vincent Rodriguez Martinez Rasmussen Hassan Carbone Johnson Mulligan Mercer Williams Mbeki Kamara Abebe Floyd Mortensen Nuzzo Okorafor Achebe Nayeli Nkosi Singh Leroux Conan Zhang Gates
+			}
+		}
+	}
+}

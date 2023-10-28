@@ -62,7 +62,7 @@ ship_section_template = {
 	entity = "miranda_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_phaser_bank_type8 }
 	
 	ai_weight = {
 		modifier = {
@@ -118,7 +118,7 @@ ship_section_template = {
 	entity = "intrepid_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_phaser_bank_type8 }
 	
 	ai_weight = {
 		modifier = {
@@ -178,7 +178,7 @@ ship_section_template = {
 	entity = "excelsior_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_phaser_bank_type8 }
 	
 	ai_weight = {
 		modifier = {
@@ -235,6 +235,8 @@ ship_section_template = {
 	entity = "excelsior_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
+	prerequisites = { tech_str_phaser_bank_type8 }
+
 	ai_weight = {
 		modifier = {
 			factor = 10.0
@@ -308,7 +310,7 @@ ship_section_template = {
 	entity = "sovereign_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_phaser_bank_type8 }
 	
 	ai_weight = {
 		modifier = {
@@ -388,7 +390,7 @@ ship_section_template = {
 	entity = "galaxy_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_phaser_bank_type8 }
 	
 	ai_weight = {
 		modifier = {
@@ -516,7 +518,7 @@ ship_section_template = {
 	entity = "bop_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_disruptor_type1 }
 	
 	ai_weight = {
 		modifier = {
@@ -572,7 +574,7 @@ ship_section_template = {
 	entity = "warbird_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_disruptor_type1 }
 	
 	ai_weight = {
 		modifier = {
@@ -636,7 +638,7 @@ ship_section_template = {
 	entity = "ktinga_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_disruptor_type1 }
 	
 	ai_weight = {
 		modifier = {
@@ -699,7 +701,7 @@ ship_section_template = {
 	entity = "vorcha_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_disruptor_type1 }
 
 	component_slot = {
 		name = "LARGE_GUN_01"
@@ -780,7 +782,7 @@ ship_section_template = {
 	entity = "neghvar_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_disruptor_type1 }
 	
 	ai_weight = {
 		modifier = {
@@ -913,7 +915,7 @@ ship_section_template = {
 	entity = "ferrax_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_disruptor_type1 }
 	
 	ai_weight = {
 		modifier = {
@@ -957,7 +959,7 @@ ship_section_template = {
 	entity = "vindius_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_disruptor_type1 }
 	
 	ai_weight = {
 		modifier = {
@@ -1016,7 +1018,7 @@ ship_section_template = {
 	entity = "valdore_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_disruptor_type1 }
 	
 	ai_weight = {
 		modifier = {
@@ -1085,7 +1087,7 @@ ship_section_template = {
 	entity = "dderidex_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_disruptor_type1 }
 	
 	component_slot = {
 		name = "LARGE_GUN_01"
@@ -1149,7 +1151,7 @@ ship_section_template = {
 	entity = "majestus_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_disruptor_type1 }
 	
 	ai_weight = {
 		modifier = {
@@ -1289,7 +1291,7 @@ ship_section_template = {
 	entity = "hideki_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_phaser_bank_type8 }
 	
 	ai_weight = {
 		modifier = {
@@ -1339,7 +1341,7 @@ ship_section_template = {
 	entity = "galor_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_phaser_bank_type8 }
 	
 	ai_weight = {
 		modifier = {
@@ -1393,7 +1395,7 @@ ship_section_template = {
 	entity = "keldon_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_phaser_bank_type8 }
 	
 	ai_weight = {
 		modifier = {
@@ -1450,7 +1452,7 @@ ship_section_template = {
 	entity = "kazikai_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_phaser_bank_type8 }
 
 	component_slot = {
 		name = "EXTRA_LARGE_GUN_01"
@@ -1509,7 +1511,7 @@ ship_section_template = {
 	entity = "nokoram_slots_entity"
 	icon = "GFX_ship_part_core_mid"
 	
-	prerequisites = { tech_big_bomb_1 }
+	prerequisites = { tech_str_phaser_bank_type8 }
 	
 	ai_weight = {
 		modifier = {
