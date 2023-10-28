@@ -228,6 +228,79 @@ ship_section_template = {
 }
 
 ship_section_template = {
+	key = "AKIRA_MID"
+	ship_size = renaissance_akira
+	fits_on_slot = mid
+	should_draw_components = no
+	entity = "excelsior_slots_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}		
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "large_gun_02"
+	}
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+    component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "invisible_medium_turret"
+		locatorname = "medium_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_01"
+	}	
+	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "invisible_small_turret"
+		locatorname = "small_gun_02"
+	}
+	
+	large_utility_slots = 4
+	medium_utility_slots = 1
+	aux_utility_slots = 2
+	
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @ufop_section_cost
+		}
+	}
+}
+
+ship_section_template = {
 	key = "SOVEREIGN_MID"
 	ship_size = sovereign
 	fits_on_slot = mid

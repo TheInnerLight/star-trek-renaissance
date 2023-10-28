@@ -400,7 +400,7 @@ utility_component_template = {
 		
 	prerequisites = { "tech_engine_1" }
 	component_set = "thruster_components"
-	size_restriction = { cruiser crisis_cruiser excelsior warbird valdore keldon }
+	size_restriction = { cruiser crisis_cruiser excelsior warbird valdore keldon renaissance_akira }
 	upgrades_to = "CRUISER_ADVANCED_IMPULSE_ENGINE"
 	
 	ai_weight = {
@@ -677,7 +677,7 @@ utility_component_template = {
 		
 	prerequisites = { "tech_engine_2" }
 	component_set = "thruster_components"
-	size_restriction = { cruiser crisis_cruiser excelsior warbird valdore keldon }
+	size_restriction = { cruiser crisis_cruiser excelsior warbird valdore keldon renaissance_akira }
 	upgrades_to = "CRUISER_HIGH_ENERGY_IMPULSE_ENGINE"
 	
 	ai_weight = {
@@ -821,7 +821,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_engine_3" }
 	component_set = "thruster_components"
-	size_restriction = { cruiser crisis_cruiser excelsior warbird valdore keldon }
+	size_restriction = { cruiser crisis_cruiser excelsior warbird valdore keldon renaissance_akira }
 	upgrades_to = "CRUISER_OMEGA_ENGINE"
 	
 	ai_weight = {
@@ -961,7 +961,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_engine_4" }
 	component_set = "thruster_components"
-	size_restriction = { cruiser crisis_cruiser excelsior warbird valdore keldon }
+	size_restriction = { cruiser crisis_cruiser excelsior warbird valdore keldon renaissance_akira }
 	
 	ai_weight = {
 		weight = 4

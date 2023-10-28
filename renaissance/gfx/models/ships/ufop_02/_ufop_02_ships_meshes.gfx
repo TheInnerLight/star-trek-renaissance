@@ -1,0 +1,19 @@
+objectTypes = {	
+    pdxmesh = { 
+		name = "ufop_02_akira_mesh"
+		file = "gfx/models/ships/ufop_02/ufop_02_akira_ship.mesh"
+		scale = 7.5
+
+		animation = { id = "idle"				type = "small_idle_animation" }
+
+		animation = { id = "death"				type = "small_death_animation" }
+
+		animation = { id = "warp_01"			type = "small_warp_01_animation" }
+
+		animation = { id = "warp_02"			type = "small_warp_02_animation" }
+
+		animation = { id = "warp_03"			type = "small_warp_03_animation" }
+
+	}
+
+}
