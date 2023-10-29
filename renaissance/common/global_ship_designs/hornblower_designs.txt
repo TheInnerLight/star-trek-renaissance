@@ -264,6 +264,95 @@ ship_design = {
 	required_component = "COMBAT_COMPUTER_HRB_INTERCEPTOR_DEFAULT"
 }
 
+# Akira
+ship_design = {
+	name = "NAME_Renaissance_Akira"
+	ship_size = akira
+	is_event_design = yes
+
+	section = {
+		template = "AKIRA_MID"
+		slot = "mid"
+
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
+		}
+
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
+		}
+
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "STR_LARGE_PHASER_ARRAY_TYPE10"
+		}
+
+		component = {
+			slot = "MEDIUM_GUN_01"
+			template = "STR_MEDIUM_PHO_TORP_TYPE4"
+		}
+
+        component = {
+			slot = "MEDIUM_GUN_02"
+			template = "STR_MEDIUM_PHO_TORP_TYPE4"
+		}
+
+		component = {
+			slot = "SMALL_GUN_01"
+			template = "SMALL_PHASER_CANNON"
+		}
+
+		component = {
+			slot = "SMALL_GUN_02"
+			template = "SMALL_PHASER_CANNON"
+		}
+
+		# ARMOR (UTILITIES)
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_DEFENSE_FIELD_SHIELDS"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_DEFENSE_FIELD_SHIELDS"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_DEFENSE_FIELD_SHIELDS"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_1"
+			template = "MEDIUM_DEFENSE_FIELD_SHIELDS"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_TRITANIUM_HULLS"
+		}
+
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "REACTOR_SUB_BATTERY"
+		}
+
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "SHIELD_BOOSTER"
+		}
+	}
+
+	required_component = "CRUISER_FUSION_REACTOR" 
+	required_component = "WARP_DRIVE_1"
+	required_component = "CRUISER_IMPULSE_ENGINE"
+	required_component = "SENSOR_PROBES"
+	required_component = "COMBAT_COMPUTER_HRB_INTERCEPTOR_DEFAULT"
+}
+
 # Sovereign
 ship_design = {
 	name = "NAME_Sovereign"
@@ -329,6 +418,7 @@ ship_design = {
 			slot = "LARGE_UTILITY_3"
 			template = "LARGE_DEFENSE_FIELD_SHIELDS"
 		}
+
 		component = {
 			slot = "LARGE_UTILITY_4"
 			template = "LARGE_TRITANIUM_HULLS"

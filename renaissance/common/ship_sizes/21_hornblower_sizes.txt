@@ -298,6 +298,96 @@ excelsior = {
 	}
 }
 
+renaissance_akira = {
+	formation_priority = @excelsior_formation_priority
+	entity = renaissance_akira_entity
+	max_speed = @excelsior_speed
+	acceleration = 0.35
+	rotation_speed = 0.3
+	collision_radius = @excelsior_collision_radius
+	max_hitpoints = @excelsior_hp
+	operative_officers = @base_operative_officers
+	officers_escape_perc = @base_officers_escape_perc
+	fleet_view_background = "military_excelsior"
+
+	prerequisites = { "tech_cruiser_unlock" }
+
+	ship_modifier = {
+		ship_fire_rate_mult = @no_admiral_fire_rate_mult
+		ship_shield_mult = @no_admiral_shield_mult
+		ship_shield_damage_mult = @no_admiral_shield_damage_mult
+		ship_shield_penetration_mult = @no_admiral_shield_penetration_mult
+		ship_tracking_mult = @no_admiral_tracking_mult
+		ship_evasion_add = @excelsior_evasion
+		#ship_piracy_suppression_add = 40
+	}
+    
+	size_multiplier = 5
+	fleet_slot_size = 3
+	graphical_culture = no
+	
+	section_slots = { "mid" = { locator = "part1" } }
+	
+	num_target_locators = 2
+	is_space_station = no
+	icon_frame = @cruiser_size_icon_frame
+	base_buildtime = @excelsior_build_time
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	can_also_survey = yes
+
+	default_behavior = "hrb_bomber"
+
+	#prerequisites =	{ "tech_corvette_unlock" }
+
+	potential_country = {
+		has_country_id = ufop
+	}
+
+	combat_disengage_chance = 1.8
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+
+	resources = {
+		category = ships
+		upkeep = {
+			trigger = {
+				NOT = {
+					ROOT = {
+						exists = FROM
+						original_owner_uses_artificial_singularities = FROM
+					}
+				}
+			}
+			deuterium = @excelsior_upkeep_deuterium
+		}
+		
+		upkeep = {
+			trigger = {
+				ROOT = {
+					exists = FROM
+					original_owner_uses_artificial_singularities = FROM
+				}
+			}
+			artificial_singularities = 0
+		}
+
+		upkeep = {
+			alloys = @excelsior_upkeep_alloys
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 1
+	}
+}
+
 sovereign = {
 	formation_priority = @sovereign_formation_priority
 	max_speed = @sovereign_speed
@@ -3082,8 +3172,7 @@ defiant = {
 
 	default_behavior = "hrb_escort"
 
-	# prerequisites = {  "tech_defiant"  }
-	prerequisites = { "tech_cruiser_unlock" }
+	prerequisites = {  "tech_defiant"  }
 
 	potential_country = {
 		has_country_id = ufop

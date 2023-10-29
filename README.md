@@ -44,4 +44,7 @@ More speculative ideas:
 
 You can find the current state of the implementation in the [Renaissance](renaissance) folder.
 
+## Attribution
+
+Some of the content here (notably 3d) models were not produced by me but other excellent creators.  Please see the [attribution](attribution.md) page where you can find both credits and links to the fabulous original artworks which the creators have generously licensed such that they can be used in your own projects if you wish.
 

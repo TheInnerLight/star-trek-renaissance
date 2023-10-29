@@ -254,6 +254,24 @@
 @excelsior_upkeep_minerals = 0.8
 
 ##################
+# AKIRA
+##################
+
+@akira_speed = 80
+
+@akira_collision_radius = 5
+@akira_formation_priority = 30
+
+@akira_hp = 6836
+@akira_evasion = 38
+@akira_build_time = 240
+
+@akira_upkeep_energy = 1.2
+@akira_upkeep_deuterium = 0.4
+@akira_upkeep_alloys = 0.4
+@akira_upkeep_minerals = 0.8
+
+##################
 # GALAXY
 ##################
 

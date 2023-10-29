@@ -507,7 +507,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_reactor_1" }
 	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser defiant excelsior warbird keldon }
+	size_restriction = { cruiser crisis_cruiser defiant excelsior warbird keldon renaissance_akira }
 	upgrades_to = "CRUISER_MATTER_ANTIMATTER_REACTOR"
 
 	ai_weight = {
@@ -982,7 +982,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_reactor_2" }
 	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser defiant excelsior warbird keldon }
+	size_restriction = { cruiser crisis_cruiser defiant excelsior warbird keldon renaissance_akira }
 	upgrades_to = "CRUISER_TETRYON_REACTOR"
 
 	ai_weight = {
@@ -1774,7 +1774,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_reactor_4" }
 	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser defiant excelsior keldon warbird }
+	size_restriction = { cruiser crisis_cruiser defiant excelsior keldon warbird renaissance_akira }
 
 	ai_weight = {
 		weight = 4

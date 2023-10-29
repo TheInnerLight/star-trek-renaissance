@@ -1,3 +1,8 @@
+Version 0.2
+
+- Add Akira class starship
+- Adjust starship names for Excelsior/Galaxy/Sovereign/Akira
+
 Version 0.1.1
 
 - Fixed broken country events

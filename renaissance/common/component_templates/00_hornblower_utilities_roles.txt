@@ -168,7 +168,7 @@ utility_component_template = {
 	
 	# HRB_TODO: no restriction for now
 	size_restriction = {
-		excelsior sovereign # UFOP
+		excelsior sovereign renaissance_akira # UFOP
 		ktinga  # KLINGON
 		valdore  # ROMULAN
 		keldon # CARDASSIAN
@@ -212,7 +212,7 @@ utility_component_template = {
 	
 	# HRB_TODO: no restriction for now
 	size_restriction = {
-		miranda defiant intrepid california excelsior sovereign # UFOP
+		miranda defiant intrepid california excelsior sovereign renaissance_akira # UFOP
 		bird_of_prey warbird ktinga # KLINGON
 		ferrax vindius valdore # ROMULAN
 		hideki galor keldon # CARDASSIAN
@@ -846,7 +846,7 @@ utility_component_template = {
 	
 	# HRB_TODO: no restriction for now
 	size_restriction = {
-		excelsior sovereign # UFOP
+		excelsior sovereign renaissance_akira # UFOP
 		ktinga  # KLINGON
 		valdore  # ROMULAN
 		keldon # CARDASSIAN
@@ -1028,7 +1028,7 @@ utility_component_template = {
 	
 	# HRB_TODO: no restriction for now
 	size_restriction = {
-		miranda defiant intrepid california excelsior sovereign # UFOP
+		miranda defiant intrepid california excelsior sovereign renaissance_akira # UFOP
 		bird_of_prey warbird ktinga # KLINGON
 		ferrax vindius valdore # ROMULAN
 		hideki galor keldon # CARDASSIAN
