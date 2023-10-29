@@ -11,9 +11,9 @@ It will modify ships, weapons, technologies, etc according to the plan described
 Here's an overview of some ideas:
 
 - [x] Make most Federation military vessels capable of conducting science missions (only within logistics range)
-- [ ] Lore friendly ship progression (e.g. excelsiors at the start and developing: galaxy -> intrepid -> sovereign to match the cannonical timeline)
-- [ ] Lore friendly weapons progression (e.g. Type XII phaser arrays and type 6 photon torpedoes)
-- [ ] Asymmetric starting ships
+- [x] Lore friendly ship progression (e.g. excelsiors at the start and developing: galaxy -> intrepid -> sovereign to match the cannonical timeline)
+- [x] Lore friendly weapons progression (e.g. Type XII phaser arrays and type 6 photon torpedoes)
+- [x] Asymmetric starting ships
     - e.g.
       - Romulans starting with D'deridex warbirds
       - Cardassians with Galors
